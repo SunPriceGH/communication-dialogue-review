@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Dialogue Review</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <span class="eyebrow">DIALOGUE REVIEW</span>
+        <h1>Kiểm tra hội thoại</h1>
+      </div>
+      <div class="file-actions">
+        <button id="openJsonBtn" type="button">Mở JSON</button>
+        <button id="saveJsonBtn" type="button" class="secondary" hidden>Lưu vào file</button>
+        <button id="exportJsonBtn" type="button" class="secondary">Xuất JSON</button>
+      </div>
+    </header>
+
+    <section class="summary-bar" aria-label="Tiến độ xác minh">
+      <div><b id="verifiedCount">0</b><span>đã xác minh</span></div>
+      <div><b id="unverifiedCount">0</b><span>chưa xác minh</span></div>
+      <div><b id="totalCount">0</b><span>hội thoại</span></div>
+      <div class="summary-progress"><i id="summaryProgress"></i></div>
+    </section>
+
+    <section class="filters" aria-label="Bộ lọc">
+      <label>
+        <span>Module</span>
+        <select id="moduleFilter"></select>
+      </label>
+      <label>
+        <span>Lesson</span>
+        <select id="lessonFilter"></select>
+      </label>
+      <label>
+        <span>Activity</span>
+        <select id="activityFilter"></select>
+      </label>
+      <label>
+        <span>Trạng thái</span>
+        <select id="statusFilter">
+          <option value="all">Tất cả</option>
+          <option value="unverified">Chưa xác minh</option>
+          <option value="verified">Đã xác minh</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="review-card" id="reviewCard">
+      <div class="review-head">
+        <button id="prevBtn" class="nav-btn" type="button" aria-label="Hội thoại trước">‹</button>
+
+        <div class="review-title">
+          <small id="breadcrumb">—</small>
+          <h2 id="activityTitle">Chưa có dữ liệu</h2>
+          <p id="activityMeta">—</p>
+        </div>
+
+        <div class="review-position" aria-live="polite">
+          <b id="positionText">0 / 0</b>
+        </div>
+
+        <button id="nextBtn" class="nav-btn" type="button" aria-label="Hội thoại tiếp theo">›</button>
+      </div>
+
+      <div class="dialogue-table-head" aria-hidden="true">
+        <span>Speaker</span>
+        <span>Thoại</span>
+      </div>
+
+      <div class="dialogue-list" id="dialogueList">
+        <div class="empty">Đang tải dữ liệu...</div>
+      </div>
+
+      <div class="verify-row">
+        <button id="verifyBtn" class="verify-btn" type="button">Xác minh</button>
+        <button id="verifiedTick" class="verified-tick" type="button" title="Bỏ xác minh" aria-label="Bỏ xác minh" hidden>✓</button>
+      </div>
+    </section>
+
+    <p id="notice" class="notice" role="status" aria-live="polite"></p>
+  </main>
+
+  <input id="fileInput" type="file" accept=".json,application/json" hidden>
+  <script src="./app.js"></script>
+</body>
+</html>
