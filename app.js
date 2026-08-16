@@ -2,12 +2,15 @@
   'use strict';
 
   const $ = id => document.getElementById(id);
+  const LOCAL_REVIEW_STORAGE_KEY = 'engcore.dialogue-review-static.review-state.v1';
 
   const state = {
     data: null,
     visibleItems: [],
     currentId: '',
-    fileHandle: null
+    fileHandle: null,
+    localPatches: null,
+    fileWriteQueue: Promise.resolve()
   };
 
   function clone(value) {
@@ -75,6 +78,111 @@
   function itemHasNote(item) {
     return Array.isArray(item?.turns)
       && item.turns.some(turn => noteText(turn) !== '');
+  }
+
+  function readLocalReviewPatches() {
+    try {
+      const raw = window.localStorage.getItem(LOCAL_REVIEW_STORAGE_KEY);
+      if (!raw) return { items: {} };
+      const parsed = JSON.parse(raw);
+      return parsed && typeof parsed === 'object' && parsed.items && typeof parsed.items === 'object'
+        ? parsed
+        : { items: {} };
+    } catch (error) {
+      console.warn('Không đọc được localStorage review state:', error);
+      return { items: {} };
+    }
+  }
+
+  function writeLocalReviewPatches() {
+    try {
+      const payload = state.localPatches && typeof state.localPatches === 'object'
+        ? state.localPatches
+        : { items: {} };
+      payload.updated_at = new Date().toISOString();
+      window.localStorage.setItem(LOCAL_REVIEW_STORAGE_KEY, JSON.stringify(payload));
+      return true;
+    } catch (error) {
+      console.warn('Không ghi được localStorage review state:', error);
+      return false;
+    }
+  }
+
+  function localPatchFor(dialogueId) {
+    if (!state.localPatches || typeof state.localPatches !== 'object') {
+      state.localPatches = { items: {} };
+    }
+    if (!state.localPatches.items || typeof state.localPatches.items !== 'object') {
+      state.localPatches.items = {};
+    }
+    if (!state.localPatches.items[dialogueId]) {
+      state.localPatches.items[dialogueId] = {};
+    }
+    return state.localPatches.items[dialogueId];
+  }
+
+  function persistVerificationPatch(item) {
+    if (!item) return false;
+    const patch = localPatchFor(item.dialogue_id);
+    patch.verified = Boolean(item.verified);
+    patch.verified_at = item.verified ? (item.verified_at || null) : null;
+    return writeLocalReviewPatches();
+  }
+
+  function persistNotePatch(item, turnIndex) {
+    const turn = item?.turns?.[turnIndex];
+    if (!item || !turn) return false;
+    const patch = localPatchFor(item.dialogue_id);
+    if (!patch.notes || typeof patch.notes !== 'object') patch.notes = {};
+    const text = noteText(turn);
+    patch.notes[String(turnIndex)] = text
+      ? {
+          text,
+          updated_at: turn.note && typeof turn.note === 'object'
+            ? (turn.note.updated_at || null)
+            : null
+        }
+      : null;
+    return writeLocalReviewPatches();
+  }
+
+  function applyLocalReviewPatches(target) {
+    if (!target || !Array.isArray(target.items)) return target;
+    const patches = state.localPatches?.items;
+    if (!patches || typeof patches !== 'object') return target;
+
+    target.items.forEach(item => {
+      const patch = patches[item.dialogue_id];
+      if (!patch || typeof patch !== 'object') return;
+
+      if (typeof patch.verified === 'boolean') {
+        item.verified = patch.verified;
+        item.verified_at = patch.verified ? (patch.verified_at || null) : null;
+      }
+
+      if (patch.notes && typeof patch.notes === 'object' && Array.isArray(item.turns)) {
+        Object.entries(patch.notes).forEach(([indexKey, notePatch]) => {
+          const turnIndex = Number(indexKey);
+          const turn = item.turns[turnIndex];
+          if (!turn) return;
+          if (notePatch && String(notePatch.text || '').trim()) {
+            turn.note = {
+              text: String(notePatch.text).trim(),
+              updated_at: notePatch.updated_at || null
+            };
+          } else {
+            delete turn.note;
+          }
+        });
+      }
+    });
+
+    recalcSummary(target);
+    return target;
+  }
+
+  function localPatchCount() {
+    return Object.keys(state.localPatches?.items || {}).length;
   }
 
   function ensureStatusOptions() {
@@ -317,16 +425,18 @@
   async function persistCurrentFileSilently() {
     if (!state.fileHandle || !state.data) return false;
 
-    try {
+    state.fileWriteQueue = state.fileWriteQueue.then(async () => {
       const payload = exportPayload();
       const writable = await state.fileHandle.createWritable();
       await writable.write(JSON.stringify(payload, null, 2));
       await writable.close();
       return true;
-    } catch (error) {
+    }).catch(error => {
       console.error(error);
       return false;
-    }
+    });
+
+    return state.fileWriteQueue;
   }
 
   async function saveTurnNote(turnIndex, value) {
@@ -348,7 +458,7 @@
     state.data.updated_at = new Date().toISOString();
     state.data.storage = state.fileHandle
       ? 'browser-file-system-access'
-      : 'standalone-in-memory-export';
+      : 'browser-localStorage';
 
     rebuildVisible({ preserveCurrent: true });
 
@@ -358,9 +468,10 @@
         ? (text ? 'Đã lưu ghi chú trực tiếp vào file JSON.' : 'Đã xóa ghi chú khỏi file JSON.')
         : 'Đã cập nhật ghi chú trong dữ liệu hiện tại, nhưng chưa ghi được file.');
     } else {
-      setNotice(text
-        ? 'Đã lưu ghi chú. Bấm Xuất JSON để tải file đã cập nhật.'
-        : 'Đã xóa ghi chú. Bấm Xuất JSON để tải file đã cập nhật.');
+      const persisted = persistNotePatch(item, turnIndex);
+      setNotice(persisted
+        ? (text ? 'Đã lưu ghi chú. Reload vẫn giữ nguyên.' : 'Đã xóa ghi chú. Reload vẫn giữ nguyên.')
+        : 'Đã cập nhật ghi chú, nhưng trình duyệt không lưu được localStorage.');
     }
   }
 
@@ -378,7 +489,7 @@
     }
   }
 
-  function toggleVerified(force) {
+  async function toggleVerified(force) {
     const item = currentItem();
     if (!item) return;
 
@@ -390,12 +501,28 @@
       state.data.updated_at = new Date().toISOString();
       state.data.storage = state.fileHandle
         ? 'browser-file-system-access'
-        : 'standalone-in-memory-export';
+        : 'browser-localStorage';
       recalcSummary();
     }
 
     render();
-    setNotice(nextValue ? 'Đã đánh dấu hội thoại đạt chuẩn.' : 'Đã bỏ xác minh.');
+
+    if (state.fileHandle) {
+      const written = await persistCurrentFileSilently();
+      setNotice(written
+        ? (nextValue
+            ? 'Đã xác minh và ghi trực tiếp vào file JSON.'
+            : 'Đã bỏ xác minh và ghi trực tiếp vào file JSON.')
+        : 'Đã đổi trạng thái, nhưng chưa ghi được file JSON.');
+      return;
+    }
+
+    const persisted = persistVerificationPatch(item);
+    setNotice(persisted
+      ? (nextValue
+          ? 'Đã xác minh. Reload vẫn giữ nguyên.'
+          : 'Đã bỏ xác minh. Reload vẫn giữ nguyên.')
+      : 'Đã đổi trạng thái, nhưng trình duyệt không lưu được localStorage.');
   }
 
   function setNotice(message) {
@@ -477,7 +604,7 @@
     $('saveJsonBtn').hidden = false;
     fillFilters({ resetLesson: true, resetActivity: true });
     rebuildVisible({ preserveCurrent: false });
-    setNotice(`Đã mở ${file.name}. Có thể lưu trực tiếp lại file này.`);
+    setNotice(`Đã mở ${file.name}. Xác minh và ghi chú sẽ tự ghi trực tiếp vào file này.`);
   }
 
   async function openJson() {
@@ -514,10 +641,14 @@
     try {
       const response = await fetch('./data/dialogues.json', { cache: 'no-store' });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      state.data = normalizeData(await response.json());
+      state.fileHandle = null;
+      state.localPatches = readLocalReviewPatches();
+      state.data = applyLocalReviewPatches(normalizeData(await response.json()));
       fillFilters({ resetLesson: true, resetActivity: true });
       rebuildVisible({ preserveCurrent: false });
-      setNotice('Đã tải data/dialogues.json.');
+      setNotice(localPatchCount()
+        ? 'Đã tải data/dialogues.json và khôi phục trạng thái đã lưu trên trình duyệt.'
+        : 'Đã tải data/dialogues.json.');
     } catch (error) {
       console.warn(error);
       $('dialogueList').innerHTML =
@@ -589,6 +720,7 @@
     if (event.key === 'ArrowRight') move(1);
   });
 
+  state.localPatches = readLocalReviewPatches();
   ensureStatusOptions();
   loadBundledData();
 })();
