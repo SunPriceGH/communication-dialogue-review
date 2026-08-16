@@ -10,7 +10,8 @@
     currentId: '',
     fileHandle: null,
     localPatches: null,
-    fileWriteQueue: Promise.resolve()
+    fileWriteQueue: Promise.resolve(),
+    openNote: null
   };
 
   function clone(value) {
@@ -354,6 +355,7 @@
     const next = index + delta;
     if (next < 0 || next >= state.visibleItems.length) return;
     state.currentId = state.visibleItems[next].dialogue_id;
+    state.openNote = null;
     render();
     centerReviewCard();
   }
@@ -421,7 +423,11 @@
               title="${savedNote ? 'Sửa ghi chú' : 'Thêm ghi chú'}"
             >✎</button>
             ${savedNote ? `<div class="turn-note-preview">${esc(savedNote)}</div>` : ''}
-            <div class="turn-note-editor" data-note-editor="${turnIndex}" hidden>
+            <div
+              class="turn-note-editor"
+              data-note-editor="${turnIndex}"
+              ${state.openNote && state.openNote.dialogueId === item.dialogue_id && state.openNote.turnIndex === turnIndex ? '' : 'hidden'}
+            >
               <input
                 class="turn-note-input"
                 type="text"
@@ -489,6 +495,7 @@
       ? 'browser-file-system-access'
       : 'browser-localStorage';
 
+    state.openNote = null;
     rebuildVisible({ preserveCurrent: true });
 
     if (state.fileHandle) {
@@ -505,16 +512,29 @@
   }
 
   function toggleNoteEditor(turnIndex, forceOpen = null) {
-    const editor = document.querySelector(`[data-note-editor="${turnIndex}"]`);
-    const input = document.querySelector(`[data-note-input="${turnIndex}"]`);
-    if (!editor || !input) return;
+    const item = currentItem();
+    if (!item || !item.turns?.[turnIndex]) return;
 
-    const shouldOpen = forceOpen === null ? editor.hidden : forceOpen;
-    editor.hidden = !shouldOpen;
+    const isOpen = Boolean(
+      state.openNote
+      && state.openNote.dialogueId === item.dialogue_id
+      && state.openNote.turnIndex === turnIndex
+    );
+    const shouldOpen = forceOpen === null ? !isOpen : Boolean(forceOpen);
+
+    state.openNote = shouldOpen
+      ? { dialogueId: item.dialogue_id, turnIndex }
+      : null;
+
+    render();
 
     if (shouldOpen) {
-      input.focus();
-      input.select();
+      window.requestAnimationFrame(() => {
+        const input = document.querySelector(`[data-note-input="${turnIndex}"]`);
+        if (!input) return;
+        input.focus();
+        input.setSelectionRange(input.value.length, input.value.length);
+      });
     }
   }
 
@@ -729,24 +749,39 @@
   });
 
   $('moduleFilter').addEventListener('change', () => {
+    state.openNote = null;
     fillFilters({ resetLesson: true, resetActivity: true });
     rebuildVisible({ preserveCurrent: false });
   });
 
   $('lessonFilter').addEventListener('change', () => {
+    state.openNote = null;
     fillFilters({ resetActivity: true });
     rebuildVisible({ preserveCurrent: false });
   });
 
   $('activityFilter').addEventListener('change', () => {
+    state.openNote = null;
     rebuildVisible({ preserveCurrent: false });
   });
 
   $('statusFilter').addEventListener('change', () => {
+    state.openNote = null;
     rebuildVisible({ preserveCurrent: false });
   });
 
   window.addEventListener('keydown', event => {
+    const target = event.target;
+    if (
+      target instanceof HTMLElement
+      && (
+        target.matches('input, textarea, select, [contenteditable="true"]')
+        || target.closest('.turn-note-editor')
+      )
+    ) {
+      return;
+    }
+
     if (event.key === 'ArrowLeft') move(-1);
     if (event.key === 'ArrowRight') move(1);
   });
