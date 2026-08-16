@@ -38,11 +38,51 @@
       dialogue_id: String(item.dialogue_id || `dialogue_${index + 1}`),
       verified: Boolean(item.verified),
       verified_at: item.verified ? (item.verified_at || null) : null,
-      turns: Array.isArray(item.turns) ? item.turns : []
+      turns: Array.isArray(item.turns)
+        ? item.turns.map(turn => normalizeTurn(turn))
+        : []
     }));
 
     recalcSummary(next);
     return next;
+  }
+
+  function noteText(turn) {
+    if (!turn) return '';
+    if (typeof turn.note === 'string') return turn.note.trim();
+    if (turn.note && typeof turn.note === 'object') {
+      return String(turn.note.text || '').trim();
+    }
+    return '';
+  }
+
+  function normalizeTurn(turn) {
+    const next = turn && typeof turn === 'object' ? { ...turn } : {};
+    const text = noteText(next);
+
+    if (text) {
+      const updatedAt = next.note && typeof next.note === 'object'
+        ? (next.note.updated_at || null)
+        : null;
+      next.note = { text, updated_at: updatedAt };
+    } else {
+      delete next.note;
+    }
+
+    return next;
+  }
+
+  function itemHasNote(item) {
+    return Array.isArray(item?.turns)
+      && item.turns.some(turn => noteText(turn) !== '');
+  }
+
+  function ensureStatusOptions() {
+    const status = $('statusFilter');
+    if (!status || [...status.options].some(option => option.value === 'noted')) {
+      return;
+    }
+    status.add(new Option('Có ghi chú', 'noted'));
   }
 
   function recalcSummary(target = state.data) {
@@ -138,6 +178,7 @@
       if (activityValue !== 'all' && item.dialogue_id !== activityValue) return false;
       if (statusValue === 'verified' && !item.verified) return false;
       if (statusValue === 'unverified' && item.verified) return false;
+      if (statusValue === 'noted' && !itemHasNote(item)) return false;
       return true;
     });
 
@@ -225,15 +266,42 @@
     $('activityMeta').textContent = `${item.turn_count ?? item.turns.length} lượt · ${item.activity_key || item.dialogue_id}`;
     $('positionText').textContent = `${index + 1} / ${state.visibleItems.length}`;
 
-    list.innerHTML = item.turns.map((turn, turnIndex) => `
-      <div class="dialogue-turn">
-        <div class="speaker-cell">
-          <span class="turn-no">${String(turnIndex + 1).padStart(2, '0')}</span>
-          <b class="speaker-name" title="${esc(turn.speaker || '—')}">${esc(turn.speaker || '—')}</b>
+    list.innerHTML = item.turns.map((turn, turnIndex) => {
+      const savedNote = noteText(turn);
+      return `
+        <div class="dialogue-turn ${savedNote ? 'has-note' : ''}" data-turn-index="${turnIndex}">
+          <div class="speaker-cell">
+            <span class="turn-no">${String(turnIndex + 1).padStart(2, '0')}</span>
+            <b class="speaker-name" title="${esc(turn.speaker || '—')}">${esc(turn.speaker || '—')}</b>
+          </div>
+          <div class="turn-content">
+            <div class="turn-text">${esc(turn.text || '')}</div>
+            <button
+              class="turn-note-toggle ${savedNote ? 'is-noted' : ''}"
+              type="button"
+              data-note-toggle="${turnIndex}"
+              aria-label="${savedNote ? 'Sửa ghi chú' : 'Thêm ghi chú'} cho câu ${turnIndex + 1}"
+              title="${savedNote ? 'Sửa ghi chú' : 'Thêm ghi chú'}"
+            >✎</button>
+            ${savedNote ? `<div class="turn-note-preview">${esc(savedNote)}</div>` : ''}
+            <div class="turn-note-editor" data-note-editor="${turnIndex}" hidden>
+              <input
+                class="turn-note-input"
+                type="text"
+                value="${esc(savedNote)}"
+                placeholder="Ví dụ: câu này dư / thiếu ý..."
+                maxlength="500"
+                data-note-input="${turnIndex}"
+              >
+              <div class="turn-note-actions">
+                <button type="button" data-note-save="${turnIndex}">Lưu</button>
+                <button type="button" class="secondary" data-note-cancel="${turnIndex}">Hủy</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="turn-text">${esc(turn.text || '')}</div>
-      </div>
-    `).join('') || '<div class="empty">Hội thoại này không có lượt thoại.</div>';
+      `;
+    }).join('') || '<div class="empty">Hội thoại này không có lượt thoại.</div>';
 
     $('prevBtn').disabled = index <= 0;
     $('nextBtn').disabled = index >= state.visibleItems.length - 1;
@@ -244,6 +312,70 @@
     verifyBtn.classList.toggle('is-verified', item.verified);
     verifyBtn.setAttribute('aria-pressed', item.verified ? 'true' : 'false');
     $('verifiedTick').hidden = !item.verified;
+  }
+
+  async function persistCurrentFileSilently() {
+    if (!state.fileHandle || !state.data) return false;
+
+    try {
+      const payload = exportPayload();
+      const writable = await state.fileHandle.createWritable();
+      await writable.write(JSON.stringify(payload, null, 2));
+      await writable.close();
+      return true;
+    } catch (error) {
+      console.error(error);
+      return false;
+    }
+  }
+
+  async function saveTurnNote(turnIndex, value) {
+    const item = currentItem();
+    const turn = item?.turns?.[turnIndex];
+    if (!turn || !state.data) return;
+
+    const text = String(value || '').trim();
+
+    if (text) {
+      turn.note = {
+        text,
+        updated_at: new Date().toISOString()
+      };
+    } else {
+      delete turn.note;
+    }
+
+    state.data.updated_at = new Date().toISOString();
+    state.data.storage = state.fileHandle
+      ? 'browser-file-system-access'
+      : 'standalone-in-memory-export';
+
+    rebuildVisible({ preserveCurrent: true });
+
+    if (state.fileHandle) {
+      const written = await persistCurrentFileSilently();
+      setNotice(written
+        ? (text ? 'Đã lưu ghi chú trực tiếp vào file JSON.' : 'Đã xóa ghi chú khỏi file JSON.')
+        : 'Đã cập nhật ghi chú trong dữ liệu hiện tại, nhưng chưa ghi được file.');
+    } else {
+      setNotice(text
+        ? 'Đã lưu ghi chú. Bấm Xuất JSON để tải file đã cập nhật.'
+        : 'Đã xóa ghi chú. Bấm Xuất JSON để tải file đã cập nhật.');
+    }
+  }
+
+  function toggleNoteEditor(turnIndex, forceOpen = null) {
+    const editor = document.querySelector(`[data-note-editor="${turnIndex}"]`);
+    const input = document.querySelector(`[data-note-input="${turnIndex}"]`);
+    if (!editor || !input) return;
+
+    const shouldOpen = forceOpen === null ? editor.hidden : forceOpen;
+    editor.hidden = !shouldOpen;
+
+    if (shouldOpen) {
+      input.focus();
+      input.select();
+    }
   }
 
   function toggleVerified(force) {
@@ -394,6 +526,34 @@
     }
   }
 
+  $('dialogueList').addEventListener('click', event => {
+    const toggle = event.target.closest('[data-note-toggle]');
+    if (toggle) {
+      toggleNoteEditor(Number(toggle.dataset.noteToggle));
+      return;
+    }
+
+    const save = event.target.closest('[data-note-save]');
+    if (save) {
+      const index = Number(save.dataset.noteSave);
+      const input = document.querySelector(`[data-note-input="${index}"]`);
+      saveTurnNote(index, input?.value || '');
+      return;
+    }
+
+    const cancel = event.target.closest('[data-note-cancel]');
+    if (cancel) {
+      toggleNoteEditor(Number(cancel.dataset.noteCancel), false);
+    }
+  });
+
+  $('dialogueList').addEventListener('keydown', event => {
+    if (event.key !== 'Enter' || !event.target.matches('[data-note-input]')) return;
+    event.preventDefault();
+    const index = Number(event.target.dataset.noteInput);
+    saveTurnNote(index, event.target.value);
+  });
+
   $('prevBtn').addEventListener('click', () => move(-1));
   $('nextBtn').addEventListener('click', () => move(1));
   $('verifyBtn').addEventListener('click', () => toggleVerified());
@@ -429,5 +589,6 @@
     if (event.key === 'ArrowRight') move(1);
   });
 
+  ensureStatusOptions();
   loadBundledData();
 })();
