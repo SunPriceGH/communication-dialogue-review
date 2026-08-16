@@ -160,6 +160,19 @@
     return index >= 0 ? state.visibleItems[index] : null;
   }
 
+  function centerReviewCard() {
+    const card = $('reviewCard');
+    if (!card) return;
+
+    window.requestAnimationFrame(() => {
+      card.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+        inline: 'nearest'
+      });
+    });
+  }
+
   function move(delta) {
     const index = currentIndex();
     if (index < 0) return;
@@ -167,6 +180,7 @@
     if (next < 0 || next >= state.visibleItems.length) return;
     state.currentId = state.visibleItems[next].dialogue_id;
     render();
+    centerReviewCard();
   }
 
   function renderSummary() {
