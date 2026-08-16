@@ -208,6 +208,20 @@
     return item.activity_title || item.activity_key || item.dialogue_id;
   }
 
+  function buildSpeakerToneClasses(turns) {
+    const speakers = new Map();
+    let nextTone = 1;
+
+    return (Array.isArray(turns) ? turns : []).map(turn => {
+      const key = String(turn?.speaker || '—').trim().toLocaleLowerCase() || '—';
+      if (!speakers.has(key)) {
+        speakers.set(key, nextTone);
+        nextTone = nextTone >= 6 ? 1 : nextTone + 1;
+      }
+      return `speaker-tone-${speakers.get(key)}`;
+    });
+  }
+
   function uniqueBy(items, keyFn) {
     const seen = new Map();
     items.forEach(item => {
@@ -322,6 +336,18 @@
     });
   }
 
+  function relocateNavigationControls() {
+    const row = document.querySelector('.verify-row');
+    const prev = $('prevBtn');
+    const next = $('nextBtn');
+    const verify = $('verifyBtn');
+
+    if (!row || !prev || !next || !verify) return;
+
+    row.insertBefore(prev, verify);
+    row.appendChild(next);
+  }
+
   function move(delta) {
     const index = currentIndex();
     if (index < 0) return;
@@ -374,10 +400,13 @@
     $('activityMeta').textContent = `${item.turn_count ?? item.turns.length} lượt · ${item.activity_key || item.dialogue_id}`;
     $('positionText').textContent = `${index + 1} / ${state.visibleItems.length}`;
 
+    const speakerToneClasses = buildSpeakerToneClasses(item.turns);
+
     list.innerHTML = item.turns.map((turn, turnIndex) => {
       const savedNote = noteText(turn);
+      const speakerToneClass = speakerToneClasses[turnIndex] || 'speaker-tone-1';
       return `
-        <div class="dialogue-turn ${savedNote ? 'has-note' : ''}" data-turn-index="${turnIndex}">
+        <div class="dialogue-turn ${speakerToneClass} ${savedNote ? 'has-note' : ''}" data-turn-index="${turnIndex}">
           <div class="speaker-cell">
             <span class="turn-no">${String(turnIndex + 1).padStart(2, '0')}</span>
             <b class="speaker-name" title="${esc(turn.speaker || '—')}">${esc(turn.speaker || '—')}</b>
@@ -684,6 +713,8 @@
     const index = Number(event.target.dataset.noteInput);
     saveTurnNote(index, event.target.value);
   });
+
+  relocateNavigationControls();
 
   $('prevBtn').addEventListener('click', () => move(-1));
   $('nextBtn').addEventListener('click', () => move(1));
