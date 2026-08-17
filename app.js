@@ -81,6 +81,71 @@
       && item.turns.some(turn => noteText(turn) !== '');
   }
 
+  function fillBlankWords(item) {
+    if (!item || item.activity_title !== 'Reading — Fill Blank') return [];
+    if (!Array.isArray(item.fill_blank_words)) return [];
+    return item.fill_blank_words
+      .map(word => String(word ?? '').trim())
+      .filter(Boolean);
+  }
+
+  function renderFillBlankReference(item) {
+    const reference = $('fillBlankReference');
+    const wordsNode = $('fillBlankWords');
+    if (!reference || !wordsNode) return;
+
+    const words = fillBlankWords(item);
+    if (!words.length) {
+      reference.hidden = true;
+      wordsNode.innerHTML = '';
+      return;
+    }
+
+    wordsNode.innerHTML = words
+      .map((word, index) => `<span class="fill-blank-word" title="Từ điền ${index + 1}">${esc(word)}</span>`)
+      .join('');
+    reference.hidden = false;
+  }
+
+  function fillBlankMarksForTurn(item, turnIndex) {
+    if (!item || item.activity_title !== 'Reading — Fill Blank') return [];
+    if (!Array.isArray(item.fill_blank_marks)) return [];
+
+    return item.fill_blank_marks
+      .filter(mark => Number(mark?.turn_index) === turnIndex)
+      .map(mark => ({
+        start: Number(mark?.start),
+        end: Number(mark?.end),
+        word: String(mark?.word ?? '').trim(),
+        blankId: String(mark?.blank_id ?? '').trim()
+      }))
+      .filter(mark => Number.isInteger(mark.start) && Number.isInteger(mark.end) && mark.start >= 0 && mark.end > mark.start)
+      .sort((a, b) => a.start - b.start);
+  }
+
+  function renderTurnText(item, turn, turnIndex) {
+    const text = String(turn?.text ?? '');
+    const marks = fillBlankMarksForTurn(item, turnIndex);
+    if (!marks.length) return esc(text);
+
+    let cursor = 0;
+    const parts = [];
+
+    marks.forEach(mark => {
+      if (mark.start < cursor || mark.end > text.length) return;
+
+      const markedText = text.slice(mark.start, mark.end);
+      if (mark.word && markedText.toLocaleLowerCase() !== mark.word.toLocaleLowerCase()) return;
+
+      parts.push(esc(text.slice(cursor, mark.start)));
+      parts.push(`<span class="turn-fill-blank" title="Từ điền (blank): ${esc(mark.word || markedText)}">${esc(markedText)}</span>`);
+      cursor = mark.end;
+    });
+
+    parts.push(esc(text.slice(cursor)));
+    return parts.join('');
+  }
+
   function readLocalReviewPatches() {
     try {
       const raw = window.localStorage.getItem(LOCAL_REVIEW_STORAGE_KEY);
@@ -424,6 +489,7 @@
       $('nextBtn').disabled = true;
       $('verifyBtn').disabled = true;
       $('verifiedTick').hidden = true;
+      renderFillBlankReference(null);
       return;
     }
 
@@ -437,6 +503,7 @@
     $('activityTitle').textContent = itemLabel(item);
     $('activityMeta').textContent = `${item.turn_count ?? item.turns.length} lượt · ${item.activity_key || item.dialogue_id}`;
     $('positionText').textContent = `${index + 1} / ${state.visibleItems.length}`;
+    renderFillBlankReference(item);
 
     const speakerToneClasses = buildSpeakerToneClasses(item.turns);
 
@@ -450,7 +517,7 @@
             <b class="speaker-name" title="${esc(turn.speaker || '—')}">${esc(turn.speaker || '—')}</b>
           </div>
           <div class="turn-content">
-            <div class="turn-text">${esc(turn.text || '')}</div>
+            <div class="turn-text">${renderTurnText(item, turn, turnIndex)}</div>
             <button
               class="turn-note-toggle ${savedNote ? 'is-noted' : ''}"
               type="button"

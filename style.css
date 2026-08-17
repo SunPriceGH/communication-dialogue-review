@@ -226,6 +226,49 @@ h1 {
   white-space: nowrap;
 }
 
+.fill-blank-reference {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 14px;
+  border-bottom: 1px solid #e4edf0;
+  background: #f4faf7;
+}
+
+.fill-blank-reference[hidden] {
+  display: none;
+}
+
+.fill-blank-reference-label {
+  flex: 0 0 auto;
+  color: #557068;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.fill-blank-words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  min-width: 0;
+}
+
+.fill-blank-word {
+  display: inline-flex;
+  align-items: center;
+  min-height: 25px;
+  padding: 3px 8px;
+  border: 1px solid #cfe4d8;
+  border-radius: 999px;
+  background: #fff;
+  color: #28614c;
+  font-size: .78rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
 .dialogue-table-head,
 .dialogue-turn {
   display: grid;
@@ -290,6 +333,17 @@ h1 {
   color: #243d4d;
   font-size: .96rem;
   line-height: 1.42;
+}
+
+.turn-fill-blank {
+  padding: 0 2px;
+  border-bottom: 1px dotted #8abca1;
+  border-radius: 3px;
+  background: #eef8f2;
+  color: #235b46;
+  font-weight: 600;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 .verify-row {
