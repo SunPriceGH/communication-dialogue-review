@@ -620,9 +620,34 @@
     }, 2600);
   }
 
-  function exportPayload() {
+  function activityIdentity(item, index = 0) {
+    if (item?.activity_id !== undefined && item?.activity_id !== null && String(item.activity_id) !== '') {
+      return `id:${item.activity_id}`;
+    }
+    if (item?.activity_key) return `key:${item.activity_key}`;
+    return `dialogue:${item?.dialogue_id || index}`;
+  }
+
+  function exportPayload(scope = 'full') {
     if (!state.data) return null;
     const payload = clone(state.data);
+
+    if (scope === 'noted') {
+      const notedActivityIds = new Set();
+      payload.items.forEach((item, index) => {
+        if (itemHasNote(item)) notedActivityIds.add(activityIdentity(item, index));
+      });
+
+      payload.items = payload.items.filter((item, index) =>
+        notedActivityIds.has(activityIdentity(item, index))
+      );
+      payload.export_scope = 'activities_with_notes';
+      payload.noted_activity_count = notedActivityIds.size;
+    } else {
+      payload.export_scope = 'full';
+      delete payload.noted_activity_count;
+    }
+
     recalcSummary(payload);
     payload.exported_at = new Date().toISOString();
     payload.updated_at = new Date().toISOString();
@@ -631,9 +656,64 @@
     return payload;
   }
 
-  function downloadJson() {
-    const payload = exportPayload();
+  function askExportScope() {
+    return new Promise(resolve => {
+      const existing = document.querySelector('.export-choice-backdrop');
+      if (existing) existing.remove();
+
+      const backdrop = document.createElement('div');
+      backdrop.className = 'export-choice-backdrop';
+      backdrop.innerHTML = `
+        <div class="export-choice-dialog" role="dialog" aria-modal="true" aria-labelledby="exportChoiceTitle">
+          <div id="exportChoiceTitle" class="export-choice-title">Xuất JSON</div>
+          <div class="export-choice-text">Bạn muốn xuất phạm vi nào?</div>
+          <div class="export-choice-actions">
+            <button type="button" data-export-scope="full">Xuất full JSON</button>
+            <button type="button" data-export-scope="noted" class="secondary">Chỉ activity có ghi chú</button>
+            <button type="button" data-export-scope="cancel" class="secondary export-choice-cancel">Hủy</button>
+          </div>
+        </div>`;
+
+      const finish = value => {
+        document.removeEventListener('keydown', onKeydown, true);
+        backdrop.remove();
+        resolve(value);
+      };
+      const onKeydown = event => {
+        if (event.key === 'Escape') {
+          event.preventDefault();
+          event.stopPropagation();
+          finish(null);
+        }
+      };
+
+      backdrop.addEventListener('click', event => {
+        const button = event.target.closest('[data-export-scope]');
+        if (button) {
+          const value = button.dataset.exportScope;
+          finish(value === 'cancel' ? null : value);
+          return;
+        }
+        if (event.target === backdrop) finish(null);
+      });
+
+      document.addEventListener('keydown', onKeydown, true);
+      document.body.appendChild(backdrop);
+      backdrop.querySelector('[data-export-scope="full"]')?.focus();
+    });
+  }
+
+  async function downloadJson() {
+    const scope = await askExportScope();
+    if (!scope) return;
+
+    const payload = exportPayload(scope);
     if (!payload) return;
+
+    if (scope === 'noted' && !payload.items.length) {
+      setNotice('Không có activity nào đang có ghi chú.');
+      return;
+    }
 
     const blob = new Blob(
       [JSON.stringify(payload, null, 2)],
@@ -643,12 +723,16 @@
     const a = document.createElement('a');
     const stamp = new Date().toISOString().replace(/[:.]/g, '-');
     a.href = url;
-    a.download = `communication-dialogue-review-${stamp}.json`;
+    a.download = scope === 'noted'
+      ? `communication-dialogue-review-noted-activities-${stamp}.json`
+      : `communication-dialogue-review-${stamp}.json`;
     document.body.appendChild(a);
     a.click();
     a.remove();
     URL.revokeObjectURL(url);
-    setNotice('Đã xuất JSON mới với trạng thái xác minh hiện tại.');
+    setNotice(scope === 'noted'
+      ? `Đã xuất ${payload.noted_activity_count} activity có ghi chú.`
+      : 'Đã xuất full JSON với trạng thái xác minh hiện tại.');
   }
 
   async function saveToHandle() {
