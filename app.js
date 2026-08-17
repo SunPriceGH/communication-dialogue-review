@@ -613,57 +613,6 @@
     setNotice('Đã xuất JSON mới với trạng thái xác minh hiện tại.');
   }
 
-  async function overwriteDialoguesJson() {
-    if (!state.data) {
-      setNotice('Chưa có dữ liệu để chép đè.');
-      return;
-    }
-
-    if (!('showOpenFilePicker' in window) || !window.isSecureContext) {
-      setNotice('Trình duyệt này không hỗ trợ chép đè file trực tiếp. Hãy dùng Chrome/Edge trên HTTPS hoặc localhost.');
-      return;
-    }
-
-    try {
-      const [handle] = await window.showOpenFilePicker({
-        multiple: false,
-        types: [{
-          description: 'dialogues.json',
-          accept: { 'application/json': ['.json'] }
-        }]
-      });
-
-      const file = await handle.getFile();
-      if (file.name !== 'dialogues.json') {
-        setNotice(`Bạn đã chọn ${file.name}. Hãy chọn đúng file dialogues.json.`);
-        return;
-      }
-
-      const confirmed = window.confirm(
-        'Chép đè toàn bộ nội dung hiện tại vào dialogues.json?\n\nFile dialogues.json đang chọn sẽ bị thay thế.'
-      );
-      if (!confirmed) return;
-
-      const payload = exportPayload();
-      if (!payload) return;
-
-      const writable = await handle.createWritable();
-      await writable.write(JSON.stringify(payload, null, 2));
-      await writable.close();
-
-      state.fileHandle = handle;
-      state.data = normalizeData(payload);
-      $('saveJsonBtn').hidden = false;
-      fillFilters();
-      rebuildVisible();
-      setNotice('Đã chép đè dialogues.json. Các xác minh/ghi chú tiếp theo sẽ tự ghi vào file này.');
-    } catch (error) {
-      if (error?.name === 'AbortError') return;
-      console.error(error);
-      setNotice('Không chép đè được dialogues.json. File gốc chưa bị thay đổi.');
-    }
-  }
-
   async function saveToHandle() {
     if (!state.fileHandle) {
       setNotice('Chưa có file handle. Hãy mở JSON bằng nút Mở JSON.');
@@ -792,7 +741,6 @@
   $('verifyBtn').addEventListener('click', () => toggleVerified());
   $('verifiedTick').addEventListener('click', () => toggleVerified(false));
   $('exportJsonBtn').addEventListener('click', downloadJson);
-  $('overwriteJsonBtn').addEventListener('click', overwriteDialoguesJson);
   $('saveJsonBtn').addEventListener('click', saveToHandle);
   $('openJsonBtn').addEventListener('click', openJson);
   $('fileInput').addEventListener('change', event => {
