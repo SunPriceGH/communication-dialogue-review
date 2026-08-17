@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "export_type": "communication_dialogue_review",
-  "exported_at": "2026-08-17T04:00:47.936Z",
+  "exported_at": "2026-08-17T07:04:49.210Z",
   "storage": "standalone-json-review",
   "navigation_status": "all",
   "summary": {
     "dialogues": 209,
-    "verified": 27,
-    "unverified": 182
+    "verified": 53,
+    "unverified": 156
   },
   "items": [
     {
@@ -1615,8 +1615,8 @@
     },
     {
       "dialogue_id": "dlg_204_3201078e",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T04:25:47.716Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -1667,9 +1667,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_210_e63eec21",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_210_88dc8acd",
+      "verified": true,
+      "verified_at": "2026-08-17T07:04:49.210Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -1719,18 +1719,18 @@
         },
         {
           "speaker": "Daniel",
-          "text": "So Tom and Rosa are Mia's grandparents."
+          "text": "Mia really looks like her grandparents."
         },
         {
           "speaker": "Ava",
-          "text": "Yes, that is right. We are a small family."
+          "text": "Yes, she does. We love her a lot."
         }
       ]
     },
     {
       "dialogue_id": "dlg_211_886f5388",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T04:30:36.345Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -1790,8 +1790,8 @@
     },
     {
       "dialogue_id": "dlg_215_4f6ee532",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T04:31:06.410Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -1839,8 +1839,8 @@
     },
     {
       "dialogue_id": "dlg_625_ade00161",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T04:34:20.833Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -1900,8 +1900,8 @@
     },
     {
       "dialogue_id": "dlg_220_aec24879",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T04:36:00.366Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -1960,9 +1960,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_223_71ceaad5",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_223_0cbb0619",
+      "verified": true,
+      "verified_at": "2026-08-17T07:04:49.210Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2012,7 +2012,7 @@
         },
         {
           "speaker": "Nhân vật",
-          "text": "You know many people here. Who is Mia?"
+          "text": "You know many people here. What about Mia, then?"
         },
         {
           "speaker": "Bạn",
@@ -2022,8 +2022,8 @@
     },
     {
       "dialogue_id": "dlg_224_b9188414",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T05:08:07.901Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2083,8 +2083,8 @@
     },
     {
       "dialogue_id": "dlg_225_7d00c9a7",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T05:11:27.645Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2128,8 +2128,8 @@
     },
     {
       "dialogue_id": "dlg_626_b65db299",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T05:13:38.650Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2188,9 +2188,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_230_490aa04e",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_230_4450c79e",
+      "verified": true,
+      "verified_at": "2026-08-17T07:04:49.210Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2232,26 +2232,26 @@
         },
         {
           "speaker": "Emma",
-          "text": "And who is the man sitting beside her?"
+          "text": "Oh, I know her brother, Ben. He is very friendly too."
         },
         {
           "speaker": "Minh",
-          "text": "That is Leo. He is usually quiet at first."
+          "text": "Really? I don't talk to him much."
         },
         {
           "speaker": "Emma",
-          "text": "Really? He smiled at me a lot."
+          "text": "He's quiet at first, but he's very funny once he feels comfortable."
         },
         {
           "speaker": "Minh",
-          "text": "Yes. He is quiet at first, but later he is very funny."
+          "text": "Good to know!"
         }
       ]
     },
     {
       "dialogue_id": "dlg_233_14135ac7",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T06:11:00.055Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2311,8 +2311,8 @@
     },
     {
       "dialogue_id": "dlg_234_a6ac8ed3",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T06:10:58.983Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2371,9 +2371,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_235_6088660b",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_235_2e5c2a26",
+      "verified": true,
+      "verified_at": "2026-08-17T07:04:49.210Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2403,7 +2403,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, he looks young."
+          "text": "Yes, that's him."
         },
         {
           "speaker": "Emma",
@@ -2411,30 +2411,30 @@
         },
         {
           "speaker": "Bạn",
-          "text": "He is very friendly."
+          "text": "He's very friendly, but quiet at first."
         },
         {
           "speaker": "Emma",
-          "text": "Good. Is he usually quiet?"
+          "text": "Oh, he sounds like a good friend."
         },
         {
           "speaker": "Bạn",
-          "text": "He is quiet at first, but he talks more later."
+          "text": "He's very funny too."
         },
         {
           "speaker": "Emma",
-          "text": "That sounds like the man over there. He is making everyone laugh."
+          "text": "He is making everyone laugh over there."
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, Ben is very funny."
+          "text": "Yeah. He loves making new friends, just like I do."
         }
       ]
     },
     {
       "dialogue_id": "dlg_236_166e543e",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T06:20:44.959Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2478,8 +2478,8 @@
     },
     {
       "dialogue_id": "dlg_627_fb277214",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T06:21:09.240Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2539,8 +2539,8 @@
     },
     {
       "dialogue_id": "dlg_241_aacc0215",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T06:23:22.134Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2600,8 +2600,8 @@
     },
     {
       "dialogue_id": "dlg_243_9c0228ba",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T06:23:44.375Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2661,8 +2661,8 @@
     },
     {
       "dialogue_id": "dlg_245_4d733669",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T06:24:02.743Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2722,8 +2722,8 @@
     },
     {
       "dialogue_id": "dlg_246_b2e73e3d",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T06:24:14.040Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2783,8 +2783,8 @@
     },
     {
       "dialogue_id": "dlg_247_44dd73f7",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T06:26:12.381Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2843,9 +2843,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_628_f90007df",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_628_f28663c9",
+      "verified": true,
+      "verified_at": "2026-08-17T07:04:49.210Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2863,7 +2863,7 @@
       "turns": [
         {
           "speaker": "Liam",
-          "text": "Hi, Minh. Who is Nina in this photo?"
+          "text": "Hi, Minh. Who is this in the photo?"
         },
         {
           "speaker": "Minh",
@@ -2871,7 +2871,7 @@
         },
         {
           "speaker": "Liam",
-          "text": "I remember Nina. Are you two close?"
+          "text": "She looks nice. Are you two close?"
         },
         {
           "speaker": "Minh",
@@ -2905,8 +2905,8 @@
     },
     {
       "dialogue_id": "dlg_251_7ebc5dc9",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T06:27:51.049Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2965,9 +2965,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_253_88257255",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_253_fb5c485d",
+      "verified": true,
+      "verified_at": "2026-08-17T07:04:49.210Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -2985,11 +2985,11 @@
       "turns": [
         {
           "speaker": "Emma",
-          "text": "Is Anna your friend?"
+          "text": "I met Anna today. I want to know more about her. Is she your friend?"
         },
         {
           "speaker": "Minh",
-          "text": "Yes, and the woman next to her is her parent."
+          "text": "Yes, Anna is my best friend."
         },
         {
           "speaker": "Emma",
@@ -3026,9 +3026,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_255_f72e1e1a",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_255_a160db05",
+      "verified": true,
+      "verified_at": "2026-08-17T07:04:49.210Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -3046,7 +3046,7 @@
       "turns": [
         {
           "speaker": "Nhân vật",
-          "text": "Hi, Minh. Who is Anna?"
+          "text": "Hi, Minh. You talked about Anna when we met this morning. Who is she?"
         },
         {
           "speaker": "Bạn",
@@ -3062,7 +3062,7 @@
         },
         {
           "speaker": "Nhân vật",
-          "text": "I have not met Anna. What does she look like?"
+          "text": "I want to meet her. What does she look like?"
         },
         {
           "speaker": "Bạn",
@@ -3088,8 +3088,8 @@
     },
     {
       "dialogue_id": "dlg_256_6595ebf2",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T06:37:06.600Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-02",
@@ -12348,5 +12348,5 @@
       ]
     }
   ],
-  "updated_at": "2026-08-17T03:49:02.187Z"
+  "updated_at": "2026-08-17T07:04:49.210Z"
 }
