@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "export_type": "communication_dialogue_review",
-  "exported_at": "2026-08-17T03:49:02.187Z",
+  "exported_at": "2026-08-17T04:00:47.936Z",
   "storage": "standalone-json-review",
   "navigation_status": "all",
   "summary": {
     "dialogues": 209,
-    "verified": 17,
-    "unverified": 192
+    "verified": 27,
+    "unverified": 182
   },
   "items": [
     {
@@ -569,9 +569,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_623_05a698ba",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_623_9c21f23d",
+      "verified": true,
+      "verified_at": "2026-08-17T04:00:47.936Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-01",
@@ -617,11 +617,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "I spell it T-R-A-N.",
-          "note": {
-            "text": "sừa thành \"It's T-R-A-N.\"",
-            "updated_at": "2026-08-16T17:47:57.548Z"
-          }
+          "text": "It's T-R-A-N."
         },
         {
           "speaker": "Receptionist",
@@ -629,18 +625,14 @@
         },
         {
           "speaker": "Minh",
-          "text": "Of course. I spell it T-R-A-N.",
-          "note": {
-            "text": "sừa thành \"Of course, T-R-A-N.\"",
-            "updated_at": "2026-08-16T17:48:22.021Z"
-          }
+          "text": "Of course, T-R-A-N."
         }
       ]
     },
     {
-      "dialogue_id": "dlg_115_e1a7fe50",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_115_b2cfd7a0",
+      "verified": true,
+      "verified_at": "2026-08-17T04:00:47.936Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-01",
@@ -670,11 +662,7 @@
         },
         {
           "speaker": "Anna",
-          "text": "My last name is Lee. I spell it L-E-E.",
-          "note": {
-            "text": "My last name is Lee, L-E-E.",
-            "updated_at": "2026-08-16T17:48:55.775Z"
-          }
+          "text": "My last name is Lee, L-E-E."
         },
         {
           "speaker": "Daniel",
@@ -703,9 +691,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_117_23ba0fb2",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_117_54fc4c87",
+      "verified": true,
+      "verified_at": "2026-08-17T04:00:47.936Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-01",
@@ -743,11 +731,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "I spell it N-G-U-Y-E-N.",
-          "note": {
-            "text": "It's N-G-U-Y-E-N.",
-            "updated_at": "2026-08-16T17:49:11.247Z"
-          }
+          "text": "It's N-G-U-Y-E-N."
         },
         {
           "speaker": "Mia",
@@ -784,9 +768,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_119_8440c1a9",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_119_8652d282",
+      "verified": true,
+      "verified_at": "2026-08-17T04:00:47.936Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-01",
@@ -836,11 +820,7 @@
         },
         {
           "speaker": "Nhân vật",
-          "text": "Of course. I spell it W-I-L-S-O-N.",
-          "note": {
-            "text": "Of course, it's W-I-L-S-O-N.",
-            "updated_at": "2026-08-16T17:49:47.593Z"
-          }
+          "text": "Of course, it's W-I-L-S-O-N."
         },
         {
           "speaker": "Bạn",
@@ -1268,9 +1248,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_139_e8589963",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_139_e72f5bb3",
+      "verified": true,
+      "verified_at": "2026-08-17T04:00:47.936Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-01",
@@ -1288,19 +1268,11 @@
       "turns": [
         {
           "speaker": "Emma",
-          "text": "Hi, I'm Emma. What's your first name?",
-          "note": {
-            "text": "bỏ \"first\"",
-            "updated_at": "2026-08-16T17:54:26.845Z"
-          }
+          "text": "Hi, I'm Emma. What's your name?"
         },
         {
           "speaker": "Minh",
-          "text": "My first name is Minh. Nice to meet you.",
-          "note": {
-            "text": "bỏ \"first\"",
-            "updated_at": "2026-08-16T17:54:29.284Z"
-          }
+          "text": "My name is Minh. Nice to meet you."
         },
         {
           "speaker": "Emma",
@@ -1337,9 +1309,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_624_fe181e3e",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_624_aabc1f1a",
+      "verified": true,
+      "verified_at": "2026-08-17T04:00:47.936Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-01",
@@ -1365,19 +1337,11 @@
         },
         {
           "speaker": "Alex",
-          "text": "Nice to meet you too. What's your first name?",
-          "note": {
-            "text": "bỏ \"first\"",
-            "updated_at": "2026-08-16T17:54:44.773Z"
-          }
+          "text": "Nice to meet you too. What's your name?"
         },
         {
           "speaker": "Minh",
-          "text": "My first name is Minh.",
-          "note": {
-            "text": "bỏ \"first\"",
-            "updated_at": "2026-08-16T17:54:40.660Z"
-          }
+          "text": "My name is Minh."
         },
         {
           "speaker": "Alex",
@@ -1406,9 +1370,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_143_f274fc90",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_143_b52850cc",
+      "verified": true,
+      "verified_at": "2026-08-17T04:00:47.936Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-01",
@@ -1426,19 +1390,11 @@
       "turns": [
         {
           "speaker": "Mia",
-          "text": "Hello. Welcome to the student event. I'm Mia. What's your first name?",
-          "note": {
-            "text": "bỏ \"first\"",
-            "updated_at": "2026-08-16T17:54:53.469Z"
-          }
+          "text": "Hello. Welcome to the student event. I'm Mia. What's your name?"
         },
         {
           "speaker": "Minh",
-          "text": "My first name is Minh. Nice to meet you.",
-          "note": {
-            "text": "bỏ \"first\"",
-            "updated_at": "2026-08-16T17:54:55.389Z"
-          }
+          "text": "My name is Minh. Nice to meet you."
         },
         {
           "speaker": "Mia",
@@ -1475,9 +1431,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_145_cf7cbfba",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_145_cd4d48eb",
+      "verified": true,
+      "verified_at": "2026-08-17T04:00:47.936Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-01",
@@ -1523,11 +1479,7 @@
         },
         {
           "speaker": "Liam",
-          "text": "I spell it C-A-R-T-E-R.",
-          "note": {
-            "text": "\"It's C-A-R-T-E-R.\"",
-            "updated_at": "2026-08-16T17:55:17.478Z"
-          }
+          "text": "It's C-A-R-T-E-R."
         },
         {
           "speaker": "Emma",
@@ -1540,9 +1492,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_147_2f879ca3",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_147_23c1d65f",
+      "verified": true,
+      "verified_at": "2026-08-17T04:00:47.936Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-01",
@@ -1564,19 +1516,11 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Hi, I'm Minh. What's your first name?",
-          "note": {
-            "text": "bỏ \"first\"",
-            "updated_at": "2026-08-16T17:56:33.705Z"
-          }
+          "text": "Hi, I'm Minh. What's your name?"
         },
         {
           "speaker": "Nhân vật",
-          "text": "My first name is Alex. Nice to meet you, Minh. Where are you from?",
-          "note": {
-            "text": "bỏ \"first\"",
-            "updated_at": "2026-08-16T17:56:38.850Z"
-          }
+          "text": "My name is Alex. Nice to meet you, Minh. Where are you from?"
         },
         {
           "speaker": "Bạn",
@@ -1609,9 +1553,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_148_6dbb2339",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_148_8f8c858d",
+      "verified": true,
+      "verified_at": "2026-08-17T04:00:47.936Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-01",
@@ -1633,19 +1577,11 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Hi, I'm Minh. What's your first name?",
-          "note": {
-            "text": "bỏ \"first\"",
-            "updated_at": "2026-08-16T17:56:44.194Z"
-          }
+          "text": "Hi, I'm Minh. What's your name?"
         },
         {
           "speaker": "Emma",
-          "text": "My first name is Emma. Nice to meet you, Minh. Where are you from?",
-          "note": {
-            "text": "bỏ \"first\"",
-            "updated_at": "2026-08-16T17:56:46.027Z"
-          }
+          "text": "My name is Emma. Nice to meet you, Minh. Where are you from?"
         },
         {
           "speaker": "Bạn",
