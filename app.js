@@ -232,8 +232,26 @@
     return [...seen.values()];
   }
 
-  function option(value, label) {
-    return `<option value="${esc(value)}">${esc(label)}</option>`;
+  function option(value, label, className = '') {
+    const classAttr = className ? ` class="${esc(className)}"` : '';
+    return `<option value="${esc(value)}"${classAttr}>${esc(label)}</option>`;
+  }
+
+  function lessonReviewState(items) {
+    const total = items.length;
+    const verified = items.filter(item => item.verified).length;
+    const hasNote = items.some(item => itemHasNote(item));
+
+    return {
+      hasNote,
+      allVerified: total > 0 && verified === total
+    };
+  }
+
+  function applySelectedLessonReviewState(lessonNode, lessonStates) {
+    const selectedState = lessonStates.get(lessonNode.value);
+    lessonNode.classList.toggle('is-review-verified', Boolean(selectedState?.allVerified));
+    lessonNode.classList.toggle('is-review-noted', Boolean(selectedState?.hasNote));
   }
 
   function fillFilters({ resetLesson = false, resetActivity = false } = {}) {
@@ -259,14 +277,32 @@
     );
 
     const lessons = uniqueBy(lessonPool, item => item.lesson_key || item.lesson_title || '');
+    const lessonStates = new Map();
+    lessonPool.forEach(item => {
+      const key = item.lesson_key || item.lesson_title || '';
+      if (!lessonStates.has(key)) lessonStates.set(key, []);
+      lessonStates.get(key).push(item);
+    });
+    lessonStates.forEach((items, key) => {
+      lessonStates.set(key, lessonReviewState(items));
+    });
+
     const oldLesson = resetLesson ? '' : lessonNode.value;
-    lessonNode.innerHTML = option('all', 'Tất cả lesson') + lessons.map(item =>
-      option(item.lesson_key || item.lesson_title, `${item.lesson_key} · ${item.lesson_title}`)
-    ).join('');
+    lessonNode.innerHTML = option('all', 'Tất cả lesson') + lessons.map(item => {
+      const key = item.lesson_key || item.lesson_title;
+      const reviewState = lessonStates.get(key) || { hasNote: false, allVerified: false };
+      const suffix = `${reviewState.hasNote ? ' ✎' : ''}${reviewState.allVerified ? ' ✓' : ''}`;
+      const classNames = [
+        reviewState.allVerified ? 'lesson-review-verified' : '',
+        reviewState.hasNote ? 'lesson-review-noted' : ''
+      ].filter(Boolean).join(' ');
+      return option(key, `${item.lesson_key} · ${item.lesson_title}${suffix}`, classNames);
+    }).join('');
 
     if (oldLesson && [...lessonNode.options].some(o => o.value === oldLesson)) {
       lessonNode.value = oldLesson;
     }
+    applySelectedLessonReviewState(lessonNode, lessonStates);
 
     const lessonValue = lessonNode.value;
     const activityPool = lessonPool.filter(item =>
@@ -496,6 +532,7 @@
       : 'browser-localStorage';
 
     state.openNote = null;
+    fillFilters();
     rebuildVisible({ preserveCurrent: true });
 
     if (state.fileHandle) {
@@ -552,6 +589,7 @@
         ? 'browser-file-system-access'
         : 'browser-localStorage';
       recalcSummary();
+      fillFilters();
     }
 
     render();

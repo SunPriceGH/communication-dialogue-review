@@ -148,6 +148,16 @@ h1 {
   color: #17324a;
 }
 
+#lessonFilter option.lesson-review-verified,
+#lessonFilter.is-review-verified {
+  background: #f3fbf5;
+}
+
+#lessonFilter option.lesson-review-noted,
+#lessonFilter.is-review-noted {
+  background: #fffaf0;
+}
+
 .review-card {
   margin-top: 12px;
   border-radius: 18px;
