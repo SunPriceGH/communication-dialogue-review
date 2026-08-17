@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "export_type": "communication_dialogue_review",
-  "exported_at": "2026-08-17T07:04:49.210Z",
+  "exported_at": "2026-08-17T15:42:03.726Z",
   "storage": "standalone-json-review",
   "navigation_status": "all",
   "summary": {
     "dialogues": 209,
-    "verified": 53,
-    "unverified": 156
+    "verified": 79,
+    "unverified": 130
   },
   "items": [
     {
@@ -3297,8 +3297,8 @@
     },
     {
       "dialogue_id": "dlg_257_2e33c5ec",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T08:57:52.569Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -3350,8 +3350,8 @@
     },
     {
       "dialogue_id": "dlg_263_38e3a5cd",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T08:59:09.129Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -3411,8 +3411,8 @@
     },
     {
       "dialogue_id": "dlg_264_0a493eca",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T08:59:58.588Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -3878,8 +3878,8 @@
     },
     {
       "dialogue_id": "dlg_279_160c8b1c",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T09:05:10.041Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -3927,8 +3927,8 @@
     },
     {
       "dialogue_id": "dlg_630_abeeac9a",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T09:06:10.170Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -3988,8 +3988,8 @@
     },
     {
       "dialogue_id": "dlg_284_6fee8dbe",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T09:14:03.903Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -4068,7 +4068,11 @@
       "turns": [
         {
           "speaker": "Nhân vật",
-          "text": "I am free after class. Do you want to do something?"
+          "text": "I am free after class. Do you want to do something?",
+          "note": {
+            "text": "Sửa thành \"Good morning. We should go out and have fun someday\"\"",
+            "updated_at": "2026-08-17T09:22:58.445Z"
+          }
         },
         {
           "speaker": "Bạn",
@@ -4110,8 +4114,8 @@
     },
     {
       "dialogue_id": "dlg_288_0252e123",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T09:20:53.375Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -4171,8 +4175,8 @@
     },
     {
       "dialogue_id": "dlg_289_6ece696e",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T10:02:02.887Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -4216,8 +4220,8 @@
     },
     {
       "dialogue_id": "dlg_631_b040aa72",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T10:02:25.438Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -4277,8 +4281,8 @@
     },
     {
       "dialogue_id": "dlg_294_89976f60",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T10:05:02.055Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -4437,7 +4441,11 @@
         },
         {
           "speaker": "Minh",
-          "text": "Let us meet at the north gate of the park."
+          "text": "Let us meet at the north gate of the park.",
+          "note": {
+            "text": "Thêm \"We should also invite Mia.\"",
+            "updated_at": "2026-08-17T10:08:31.535Z"
+          }
         },
         {
           "speaker": "Leo",
@@ -4451,8 +4459,8 @@
     },
     {
       "dialogue_id": "dlg_298_ddbd3f9e",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T10:12:08.151Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -4494,7 +4502,11 @@
         },
         {
           "speaker": "Nhân vật",
-          "text": "Thanks. How about two in the afternoon?"
+          "text": "Thanks. How about two in the afternoon?",
+          "note": {
+            "text": "Bỏ \"thanks.\"",
+            "updated_at": "2026-08-17T10:10:34.565Z"
+          }
         },
         {
           "speaker": "Bạn",
@@ -4512,8 +4524,8 @@
     },
     {
       "dialogue_id": "dlg_299_55f9788f",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T10:14:24.073Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -4620,15 +4632,27 @@
         },
         {
           "speaker": "Minh",
-          "text": "Sure. And are you free for dinner later?"
+          "text": "Sure. And are you free for dinner later?",
+          "note": {
+            "text": "Bỏ \"and\", thay \"dinner\" thành \"lunch\"",
+            "updated_at": "2026-08-17T10:16:35.151Z"
+          }
         },
         {
           "speaker": "Emma",
-          "text": "Yes. Let's have dinner at six at Green Garden."
+          "text": "Yes. Let's have dinner at six at Green Garden.",
+          "note": {
+            "text": "Bỏ \"at six\", thay \"dinner\" thành \"lunch\"",
+            "updated_at": "2026-08-17T10:17:13.937Z"
+          }
         },
         {
           "speaker": "Minh",
-          "text": "That works for me. Breakfast at eight thirty, the market after that, and dinner at six."
+          "text": "That works for me. Breakfast at eight thirty, the market after that, and dinner at six.",
+          "note": {
+            "text": "Thay \"dinner at six\" thành \"lunch at Green Garden\"",
+            "updated_at": "2026-08-17T10:18:56.449Z"
+          }
         }
       ]
     },
@@ -4657,7 +4681,11 @@
         },
         {
           "speaker": "Minh",
-          "text": "At about eight."
+          "text": "At about eight.",
+          "note": {
+            "text": "Bỏ \"at\"",
+            "updated_at": "2026-08-17T10:21:24.833Z"
+          }
         },
         {
           "speaker": "Mia",
@@ -4677,7 +4705,11 @@
         },
         {
           "speaker": "Mia",
-          "text": "Great. Let's meet at the station."
+          "text": "Great. Let's meet at the station.",
+          "note": {
+            "text": "Thêm \"bus\" vào trước \"station\"",
+            "updated_at": "2026-08-17T10:22:16.200Z"
+          }
         },
         {
           "speaker": "Minh",
@@ -4695,8 +4727,8 @@
     },
     {
       "dialogue_id": "dlg_304_529d03a1",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T10:25:38.470Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -4783,11 +4815,19 @@
         },
         {
           "speaker": "Nora",
-          "text": "That's fine. Let's make a plan after ten."
+          "text": "That's fine. Let's make a plan after ten.",
+          "note": {
+            "text": "Thay \"Let's make a plan after ten.\" Bằng \"Let's meet at 11 in the morning.\" , morning là từ điền\"",
+            "updated_at": "2026-08-17T10:44:42.524Z"
+          }
         },
         {
           "speaker": "Minh",
-          "text": "Good. I am free in the morning after ten."
+          "text": "Good. I am free in the morning after ten.",
+          "note": {
+            "text": "Thay toàn câu bằng \"How about having lunch at first.\"\"",
+            "updated_at": "2026-08-17T10:42:49.674Z"
+          }
         },
         {
           "speaker": "Nora",
@@ -4795,7 +4835,11 @@
         },
         {
           "speaker": "Minh",
-          "text": "No. Let's have lunch at noon."
+          "text": "No. Let's have lunch at noon.",
+          "note": {
+            "text": "Suửa thành \"Well, we could have lunch at noon them.\"",
+            "updated_at": "2026-08-17T10:49:16.890Z"
+          }
         },
         {
           "speaker": "Nora",
@@ -4811,7 +4855,11 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes. We can have dinner near the river."
+          "text": "Yes. We can have dinner near the river.",
+          "note": {
+            "text": "Thêm \"that is the final plan\". Plan là từ điền",
+            "updated_at": "2026-08-17T10:55:50.651Z"
+          }
         }
       ],
       "fill_blank_words": [
@@ -4896,11 +4944,19 @@
         },
         {
           "speaker": "Nhân vật",
-          "text": "Good. When can we start our plan?"
+          "text": "Good. When can we start our plan?",
+          "note": {
+            "text": "Thay bằng \"Good. Then we can meet at eight thirty.",
+            "updated_at": "2026-08-17T10:52:09.704Z"
+          }
         },
         {
           "speaker": "Bạn",
-          "text": "I am free at ten."
+          "text": "I am free at ten.",
+          "note": {
+            "text": "Thay bằng \"But I am only free at ten.\"",
+            "updated_at": "2026-08-17T10:52:49.159Z"
+          }
         },
         {
           "speaker": "Nhân vật",
@@ -4977,7 +5033,11 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Ten is a little early. Does ten thirty work for you?"
+          "text": "Ten is a little early. Does ten thirty work for you?",
+          "note": {
+            "text": "Thay câu đầu bằng \"Actually, I have to do housework at ten.\"",
+            "updated_at": "2026-08-17T10:34:59.314Z"
+          }
         },
         {
           "speaker": "Leo",
@@ -4991,8 +5051,8 @@
     },
     {
       "dialogue_id": "dlg_310_d2412d1d",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T11:02:58.026Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5040,8 +5100,8 @@
     },
     {
       "dialogue_id": "dlg_633_fe4d2dbe",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T11:03:19.135Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5101,8 +5161,8 @@
     },
     {
       "dialogue_id": "dlg_315_bb4262bb",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T11:04:27.680Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5162,8 +5222,8 @@
     },
     {
       "dialogue_id": "dlg_317_19b08ba7",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T11:05:06.952Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5314,7 +5374,11 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, I like fish."
+          "text": "Yes, I like fish.",
+          "note": {
+            "text": "Xàm lon, đã ăn cơm gà còn thích cá là sao",
+            "updated_at": "2026-08-17T11:06:16.713Z"
+          }
         },
         {
           "speaker": "Nhân vật",
@@ -5371,7 +5435,11 @@
         },
         {
           "speaker": "Mia",
-          "text": "Great. What would you like to drink now?"
+          "text": "Great. What would you like to drink now?",
+          "note": {
+            "text": "Bỏ \"now\"",
+            "updated_at": "2026-08-17T11:09:30.441Z"
+          }
         },
         {
           "speaker": "Bạn",
@@ -5397,8 +5465,8 @@
     },
     {
       "dialogue_id": "dlg_321_72df311d",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T11:14:29.070Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5446,8 +5514,8 @@
     },
     {
       "dialogue_id": "dlg_327_3b957b55",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T11:14:56.796Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5507,8 +5575,8 @@
     },
     {
       "dialogue_id": "dlg_328_444da699",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T11:15:20.862Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5568,8 +5636,8 @@
     },
     {
       "dialogue_id": "dlg_332_f50ef9ce",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T11:15:47.491Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5617,8 +5685,8 @@
     },
     {
       "dialogue_id": "dlg_634_f0bfc1b0",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T11:16:01.998Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5678,8 +5746,8 @@
     },
     {
       "dialogue_id": "dlg_337_c1ed2446",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T11:16:27.003Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5739,8 +5807,8 @@
     },
     {
       "dialogue_id": "dlg_340_258254b0",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T11:16:42.673Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5800,8 +5868,8 @@
     },
     {
       "dialogue_id": "dlg_341_48ccb503",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T11:17:10.845Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5861,8 +5929,8 @@
     },
     {
       "dialogue_id": "dlg_342_58949dea",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-17T11:19:16.236Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5961,7 +6029,11 @@
         },
         {
           "speaker": "Server",
-          "text": "Yes. Emma, you can pay your half in cash."
+          "text": "Yes. Emma, you can pay your half in cash.",
+          "note": {
+            "text": "Sao bồi bàn lại yêu cầu Emma trả tiền mặt???",
+            "updated_at": "2026-08-17T11:20:04.387Z"
+          }
         },
         {
           "speaker": "Emma",
@@ -6006,7 +6078,11 @@
         },
         {
           "speaker": "Minh",
-          "text": "That is fine. We can split the total."
+          "text": "That is fine. We can split the total.",
+          "note": {
+            "text": "Không nên để đoạn nào cũng toàn split the bill, nên có nam bao, hoặc nữ bao, cảd hoặc cash",
+            "updated_at": "2026-08-17T11:26:24.556Z"
+          }
         },
         {
           "speaker": "Nora",
@@ -6115,7 +6191,11 @@
         },
         {
           "speaker": "Mia",
-          "text": "I have cash, so maybe we can pay separately."
+          "text": "I have cash, so maybe we can pay separately.",
+          "note": {
+            "text": "Để Minh bao bằng credit card",
+            "updated_at": "2026-08-17T11:29:18.120Z"
+          }
         },
         {
           "speaker": "Minh",
@@ -6176,7 +6256,11 @@
         },
         {
           "speaker": "Nhân vật",
-          "text": "Of course. Here is the bill. The total is thirty dollars. Would you like one payment or two?"
+          "text": "Of course. Here is the bill. The total is thirty dollars. Would you like one payment or two?",
+          "note": {
+            "text": "Ht này cho user ăn một mình",
+            "updated_at": "2026-08-17T11:30:26.294Z"
+          }
         },
         {
           "speaker": "Bạn",
@@ -6302,7 +6386,11 @@
         },
         {
           "speaker": "Waiter",
-          "text": "Good choice. What would you like?"
+          "text": "Good choice. What would you like?",
+          "note": {
+            "text": "Sửa câu 2 thành \"Would you like to order now?\"\"",
+            "updated_at": "2026-08-17T11:56:55.584Z"
+          }
         },
         {
           "speaker": "Minh",
@@ -13432,5 +13520,6 @@
       ]
     }
   ],
-  "updated_at": "2026-08-17T07:04:49.210Z"
+  "updated_at": "2026-08-17T15:42:03.726Z",
+  "export_scope": "full"
 }
