@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "export_type": "communication_dialogue_review",
-  "exported_at": "2026-08-17T15:42:03.726Z",
+  "exported_at": "2026-08-18T04:51:49.734Z",
   "storage": "standalone-json-review",
   "navigation_status": "all",
   "summary": {
     "dialogues": 209,
-    "verified": 79,
-    "unverified": 130
+    "verified": 98,
+    "unverified": 111
   },
   "items": [
     {
@@ -4048,9 +4048,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_287_d8fe46a8",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_287_77f3cee2",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -4068,11 +4068,7 @@
       "turns": [
         {
           "speaker": "Nhân vật",
-          "text": "I am free after class. Do you want to do something?",
-          "note": {
-            "text": "Sửa thành \"Good morning. We should go out and have fun someday\"\"",
-            "updated_at": "2026-08-17T09:22:58.445Z"
-          }
+          "text": "Good morning. We should do something together sometime."
         },
         {
           "speaker": "Bạn",
@@ -4393,9 +4389,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_297_704ca991",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_297_763ffd05",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -4441,15 +4437,11 @@
         },
         {
           "speaker": "Minh",
-          "text": "Let us meet at the north gate of the park.",
-          "note": {
-            "text": "Thêm \"We should also invite Mia.\"",
-            "updated_at": "2026-08-17T10:08:31.535Z"
-          }
+          "text": "Let us meet at the north gate of the park. We should also invite Mia."
         },
         {
           "speaker": "Leo",
-          "text": "Great. I will confirm the plan with Mia too."
+          "text": "Great. I will confirm the plan with Mia."
         },
         {
           "speaker": "Minh",
@@ -4458,9 +4450,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_298_ddbd3f9e",
+      "dialogue_id": "dlg_298_a0b9b8e9",
       "verified": true,
-      "verified_at": "2026-08-17T10:12:08.151Z",
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -4502,11 +4494,7 @@
         },
         {
           "speaker": "Nhân vật",
-          "text": "Thanks. How about two in the afternoon?",
-          "note": {
-            "text": "Bỏ \"thanks.\"",
-            "updated_at": "2026-08-17T10:10:34.565Z"
-          }
+          "text": "How about two in the afternoon?"
         },
         {
           "speaker": "Bạn",
@@ -4584,9 +4572,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_300_c441d50f",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_300_1f2e6ecf",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -4632,34 +4620,22 @@
         },
         {
           "speaker": "Minh",
-          "text": "Sure. And are you free for dinner later?",
-          "note": {
-            "text": "Bỏ \"and\", thay \"dinner\" thành \"lunch\"",
-            "updated_at": "2026-08-17T10:16:35.151Z"
-          }
+          "text": "Sure. Are you free for lunch later?"
         },
         {
           "speaker": "Emma",
-          "text": "Yes. Let's have dinner at six at Green Garden.",
-          "note": {
-            "text": "Bỏ \"at six\", thay \"dinner\" thành \"lunch\"",
-            "updated_at": "2026-08-17T10:17:13.937Z"
-          }
+          "text": "Yes. Let's have lunch at Green Garden."
         },
         {
           "speaker": "Minh",
-          "text": "That works for me. Breakfast at eight thirty, the market after that, and dinner at six.",
-          "note": {
-            "text": "Thay \"dinner at six\" thành \"lunch at Green Garden\"",
-            "updated_at": "2026-08-17T10:18:56.449Z"
-          }
+          "text": "That works for me. Breakfast at eight thirty, the market after that, and lunch at Green Garden."
         }
       ]
     },
     {
-      "dialogue_id": "dlg_632_736df853",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_632_3ebaac42",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -4681,11 +4657,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "At about eight.",
-          "note": {
-            "text": "Bỏ \"at\"",
-            "updated_at": "2026-08-17T10:21:24.833Z"
-          }
+          "text": "About eight."
         },
         {
           "speaker": "Mia",
@@ -4705,11 +4677,7 @@
         },
         {
           "speaker": "Mia",
-          "text": "Great. Let's meet at the station.",
-          "note": {
-            "text": "Thêm \"bus\" vào trước \"station\"",
-            "updated_at": "2026-08-17T10:22:16.200Z"
-          }
+          "text": "Great. Let's meet at the bus station."
         },
         {
           "speaker": "Minh",
@@ -4787,9 +4755,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_306_5904a27f",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_306_98c187ce",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -4815,19 +4783,11 @@
         },
         {
           "speaker": "Nora",
-          "text": "That's fine. Let's make a plan after ten.",
-          "note": {
-            "text": "Thay \"Let's make a plan after ten.\" Bằng \"Let's meet at 11 in the morning.\" , morning là từ điền\"",
-            "updated_at": "2026-08-17T10:44:42.524Z"
-          }
+          "text": "That's fine. Let's meet at eleven in the morning."
         },
         {
           "speaker": "Minh",
-          "text": "Good. I am free in the morning after ten.",
-          "note": {
-            "text": "Thay toàn câu bằng \"How about having lunch at first.\"\"",
-            "updated_at": "2026-08-17T10:42:49.674Z"
-          }
+          "text": "How about having lunch first?"
         },
         {
           "speaker": "Nora",
@@ -4835,11 +4795,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "No. Let's have lunch at noon.",
-          "note": {
-            "text": "Suửa thành \"Well, we could have lunch at noon them.\"",
-            "updated_at": "2026-08-17T10:49:16.890Z"
-          }
+          "text": "Well, we could have lunch at noon then."
         },
         {
           "speaker": "Nora",
@@ -4855,20 +4811,16 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes. We can have dinner near the river.",
-          "note": {
-            "text": "Thêm \"that is the final plan\". Plan là từ điền",
-            "updated_at": "2026-08-17T10:55:50.651Z"
-          }
+          "text": "Yes. We can have dinner near the river. That's the final plan."
         }
       ],
       "fill_blank_words": [
         "available",
         "busy",
-        "plan",
         "morning",
         "early",
-        "dinner"
+        "dinner",
+        "plan"
       ],
       "fill_blank_marks": [
         {
@@ -4887,15 +4839,8 @@
         },
         {
           "turn_index": 2,
-          "start": 26,
-          "end": 30,
-          "word": "plan",
-          "blank_id": "l5-read-b03"
-        },
-        {
-          "turn_index": 3,
-          "start": 23,
-          "end": 30,
+          "start": 41,
+          "end": 48,
           "word": "morning",
           "blank_id": "l5-read-b04"
         },
@@ -4912,13 +4857,20 @@
           "end": 23,
           "word": "dinner",
           "blank_id": "l5-read-b06"
+        },
+        {
+          "turn_index": 9,
+          "start": 57,
+          "end": 61,
+          "word": "plan",
+          "blank_id": "l5-read-b03"
         }
       ]
     },
     {
-      "dialogue_id": "dlg_308_397c002c",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_308_aa624ab0",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -4944,31 +4896,23 @@
         },
         {
           "speaker": "Nhân vật",
-          "text": "Good. When can we start our plan?",
-          "note": {
-            "text": "Thay bằng \"Good. Then we can meet at eight thirty.",
-            "updated_at": "2026-08-17T10:52:09.704Z"
-          }
+          "text": "Good. Then how about meeting at eight thirty?"
         },
         {
           "speaker": "Bạn",
-          "text": "I am free at ten.",
-          "note": {
-            "text": "Thay bằng \"But I am only free at ten.\"",
-            "updated_at": "2026-08-17T10:52:49.159Z"
-          }
+          "text": "But I'm not free until ten."
         },
         {
           "speaker": "Nhân vật",
-          "text": "Great. I am free at ten too. I am hungry. What should we do?"
+          "text": "No problem. I'm free after ten too. What should we do then?"
         },
         {
           "speaker": "Bạn",
-          "text": "Would you like to have breakfast together?"
+          "text": "How about having lunch together?"
         },
         {
           "speaker": "Nhân vật",
-          "text": "Yes, I would love to. Where should we meet?"
+          "text": "Sure. Where should we meet?"
         },
         {
           "speaker": "Bạn",
@@ -4976,18 +4920,18 @@
         },
         {
           "speaker": "Nhân vật",
-          "text": "Sunny Cafe sounds good. Ten is a little early for me."
+          "text": "Okay, Sunny Cafe. How about ten thirty?"
         },
         {
           "speaker": "Bạn",
-          "text": "Does ten thirty work for you?"
+          "text": "Ten thirty works for me."
         }
       ]
     },
     {
-      "dialogue_id": "dlg_309_2ca1aac2",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_309_6689316a",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -5033,11 +4977,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Ten is a little early. Does ten thirty work for you?",
-          "note": {
-            "text": "Thay câu đầu bằng \"Actually, I have to do housework at ten.\"",
-            "updated_at": "2026-08-17T10:34:59.314Z"
-          }
+          "text": "Actually, I have to do housework at ten. Does ten thirty work for you?"
         },
         {
           "speaker": "Leo",
@@ -5334,9 +5274,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_319_bba0d19f",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_319_ec135154",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5374,11 +5314,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, I like fish.",
-          "note": {
-            "text": "Xàm lon, đã ăn cơm gà còn thích cá là sao",
-            "updated_at": "2026-08-17T11:06:16.713Z"
-          }
+          "text": "I do, but I prefer chicken."
         },
         {
           "speaker": "Nhân vật",
@@ -5390,7 +5326,7 @@
         },
         {
           "speaker": "Nhân vật",
-          "text": "Great. We have chicken, rice, water, and coffee. Are we ready?"
+          "text": "Great. We have chicken, rice, water, and coffee. Are we ready to order?"
         },
         {
           "speaker": "Bạn",
@@ -5399,9 +5335,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_320_2b3f2207",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_320_fd3f282c",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5435,11 +5371,7 @@
         },
         {
           "speaker": "Mia",
-          "text": "Great. What would you like to drink now?",
-          "note": {
-            "text": "Bỏ \"now\"",
-            "updated_at": "2026-08-17T11:09:30.441Z"
-          }
+          "text": "Great. What would you like to drink?"
         },
         {
           "speaker": "Bạn",
@@ -5455,7 +5387,7 @@
         },
         {
           "speaker": "Mia",
-          "text": "Sounds good. I think we have everything for the picnic."
+          "text": "Okay. I think we have everything for the picnic."
         },
         {
           "speaker": "Bạn",
@@ -5981,9 +5913,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_635_52b446be",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_635_244d1f70",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -6029,15 +5961,11 @@
         },
         {
           "speaker": "Server",
-          "text": "Yes. Emma, you can pay your half in cash.",
-          "note": {
-            "text": "Sao bồi bàn lại yêu cầu Emma trả tiền mặt???",
-            "updated_at": "2026-08-17T11:20:04.387Z"
-          }
+          "text": "Yes, of course. Emma, how would you like to pay?"
         },
         {
           "speaker": "Emma",
-          "text": "Here is twenty-two dollars. Keep the change."
+          "text": "I'll pay in cash. Here's twenty-two dollars. Keep the change."
         },
         {
           "speaker": "Server",
@@ -6046,9 +5974,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_347_d6724c4e",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_347_20019246",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -6070,31 +5998,27 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes. I can pay my part by card."
+          "text": "Yes. I'll pay the whole bill by card."
         },
         {
           "speaker": "Nora",
-          "text": "I only have cash today."
+          "text": "Are you sure? I only have cash today."
         },
         {
           "speaker": "Minh",
-          "text": "That is fine. We can split the total.",
-          "note": {
-            "text": "Không nên để đoạn nào cũng toàn split the bill, nên có nam bao, hoặc nữ bao, cảd hoặc cash",
-            "updated_at": "2026-08-17T11:26:24.556Z"
-          }
+          "text": "That's okay. This one's on me."
         },
         {
           "speaker": "Nora",
-          "text": "The server says my part is eighteen dollars."
+          "text": "Thank you. The total is thirty-six dollars."
         },
         {
           "speaker": "Minh",
-          "text": "You gave twenty, so you should get two dollars in change."
+          "text": "I'll pay by card, so there won't be any change."
         },
         {
           "speaker": "Nora",
-          "text": "I can leave that as a small tip."
+          "text": "Then I'll leave two dollars in cash as a tip."
         },
         {
           "speaker": "Minh",
@@ -6102,11 +6026,11 @@
         },
         {
           "speaker": "Nora",
-          "text": "I also need a receipt."
+          "text": "Don't forget the receipt."
         },
         {
           "speaker": "Minh",
-          "text": "Ask the server when we finish paying."
+          "text": "Right. I'll ask the server for it."
         }
       ],
       "fill_blank_words": [
@@ -6127,45 +6051,45 @@
         },
         {
           "turn_index": 1,
-          "start": 26,
-          "end": 30,
+          "start": 32,
+          "end": 36,
           "word": "card",
           "blank_id": "l4-read-b02"
         },
         {
           "turn_index": 2,
-          "start": 12,
-          "end": 16,
+          "start": 26,
+          "end": 30,
           "word": "cash",
           "blank_id": "l4-read-b03"
         },
         {
           "turn_index": 5,
-          "start": 50,
-          "end": 56,
+          "start": 40,
+          "end": 46,
           "word": "change",
           "blank_id": "l4-read-b04"
         },
         {
           "turn_index": 6,
-          "start": 28,
-          "end": 31,
+          "start": 41,
+          "end": 44,
           "word": "tip",
           "blank_id": "l4-read-b05"
         },
         {
           "turn_index": 8,
-          "start": 14,
-          "end": 21,
+          "start": 17,
+          "end": 24,
           "word": "receipt",
           "blank_id": "l4-read-b06"
         }
       ]
     },
     {
-      "dialogue_id": "dlg_350_9d4b04df",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_350_a4c2966a",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -6187,50 +6111,46 @@
         },
         {
           "speaker": "Minh",
-          "text": "I can pay by card if that is easier."
+          "text": "I can pay the whole bill by credit card. This one's on me."
         },
         {
           "speaker": "Mia",
-          "text": "I have cash, so maybe we can pay separately.",
-          "note": {
-            "text": "Để Minh bao bằng credit card",
-            "updated_at": "2026-08-17T11:29:18.120Z"
-          }
+          "text": "Really? Thanks, Minh."
         },
         {
           "speaker": "Minh",
-          "text": "Sure. My coffee and sandwich were fourteen dollars."
+          "text": "No problem. I'll pay the full twenty-four dollars."
         },
         {
           "speaker": "Mia",
-          "text": "Then my part is ten dollars."
+          "text": "Then I'll leave the tip."
         },
         {
           "speaker": "Minh",
-          "text": "I will pay fourteen by card."
+          "text": "Good idea."
         },
         {
           "speaker": "Mia",
-          "text": "I have a twenty-dollar bill. I will pay cash."
+          "text": "I have some cash. I'll leave two dollars."
         },
         {
           "speaker": "Minh",
-          "text": "Then you should get ten dollars in change."
+          "text": "Perfect."
         },
         {
           "speaker": "Mia",
-          "text": "I will leave two dollars as a tip and take eight back."
+          "text": "Don't forget the receipt."
         },
         {
           "speaker": "Minh",
-          "text": "Good. Let us remember to take the receipt."
+          "text": "Right. I'll take it after I pay."
         }
       ]
     },
     {
-      "dialogue_id": "dlg_351_3919e0be",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_351_06141cf4",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -6252,39 +6172,35 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Could we have the bill, please?"
+          "text": "Could I have the bill, please?"
         },
         {
           "speaker": "Nhân vật",
-          "text": "Of course. Here is the bill. The total is thirty dollars. Would you like one payment or two?",
-          "note": {
-            "text": "Ht này cho user ăn một mình",
-            "updated_at": "2026-08-17T11:30:26.294Z"
-          }
+          "text": "Of course. Here is the bill. The total is thirty dollars. How would you like to pay?"
         },
         {
           "speaker": "Bạn",
-          "text": "Let us split the bill."
+          "text": "I'd like to pay by card."
         },
         {
           "speaker": "Nhân vật",
-          "text": "No problem. Your half is fifteen dollars. How would you like to pay?"
+          "text": "Certainly. Please tap your card here."
         },
         {
           "speaker": "Bạn",
-          "text": "I would like to pay by card."
+          "text": "Okay."
         },
         {
           "speaker": "Nhân vật",
-          "text": "Your card payment is complete. Your friend paid in cash, and there are two dollars left."
+          "text": "Your payment is complete."
         },
         {
           "speaker": "Bạn",
-          "text": "Keep the change."
+          "text": "Could I have the receipt, please?"
         },
         {
           "speaker": "Nhân vật",
-          "text": "Here is your receipt."
+          "text": "Of course. Here is your receipt."
         },
         {
           "speaker": "Bạn",
@@ -6354,9 +6270,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_353_d8a17129",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_353_6297415e",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -6386,11 +6302,7 @@
         },
         {
           "speaker": "Waiter",
-          "text": "Good choice. What would you like?",
-          "note": {
-            "text": "Sửa câu 2 thành \"Would you like to order now?\"\"",
-            "updated_at": "2026-08-17T11:56:55.584Z"
-          }
+          "text": "Good choice. Would you like to order now?"
         },
         {
           "speaker": "Minh",
@@ -6406,7 +6318,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Very good, thank you. Could we have the bill, please?"
+          "text": "Very good, thank you. Could I have the bill, please?"
         },
         {
           "speaker": "Waiter",
@@ -6414,14 +6326,14 @@
         },
         {
           "speaker": "Minh",
-          "text": "Can I pay by card?"
+          "text": "Can I pay in cash?"
         }
       ]
     },
     {
-      "dialogue_id": "dlg_636_48fc6001",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_636_2f24e29f",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -6463,11 +6375,11 @@
         },
         {
           "speaker": "Waiter",
-          "text": "Certainly. Anything else?"
+          "text": "Certainly. Your food will be ready soon."
         },
         {
           "speaker": "Minh",
-          "text": "No, thank you. Could we have the bill?"
+          "text": "Excuse me. Could I have the bill, please?"
         },
         {
           "speaker": "Waiter",
@@ -6480,9 +6392,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_357_d58ca339",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_357_3d3d4bcd",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -6500,11 +6412,11 @@
       "turns": [
         {
           "speaker": "Waiter",
-          "text": "Good afternoon. You can order and pay here before you sit down. Here is the menu."
+          "text": "Good afternoon. Welcome to our restaurant. Here is the menu."
         },
         {
           "speaker": "Nora",
-          "text": "Thank you. Is the chicken curry very spicy?"
+          "text": "Thank you. Is the chicken curry spicy?"
         },
         {
           "speaker": "Waiter",
@@ -6524,11 +6436,11 @@
         },
         {
           "speaker": "Waiter",
-          "text": "No problem. Anything else?"
+          "text": "No problem. Your food will be ready soon."
         },
         {
           "speaker": "Nora",
-          "text": "No, thank you. Could I have the bill, please?"
+          "text": "Excuse me, could I have the bill, please?"
         },
         {
           "speaker": "Waiter",
@@ -6536,14 +6448,14 @@
         },
         {
           "speaker": "Nora",
-          "text": "Can I pay by card?"
+          "text": "I'd like to pay in cash."
         }
       ]
     },
     {
-      "dialogue_id": "dlg_359_0c4dde5f",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_359_7a022206",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -6589,15 +6501,15 @@
         },
         {
           "speaker": "Server",
-          "text": "Certainly. Your bill is fourteen dollars. You can pay at the counter here."
+          "text": "Certainly. We'll bring your food soon."
         },
         {
           "speaker": "Emma",
-          "text": "Can I pay by card?"
+          "text": "Could I have the bill, please? Can I pay by card?"
         },
         {
           "speaker": "Server",
-          "text": "Yes, of course. Please tap your card here."
+          "text": "Yes, of course. Your bill is fourteen dollars. Please tap your card here."
         }
       ],
       "fill_blank_words": [
@@ -6645,18 +6557,18 @@
           "blank_id": "l5-read-b05"
         },
         {
-          "turn_index": 7,
-          "start": 16,
-          "end": 20,
+          "turn_index": 8,
+          "start": 17,
+          "end": 21,
           "word": "bill",
           "blank_id": "l5-read-b06"
         }
       ]
     },
     {
-      "dialogue_id": "dlg_361_461136ed",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_361_a5288223",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -6670,7 +6582,7 @@
       "activity_sort_order": 10,
       "dialogue_index": 1,
       "source_path": "content.questions[canonical]",
-      "turn_count": 10,
+      "turn_count": 12,
       "turns": [
         {
           "speaker": "Nhân vật",
@@ -6706,18 +6618,26 @@
         },
         {
           "speaker": "Nhân vật",
+          "text": "Certainly. We'll bring your food soon."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Excuse me. Could I have the bill, please?"
+        },
+        {
+          "speaker": "Nhân vật",
           "text": "Of course. Here is the bill. How would you like to pay?"
         },
         {
           "speaker": "Bạn",
-          "text": "I would like to pay by card."
+          "text": "I'd like to pay by card. I don't have any cash with me."
         }
       ]
     },
     {
-      "dialogue_id": "dlg_362_5bdcd673",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_362_1c2cb139",
+      "verified": true,
+      "verified_at": "2026-08-18T04:51:49.734Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -6743,11 +6663,11 @@
         },
         {
           "speaker": "Leo",
-          "text": "The vegetarian rice bowl is available. What would you like to order?"
+          "text": "So, would you like to order that?"
         },
         {
           "speaker": "Bạn",
-          "text": "I would like to order the vegetarian rice bowl, please."
+          "text": "Yes. I'd like to order the vegetarian rice bowl, please."
         },
         {
           "speaker": "Leo",
@@ -6759,11 +6679,11 @@
         },
         {
           "speaker": "Leo",
-          "text": "Your order is fifteen dollars. Are you ready to pay?"
+          "text": "Certainly. Your food will be ready soon."
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, could I have the bill, please?"
+          "text": "Excuse me. Could I have the bill, please?"
         },
         {
           "speaker": "Leo",
@@ -6771,7 +6691,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "I would like to pay by card."
+          "text": "I don't have my credit card with me, so I'll pay in cash."
         }
       ]
     },
@@ -13520,6 +13440,5 @@
       ]
     }
   ],
-  "updated_at": "2026-08-17T15:42:03.726Z",
-  "export_scope": "full"
+  "updated_at": "2026-08-18T04:51:49.734Z"
 }
