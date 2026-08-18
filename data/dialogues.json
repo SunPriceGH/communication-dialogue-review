@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "export_type": "communication_dialogue_review",
-  "exported_at": "2026-08-18T09:02:09.137Z",
+  "exported_at": "2026-08-18T10:47:13.589Z",
   "storage": "standalone-json-review",
   "navigation_status": "all",
   "summary": {
@@ -3581,9 +3581,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_273_72d244c0",
+      "dialogue_id": "dlg_273_2965c35f",
       "verified": true,
-      "verified_at": "2026-08-18T09:02:09.137Z",
+      "verified_at": "2026-08-18T10:47:13.589Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -3613,31 +3613,31 @@
         },
         {
           "speaker": "Minh",
-          "text": "Then six o'clock is a little too early for us to meet."
+          "text": "Would you like to get coffee after your class?"
         },
         {
           "speaker": "Nora",
-          "text": "Are you free at a quarter past six?"
+          "text": "Sure. I can meet you at about a quarter past six."
         },
         {
           "speaker": "Minh",
-          "text": "I might be a little late. How about half past six?"
+          "text": "How about half past six at the cafe near the station?"
         },
         {
           "speaker": "Nora",
-          "text": "Half past six works for me."
+          "text": "That works for me."
         },
         {
           "speaker": "Minh",
-          "text": "Great. Shall we meet at the cafe near the station?"
+          "text": "Great. I will probably get there a little early."
         },
         {
           "speaker": "Nora",
-          "text": "Sure. I can get there a few minutes early."
-        },
-        {
-          "speaker": "Minh",
           "text": "Perfect. See you at six thirty."
+        },
+        {
+          "speaker": "Minh",
+          "text": "See you then."
         }
       ]
     },
@@ -13440,5 +13440,5 @@
       ]
     }
   ],
-  "updated_at": "2026-08-18T09:02:09.137Z"
+  "updated_at": "2026-08-18T10:47:13.589Z"
 }
