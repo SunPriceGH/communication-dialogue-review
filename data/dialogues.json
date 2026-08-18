@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "export_type": "communication_dialogue_review",
-  "exported_at": "2026-08-18T10:47:13.589Z",
+  "exported_at": "2026-08-18T11:19:14.993Z",
   "storage": "standalone-json-review",
   "navigation_status": "all",
   "summary": {
@@ -5616,9 +5616,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_634_f0bfc1b0",
+      "dialogue_id": "dlg_634_790eccd2",
       "verified": true,
-      "verified_at": "2026-08-17T11:16:01.998Z",
+      "verified_at": "2026-08-18T11:19:14.993Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5636,7 +5636,7 @@
       "turns": [
         {
           "speaker": "Waiter",
-          "text": "Good afternoon. Welcome."
+          "text": "Good afternoon. Welcome to our restaurant."
         },
         {
           "speaker": "Minh",
@@ -5913,9 +5913,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_635_7637754c",
+      "dialogue_id": "dlg_635_5e579590",
       "verified": true,
-      "verified_at": "2026-08-18T05:34:45.126Z",
+      "verified_at": "2026-08-18T11:19:14.993Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5937,7 +5937,7 @@
         },
         {
           "speaker": "Leo",
-          "text": "Yes. Could we have the bill?"
+          "text": "Yeah, it was. Could we have the bill, please?"
         },
         {
           "speaker": "Server",
@@ -5961,7 +5961,7 @@
         },
         {
           "speaker": "Server",
-          "text": "Yes. Your half is fifteen dollars. Mia, how about you?"
+          "text": "Yes. Your half is fifteen dollars."
         },
         {
           "speaker": "Mia",
@@ -5974,9 +5974,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_347_f2df83b4",
+      "dialogue_id": "dlg_347_c325db8e",
       "verified": true,
-      "verified_at": "2026-08-18T05:34:45.126Z",
+      "verified_at": "2026-08-18T11:19:14.993Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -6001,28 +6001,24 @@
           "text": "Of course. Here it is. The total is thirty-six dollars."
         },
         {
+          "speaker": "Nora",
+          "text": "I don't have my credit card with me. Could you pay for me?"
+        },
+        {
           "speaker": "Minh",
-          "text": "I'll pay by credit card. This one's on me."
+          "text": "Sure. I'll pay in cash. Here's forty dollars."
         },
         {
           "speaker": "Server",
-          "text": "Certainly. Please tap your card here."
+          "text": "Certainly. Here is four dollars in change."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Thanks. I'll leave two dollars as a tip."
         },
         {
           "speaker": "Nora",
-          "text": "Thanks, Minh. I'll leave the tip."
-        },
-        {
-          "speaker": "Nora",
-          "text": "I only have a five-dollar bill in cash. Could you change it?"
-        },
-        {
-          "speaker": "Server",
-          "text": "Of course. Here is three dollars in change."
-        },
-        {
-          "speaker": "Nora",
-          "text": "Perfect. I'll leave two dollars."
+          "text": "That's kind of you. The service was very good."
         },
         {
           "speaker": "Minh",
@@ -6030,15 +6026,19 @@
         },
         {
           "speaker": "Server",
-          "text": "Sure. Here you are."
+          "text": "Of course. Here you are."
+        },
+        {
+          "speaker": "Nora",
+          "text": "Thanks. Let's go."
         }
       ],
       "fill_blank_words": [
         "bill",
         "card",
-        "tip",
         "cash",
         "change",
+        "tip",
         "receipt"
       ],
       "fill_blank_marks": [
@@ -6051,34 +6051,34 @@
         },
         {
           "turn_index": 2,
-          "start": 19,
-          "end": 23,
+          "start": 23,
+          "end": 27,
           "word": "card",
           "blank_id": "l4-read-b02"
         },
         {
-          "turn_index": 4,
-          "start": 29,
-          "end": 32,
-          "word": "tip",
-          "blank_id": "l4-read-b05"
-        },
-        {
-          "turn_index": 5,
-          "start": 34,
-          "end": 38,
+          "turn_index": 3,
+          "start": 18,
+          "end": 22,
           "word": "cash",
           "blank_id": "l4-read-b03"
         },
         {
-          "turn_index": 6,
-          "start": 36,
-          "end": 42,
+          "turn_index": 4,
+          "start": 35,
+          "end": 41,
           "word": "change",
           "blank_id": "l4-read-b04"
         },
         {
-          "turn_index": 8,
+          "turn_index": 5,
+          "start": 36,
+          "end": 39,
+          "word": "tip",
+          "blank_id": "l4-read-b05"
+        },
+        {
+          "turn_index": 7,
           "start": 17,
           "end": 24,
           "word": "receipt",
@@ -13440,5 +13440,5 @@
       ]
     }
   ],
-  "updated_at": "2026-08-18T10:47:13.589Z"
+  "updated_at": "2026-08-18T11:19:14.993Z"
 }
