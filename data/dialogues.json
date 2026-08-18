@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "export_type": "communication_dialogue_review",
-  "exported_at": "2026-08-18T04:51:49.734Z",
+  "exported_at": "2026-08-18T05:34:45.126Z",
   "storage": "standalone-json-review",
   "navigation_status": "all",
   "summary": {
     "dialogues": 209,
-    "verified": 98,
-    "unverified": 111
+    "verified": 99,
+    "unverified": 110
   },
   "items": [
     {
@@ -5860,9 +5860,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_342_58949dea",
+      "dialogue_id": "dlg_342_cf0429db",
       "verified": true,
-      "verified_at": "2026-08-17T11:19:16.236Z",
+      "verified_at": "2026-08-18T05:34:45.126Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5879,32 +5879,32 @@
       "turn_count": 8,
       "turns": [
         {
-          "speaker": "Server",
-          "text": "Are you ready to pay?"
+          "speaker": "Emma",
+          "text": "That was a good meal."
         },
         {
           "speaker": "Minh",
-          "text": "Yes. Could we have the bill, please?"
+          "text": "Yes. Excuse me, could we have the bill, please?"
         },
         {
           "speaker": "Server",
-          "text": "Of course. The bill is twenty-four dollars."
-        },
-        {
-          "speaker": "Minh",
-          "text": "Let's split the bill. Can I pay by card?"
-        },
-        {
-          "speaker": "Server",
-          "text": "Yes. Your half is twelve dollars."
-        },
-        {
-          "speaker": "Minh",
-          "text": "Great. I'll pay twelve dollars by card."
+          "text": "Of course. Here you are. The total is twenty-four dollars."
         },
         {
           "speaker": "Emma",
-          "text": "I'll pay fourteen dollars in cash. Keep the change."
+          "text": "Let's split the bill."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Sure. Can I pay my half by card?"
+        },
+        {
+          "speaker": "Server",
+          "text": "Yes. That's twelve dollars on your card. And for you?"
+        },
+        {
+          "speaker": "Emma",
+          "text": "I'll pay in cash. Here's fifteen dollars. Keep the change."
         },
         {
           "speaker": "Server",
@@ -5913,9 +5913,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_635_244d1f70",
+      "dialogue_id": "dlg_635_7637754c",
       "verified": true,
-      "verified_at": "2026-08-18T04:51:49.734Z",
+      "verified_at": "2026-08-18T05:34:45.126Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5932,40 +5932,40 @@
       "turn_count": 10,
       "turns": [
         {
-          "speaker": "Emma",
-          "text": "That was a good meal."
+          "speaker": "Mia",
+          "text": "That was a nice dinner."
         },
         {
-          "speaker": "Minh",
+          "speaker": "Leo",
           "text": "Yes. Could we have the bill?"
         },
         {
           "speaker": "Server",
-          "text": "Certainly. The total is forty dollars."
+          "text": "Of course. The total is thirty dollars."
         },
         {
-          "speaker": "Emma",
-          "text": "We ordered about the same amount."
+          "speaker": "Mia",
+          "text": "We shared the meal, so we can pay half each."
         },
         {
-          "speaker": "Minh",
-          "text": "Good idea. Let us split the bill."
+          "speaker": "Leo",
+          "text": "Okay. Let's split the bill."
         },
         {
           "speaker": "Server",
-          "text": "That is fine. How would you like to pay?"
+          "text": "No problem. How would you like to pay?"
         },
         {
-          "speaker": "Minh",
+          "speaker": "Leo",
           "text": "Can I pay by card?"
         },
         {
           "speaker": "Server",
-          "text": "Yes, of course. Emma, how would you like to pay?"
+          "text": "Yes. Your half is fifteen dollars. Mia, how about you?"
         },
         {
-          "speaker": "Emma",
-          "text": "I'll pay in cash. Here's twenty-two dollars. Keep the change."
+          "speaker": "Mia",
+          "text": "I'll pay twenty dollars in cash. Keep the change."
         },
         {
           "speaker": "Server",
@@ -5974,9 +5974,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_347_20019246",
+      "dialogue_id": "dlg_347_f2df83b4",
       "verified": true,
-      "verified_at": "2026-08-18T04:51:49.734Z",
+      "verified_at": "2026-08-18T05:34:45.126Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -5994,88 +5994,88 @@
       "turns": [
         {
           "speaker": "Nora",
-          "text": "We are finished. Shall we ask for the bill?"
+          "text": "Could we have the bill, please?"
+        },
+        {
+          "speaker": "Server",
+          "text": "Of course. Here it is. The total is thirty-six dollars."
         },
         {
           "speaker": "Minh",
-          "text": "Yes. I'll pay the whole bill by card."
+          "text": "I'll pay by credit card. This one's on me."
+        },
+        {
+          "speaker": "Server",
+          "text": "Certainly. Please tap your card here."
         },
         {
           "speaker": "Nora",
-          "text": "Are you sure? I only have cash today."
-        },
-        {
-          "speaker": "Minh",
-          "text": "That's okay. This one's on me."
+          "text": "Thanks, Minh. I'll leave the tip."
         },
         {
           "speaker": "Nora",
-          "text": "Thank you. The total is thirty-six dollars."
+          "text": "I only have a five-dollar bill in cash. Could you change it?"
         },
         {
-          "speaker": "Minh",
-          "text": "I'll pay by card, so there won't be any change."
-        },
-        {
-          "speaker": "Nora",
-          "text": "Then I'll leave two dollars in cash as a tip."
-        },
-        {
-          "speaker": "Minh",
-          "text": "Good idea."
+          "speaker": "Server",
+          "text": "Of course. Here is three dollars in change."
         },
         {
           "speaker": "Nora",
-          "text": "Don't forget the receipt."
+          "text": "Perfect. I'll leave two dollars."
         },
         {
           "speaker": "Minh",
-          "text": "Right. I'll ask the server for it."
+          "text": "Could I have the receipt, please?"
+        },
+        {
+          "speaker": "Server",
+          "text": "Sure. Here you are."
         }
       ],
       "fill_blank_words": [
         "bill",
         "card",
+        "tip",
         "cash",
         "change",
-        "tip",
         "receipt"
       ],
       "fill_blank_marks": [
         {
           "turn_index": 0,
-          "start": 38,
-          "end": 42,
+          "start": 18,
+          "end": 22,
           "word": "bill",
           "blank_id": "l4-read-b01"
         },
         {
-          "turn_index": 1,
-          "start": 32,
-          "end": 36,
+          "turn_index": 2,
+          "start": 19,
+          "end": 23,
           "word": "card",
           "blank_id": "l4-read-b02"
         },
         {
-          "turn_index": 2,
-          "start": 26,
-          "end": 30,
+          "turn_index": 4,
+          "start": 29,
+          "end": 32,
+          "word": "tip",
+          "blank_id": "l4-read-b05"
+        },
+        {
+          "turn_index": 5,
+          "start": 34,
+          "end": 38,
           "word": "cash",
           "blank_id": "l4-read-b03"
         },
         {
-          "turn_index": 5,
-          "start": 40,
-          "end": 46,
+          "turn_index": 6,
+          "start": 36,
+          "end": 42,
           "word": "change",
           "blank_id": "l4-read-b04"
-        },
-        {
-          "turn_index": 6,
-          "start": 41,
-          "end": 44,
-          "word": "tip",
-          "blank_id": "l4-read-b05"
         },
         {
           "turn_index": 8,
@@ -6087,9 +6087,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_350_a4c2966a",
+      "dialogue_id": "dlg_350_6aaa4bf7",
       "verified": true,
-      "verified_at": "2026-08-18T04:51:49.734Z",
+      "verified_at": "2026-08-18T05:34:45.126Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -6106,51 +6106,51 @@
       "turn_count": 10,
       "turns": [
         {
+          "speaker": "Server",
+          "text": "Here is your bill. The total is twenty-eight dollars."
+        },
+        {
           "speaker": "Mia",
-          "text": "The bill is twenty-four dollars. How should we pay?"
+          "text": "Thanks. Minh, shall we split it?"
         },
         {
           "speaker": "Minh",
-          "text": "I can pay the whole bill by credit card. This one's on me."
+          "text": "No, I'll pay this time."
         },
         {
           "speaker": "Mia",
-          "text": "Really? Thanks, Minh."
+          "text": "Are you sure?"
         },
         {
           "speaker": "Minh",
-          "text": "No problem. I'll pay the full twenty-four dollars."
+          "text": "Yes. I'll pay by card."
+        },
+        {
+          "speaker": "Server",
+          "text": "Certainly. Please tap your card here."
         },
         {
           "speaker": "Mia",
-          "text": "Then I'll leave the tip."
+          "text": "Then I'll leave a small tip in cash."
         },
         {
           "speaker": "Minh",
           "text": "Good idea."
         },
         {
-          "speaker": "Mia",
-          "text": "I have some cash. I'll leave two dollars."
+          "speaker": "Server",
+          "text": "Your payment is complete. Would you like the receipt?"
         },
         {
           "speaker": "Minh",
-          "text": "Perfect."
-        },
-        {
-          "speaker": "Mia",
-          "text": "Don't forget the receipt."
-        },
-        {
-          "speaker": "Minh",
-          "text": "Right. I'll take it after I pay."
+          "text": "Yes, please. Thank you."
         }
       ]
     },
     {
-      "dialogue_id": "dlg_351_06141cf4",
+      "dialogue_id": "dlg_351_2daab26e",
       "verified": true,
-      "verified_at": "2026-08-18T04:51:49.734Z",
+      "verified_at": "2026-08-18T05:34:45.126Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -6168,50 +6168,50 @@
       "turns": [
         {
           "speaker": "Nhân vật",
-          "text": "Good evening. Are you ready to pay?"
+          "text": "How was your meal?"
         },
         {
           "speaker": "Bạn",
-          "text": "Could I have the bill, please?"
+          "text": "It was very good, thank you. Could I have the bill, please?"
         },
         {
           "speaker": "Nhân vật",
-          "text": "Of course. Here is the bill. The total is thirty dollars. How would you like to pay?"
+          "text": "Of course. Here it is. The total is thirty dollars."
         },
         {
           "speaker": "Bạn",
-          "text": "I'd like to pay by card."
+          "text": "Thank you. I would like to pay by credit card, please."
         },
         {
           "speaker": "Nhân vật",
-          "text": "Certainly. Please tap your card here."
+          "text": "Sure. Please tap your card here."
         },
         {
           "speaker": "Bạn",
-          "text": "Okay."
+          "text": "Okay. I'll tap my card here now."
         },
         {
           "speaker": "Nhân vật",
-          "text": "Your payment is complete."
+          "text": "Your payment is complete. Would you like the receipt?"
         },
         {
           "speaker": "Bạn",
-          "text": "Could I have the receipt, please?"
+          "text": "Yes, please. I would like to keep the receipt."
         },
         {
           "speaker": "Nhân vật",
-          "text": "Of course. Here is your receipt."
+          "text": "Of course. Here you are."
         },
         {
           "speaker": "Bạn",
-          "text": "Thank you."
+          "text": "Thank you. The meal was very good."
         }
       ]
     },
     {
-      "dialogue_id": "dlg_352_a0eb273d",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_352_a8034343",
+      "verified": true,
+      "verified_at": "2026-08-18T05:34:45.126Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-04",
@@ -6229,19 +6229,19 @@
       "turns": [
         {
           "speaker": "Leo",
-          "text": "Are you ready to pay now?"
+          "text": "Would you like the bill now?"
         },
         {
           "speaker": "Bạn",
-          "text": "Yes. Could I have the bill, please?"
+          "text": "Yes, please. Could I have the bill now? I'm ready to pay."
         },
         {
           "speaker": "Leo",
-          "text": "Here is the bill. The total is eighteen dollars. How would you like to pay?"
+          "text": "Of course. Here you are. The total is eighteen dollars."
         },
         {
           "speaker": "Bạn",
-          "text": "I will pay in cash."
+          "text": "I'll pay in cash. Here's twenty dollars for the bill."
         },
         {
           "speaker": "Leo",
@@ -6249,7 +6249,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Keep the change."
+          "text": "Thanks. You can keep the change as a tip."
         },
         {
           "speaker": "Leo",
@@ -6257,15 +6257,15 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, could I have the receipt, please?"
+          "text": "Yes, please. Could I have the receipt too?"
         },
         {
           "speaker": "Leo",
-          "text": "Here is your receipt. Is everything okay?"
+          "text": "Certainly. Here you are."
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, thank you. Everything is fine."
+          "text": "Thank you. Everything was very good today."
         }
       ]
     },
@@ -13440,5 +13440,5 @@
       ]
     }
   ],
-  "updated_at": "2026-08-18T04:51:49.734Z"
+  "updated_at": "2026-08-18T05:34:45.126Z"
 }
