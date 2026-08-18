@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "export_type": "communication_dialogue_review",
-  "exported_at": "2026-08-18T05:34:45.126Z",
+  "exported_at": "2026-08-18T09:02:09.137Z",
   "storage": "standalone-json-review",
   "navigation_status": "all",
   "summary": {
     "dialogues": 209,
-    "verified": 99,
-    "unverified": 110
+    "verified": 105,
+    "unverified": 104
   },
   "items": [
     {
@@ -3471,9 +3471,9 @@
       ]
     },
     {
-      "dialogue_id": "dlg_268_6f4c6e09",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_268_350c338d",
+      "verified": true,
+      "verified_at": "2026-08-18T09:02:09.137Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -3499,30 +3499,30 @@
         },
         {
           "speaker": "Linh",
-          "text": "My English class starts at half past two."
+          "text": "My English class starts at half past two, so I need to go soon."
         },
         {
           "speaker": "Minh",
-          "text": "I work from three to six today."
+          "text": "What time does it finish?"
         },
         {
           "speaker": "Linh",
-          "text": "Are you free at six thirty?"
+          "text": "At five. Are you working today?"
         },
         {
           "speaker": "Minh",
-          "text": "Yes. I finish work at six, so six thirty is fine."
+          "text": "Yes. I work from three to six. Are you free at six thirty?"
         },
         {
           "speaker": "Linh",
-          "text": "Great. We can have dinner at seven."
+          "text": "Yes. Let's meet for dinner at six thirty."
         }
       ]
     },
     {
-      "dialogue_id": "dlg_629_a331e98a",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_629_5ab45466",
+      "verified": true,
+      "verified_at": "2026-08-18T09:02:09.137Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -3540,7 +3540,7 @@
       "turns": [
         {
           "speaker": "Emma",
-          "text": "We have a meeting later. What time is it?"
+          "text": "I need to leave for class soon. What time is it?"
         },
         {
           "speaker": "Minh",
@@ -3548,19 +3548,19 @@
         },
         {
           "speaker": "Emma",
-          "text": "My class ends at half past four."
+          "text": "Thanks. My class ends at half past four."
         },
         {
           "speaker": "Minh",
-          "text": "That gives you enough time."
+          "text": "That gives you plenty of time."
         },
         {
           "speaker": "Emma",
-          "text": "What is your work schedule today?"
+          "text": "What about you? Are you working today?"
         },
         {
           "speaker": "Minh",
-          "text": "I work from nine to five."
+          "text": "Yes. I work from nine to five."
         },
         {
           "speaker": "Emma",
@@ -3568,22 +3568,22 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes. Six works well for me."
+          "text": "Yes. Six works for me."
         },
         {
           "speaker": "Emma",
-          "text": "Great. We can meet outside the library."
+          "text": "Great. Let's meet outside the library."
         },
         {
           "speaker": "Minh",
-          "text": "Perfect. I will be there a little early."
+          "text": "Sure. I'll be there a little early."
         }
       ]
     },
     {
-      "dialogue_id": "dlg_273_a7cf2f85",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_273_72d244c0",
+      "verified": true,
+      "verified_at": "2026-08-18T09:02:09.137Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -3601,19 +3601,11 @@
       "turns": [
         {
           "speaker": "Nora",
-          "text": "What time does your workday start?"
+          "text": "What time do you finish work today?"
         },
         {
           "speaker": "Minh",
-          "text": "At nine o'clock."
-        },
-        {
-          "speaker": "Nora",
-          "text": "And when do you finish?"
-        },
-        {
-          "speaker": "Minh",
-          "text": "At half past five today."
+          "text": "At half past five."
         },
         {
           "speaker": "Nora",
@@ -3621,15 +3613,15 @@
         },
         {
           "speaker": "Minh",
-          "text": "Then six o'clock is too early for us to meet."
+          "text": "Then six o'clock is a little too early for us to meet."
         },
         {
           "speaker": "Nora",
-          "text": "Yes. Are you free at a quarter past six?"
+          "text": "Are you free at a quarter past six?"
         },
         {
           "speaker": "Minh",
-          "text": "Six fifteen is a little early for me. How about half past six?"
+          "text": "I might be a little late. How about half past six?"
         },
         {
           "speaker": "Nora",
@@ -3637,14 +3629,22 @@
         },
         {
           "speaker": "Minh",
-          "text": "Great. I will meet you at the cafe then."
+          "text": "Great. Shall we meet at the cafe near the station?"
+        },
+        {
+          "speaker": "Nora",
+          "text": "Sure. I can get there a few minutes early."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Perfect. See you at six thirty."
         }
       ]
     },
     {
-      "dialogue_id": "dlg_275_0e9218ac",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_275_283cc28c",
+      "verified": true,
+      "verified_at": "2026-08-18T09:02:09.137Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -3670,35 +3670,35 @@
         },
         {
           "speaker": "Emma",
-          "text": "Is it at half past nine?"
+          "text": "Should we meet at half past eight?"
         },
         {
           "speaker": "Minh",
-          "text": "No. Let's meet at a quarter to nine."
+          "text": "Maybe a quarter past eight is better."
         },
         {
           "speaker": "Emma",
-          "text": "Okay. I will come early."
+          "text": "Good idea. I like to arrive early."
         },
         {
           "speaker": "Minh",
-          "text": "Good. Please don't be late."
+          "text": "Me too. I do not want to be late."
         },
         {
           "speaker": "Emma",
-          "text": "What time do I need to leave home?"
+          "text": "Shall we meet at the station?"
         },
         {
           "speaker": "Minh",
-          "text": "Eight o'clock is good."
+          "text": "Sure. It takes about twenty minutes to get there."
         },
         {
           "speaker": "Emma",
-          "text": "Great. I will see you there."
+          "text": "Okay. I will leave home at eight."
         },
         {
           "speaker": "Minh",
-          "text": "Perfect. See you then."
+          "text": "Perfect. See you tomorrow."
         }
       ],
       "fill_blank_words": [
@@ -3726,38 +3726,38 @@
         },
         {
           "turn_index": 2,
-          "start": 9,
-          "end": 13,
+          "start": 18,
+          "end": 22,
           "word": "half",
           "blank_id": "l2-read-b03"
         },
         {
           "turn_index": 3,
-          "start": 20,
-          "end": 27,
+          "start": 8,
+          "end": 15,
           "word": "quarter",
           "blank_id": "l2-read-b04"
         },
         {
           "turn_index": 4,
-          "start": 18,
-          "end": 23,
+          "start": 28,
+          "end": 33,
           "word": "early",
           "blank_id": "l2-read-b05"
         },
         {
           "turn_index": 5,
-          "start": 22,
-          "end": 26,
+          "start": 28,
+          "end": 32,
           "word": "late",
           "blank_id": "l2-read-b06"
         }
       ]
     },
     {
-      "dialogue_id": "dlg_277_a41ce41f",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_277_76271ca3",
+      "verified": true,
+      "verified_at": "2026-08-18T09:02:09.137Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -3779,46 +3779,46 @@
         },
         {
           "speaker": "Bạn",
-          "text": "It starts at three o'clock."
+          "text": "It starts at three o'clock, and it finishes at half past four."
         },
         {
           "speaker": "Nhân vật",
-          "text": "And what time does it finish?"
+          "text": "Do you have work after class?"
         },
         {
           "speaker": "Bạn",
-          "text": "It finishes at half past four."
+          "text": "Yes. I work from five to six, so I am free after six."
         },
         {
           "speaker": "Nhân vật",
-          "text": "What is your work schedule tomorrow?"
+          "text": "Would you like to get coffee at six thirty?"
         },
         {
           "speaker": "Bạn",
-          "text": "I work from nine to five."
+          "text": "Yes, I would. Where should we meet?"
         },
         {
           "speaker": "Nhân vật",
-          "text": "Are you free after work?"
+          "text": "How about the cafe near the station?"
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, I am free at six o'clock."
+          "text": "That works for me. I can get there a little early."
         },
         {
           "speaker": "Nhân vật",
-          "text": "Good. Should we arrive right at six?"
+          "text": "Great. Let's meet there at six thirty."
         },
         {
           "speaker": "Bạn",
-          "text": "We can arrive ten minutes early."
+          "text": "Perfect. I will see you at the cafe at six thirty."
         }
       ]
     },
     {
-      "dialogue_id": "dlg_278_a8cd8304",
-      "verified": false,
-      "verified_at": null,
+      "dialogue_id": "dlg_278_172640e2",
+      "verified": true,
+      "verified_at": "2026-08-18T09:02:09.137Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-03",
@@ -3840,39 +3840,39 @@
         },
         {
           "speaker": "Bạn",
-          "text": "It finishes at half past four."
+          "text": "It finishes at half past four, so I should be free after five."
         },
         {
           "speaker": "Leo",
-          "text": "I finish work at five. Are you free at six?"
+          "text": "Great. I finish work at five. Would you like to go to the movies at six?"
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, I am free at six."
+          "text": "Yes, I would. Six o'clock works well for me."
         },
         {
           "speaker": "Leo",
-          "text": "Great. The movie starts at a quarter past seven."
+          "text": "There is a movie at a quarter past seven. We could have dinner first."
         },
         {
           "speaker": "Bạn",
-          "text": "That gives us enough time for dinner first."
+          "text": "Good idea. We have enough time for a quick dinner before the movie."
         },
         {
           "speaker": "Leo",
-          "text": "We only need about thirty minutes for a quick dinner. What time should we meet?"
+          "text": "Then what time should we meet?"
         },
         {
           "speaker": "Bạn",
-          "text": "Let's meet at half past six."
+          "text": "Let's meet at half past six in front of the cinema."
         },
         {
           "speaker": "Leo",
-          "text": "Perfect. I will try to arrive early."
+          "text": "Perfect. I'll try to arrive a little early."
         },
         {
           "speaker": "Bạn",
-          "text": "Great. I will see you at half past six."
+          "text": "Great. I'll be there a few minutes early too. See you at six thirty."
         }
       ]
     },
@@ -13440,5 +13440,5 @@
       ]
     }
   ],
-  "updated_at": "2026-08-18T05:34:45.126Z"
+  "updated_at": "2026-08-18T09:02:09.137Z"
 }
