@@ -81,6 +81,15 @@ h1 {
   color: #0f766e;
 }
 
+.file-actions .danger {
+  background: #fff1f2;
+  color: #be123c;
+}
+
+.file-actions .danger:hover {
+  background: #ffe4e6;
+}
+
 .summary-bar {
   position: relative;
   display: grid;
@@ -489,13 +498,19 @@ h1 {
 .turn-content {
   position: relative;
   min-width: 0;
-  padding-right: 34px;
+  padding-right: 82px;
 }
 
-.turn-note-toggle {
+.turn-tools {
   position: absolute;
   top: -3px;
   right: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.turn-note-toggle {
   display: grid;
   place-items: center;
   width: 28px;
@@ -508,6 +523,24 @@ h1 {
   font-size: .88rem;
   font-weight: 700;
   line-height: 1;
+}
+
+.turn-edit-toggle {
+  min-width: 43px;
+  height: 28px;
+  padding: 0 8px;
+  border: 1px solid #cfe0e6;
+  border-radius: 9px;
+  background: #f3f8fa;
+  color: #466575;
+  font-size: .72rem;
+  font-weight: 700;
+}
+
+.turn-edit-toggle:hover {
+  border-color: #9fc7d5;
+  background: #eaf5f8;
+  color: #155e75;
 }
 
 .turn-note-toggle:hover,
@@ -529,6 +562,61 @@ h1 {
   line-height: 1.35;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.turn-text-editor {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 7px;
+  margin-top: 7px;
+}
+
+.turn-text-editor[hidden] {
+  display: none;
+}
+
+.turn-text-input {
+  width: 100%;
+  min-width: 0;
+  min-height: 74px;
+  resize: vertical;
+  padding: 8px 9px;
+  border: 1px solid #b9d3dc;
+  border-radius: 9px;
+  outline: 0;
+  background: #fff;
+  color: #243d4d;
+  font: inherit;
+  font-size: .86rem;
+  line-height: 1.4;
+}
+
+.turn-text-input:focus {
+  border-color: #4f9fb8;
+  box-shadow: 0 0 0 3px rgba(14, 116, 144, .10);
+}
+
+.turn-edit-actions {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.turn-edit-actions button {
+  min-height: 36px;
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 9px;
+  background: #0e7490;
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.turn-edit-actions button.secondary {
+  background: #eef3f5;
+  color: #5d7382;
 }
 
 .turn-note-editor {
@@ -588,10 +676,16 @@ h1 {
 }
 
 @media (max-width: 520px) {
+  .turn-content {
+    padding-right: 78px;
+  }
+
+  .turn-text-editor,
   .turn-note-editor {
     grid-template-columns: 1fr;
   }
 
+  .turn-edit-actions,
   .turn-note-actions {
     justify-content: flex-end;
   }

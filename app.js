@@ -9,9 +9,11 @@
     visibleItems: [],
     currentId: '',
     fileHandle: null,
+    sourceSnapshot: null,
     localPatches: null,
     fileWriteQueue: Promise.resolve(),
-    openNote: null
+    openNote: null,
+    openEdit: null
   };
 
   function clone(value) {
@@ -212,6 +214,18 @@
     return writeLocalReviewPatches();
   }
 
+  function persistTurnTextPatch(item, turnIndex) {
+    const turn = item?.turns?.[turnIndex];
+    if (!item || !turn) return false;
+    const patch = localPatchFor(item.dialogue_id);
+    if (!patch.texts || typeof patch.texts !== 'object') patch.texts = {};
+    patch.texts[String(turnIndex)] = {
+      text: String(turn.text ?? ''),
+      updated_at: new Date().toISOString()
+    };
+    return writeLocalReviewPatches();
+  }
+
   function applyLocalReviewPatches(target) {
     if (!target || !Array.isArray(target.items)) return target;
     const patches = state.localPatches?.items;
@@ -224,6 +238,21 @@
       if (typeof patch.verified === 'boolean') {
         item.verified = patch.verified;
         item.verified_at = patch.verified ? (patch.verified_at || null) : null;
+      }
+
+      if (patch.texts && typeof patch.texts === 'object' && Array.isArray(item.turns)) {
+        Object.entries(patch.texts).forEach(([indexKey, textPatch]) => {
+          const turnIndex = Number(indexKey);
+          const turn = item.turns[turnIndex];
+          if (!turn) return;
+          const nextText = textPatch && typeof textPatch === 'object'
+            ? textPatch.text
+            : textPatch;
+          if (typeof nextText === 'string') {
+            turn.text = nextText;
+            rebaseFillBlankMarks(item, turnIndex, nextText);
+          }
+        });
       }
 
       if (patch.notes && typeof patch.notes === 'object' && Array.isArray(item.turns)) {
@@ -457,6 +486,7 @@
     if (next < 0 || next >= state.visibleItems.length) return;
     state.currentId = state.visibleItems[next].dialogue_id;
     state.openNote = null;
+    state.openEdit = null;
     render();
     centerReviewCard();
   }
@@ -518,13 +548,38 @@
           </div>
           <div class="turn-content">
             <div class="turn-text">${renderTurnText(item, turn, turnIndex)}</div>
-            <button
-              class="turn-note-toggle ${savedNote ? 'is-noted' : ''}"
-              type="button"
-              data-note-toggle="${turnIndex}"
-              aria-label="${savedNote ? 'Sửa ghi chú' : 'Thêm ghi chú'} cho câu ${turnIndex + 1}"
-              title="${savedNote ? 'Sửa ghi chú' : 'Thêm ghi chú'}"
-            >✎</button>
+            <div class="turn-tools">
+              <button
+                class="turn-edit-toggle"
+                type="button"
+                data-edit-toggle="${turnIndex}"
+                aria-label="Sửa trực tiếp câu thoại ${turnIndex + 1}"
+                title="Sửa trực tiếp câu thoại"
+              >Sửa</button>
+              <button
+                class="turn-note-toggle ${savedNote ? 'is-noted' : ''}"
+                type="button"
+                data-note-toggle="${turnIndex}"
+                aria-label="${savedNote ? 'Sửa ghi chú' : 'Thêm ghi chú'} cho câu ${turnIndex + 1}"
+                title="${savedNote ? 'Sửa ghi chú' : 'Thêm ghi chú'}"
+              >✎</button>
+            </div>
+            <div
+              class="turn-text-editor"
+              data-edit-editor="${turnIndex}"
+              ${state.openEdit && state.openEdit.dialogueId === item.dialogue_id && state.openEdit.turnIndex === turnIndex ? '' : 'hidden'}
+            >
+              <textarea
+                class="turn-text-input"
+                rows="3"
+                maxlength="3000"
+                data-edit-input="${turnIndex}"
+              >${esc(turn.text || '')}</textarea>
+              <div class="turn-edit-actions">
+                <button type="button" data-edit-save="${turnIndex}">Lưu thoại</button>
+                <button type="button" class="secondary" data-edit-cancel="${turnIndex}">Hủy</button>
+              </div>
+            </div>
             ${savedNote ? `<div class="turn-note-preview">${esc(savedNote)}</div>` : ''}
             <div
               class="turn-note-editor"
@@ -577,6 +632,110 @@
     return state.fileWriteQueue;
   }
 
+  function rebaseFillBlankMarks(item, turnIndex, newText) {
+    if (!item || item.activity_title !== 'Reading — Fill Blank' || !Array.isArray(item.fill_blank_marks)) {
+      return { ok: true, updated: 0 };
+    }
+
+    const marks = item.fill_blank_marks
+      .filter(mark => Number(mark?.turn_index) === turnIndex)
+      .sort((a, b) => Number(a.start) - Number(b.start));
+    if (!marks.length) return { ok: true, updated: 0 };
+
+    const lowerText = newText.toLocaleLowerCase();
+    let cursor = 0;
+    const nextRanges = [];
+
+    for (const mark of marks) {
+      const word = String(mark?.word ?? '').trim();
+      if (!word) continue;
+      const start = lowerText.indexOf(word.toLocaleLowerCase(), cursor);
+      if (start < 0) {
+        return { ok: false, missing: word };
+      }
+      nextRanges.push({ mark, start, end: start + word.length });
+      cursor = start + word.length;
+    }
+
+    nextRanges.forEach(range => {
+      range.mark.start = range.start;
+      range.mark.end = range.end;
+    });
+    return { ok: true, updated: nextRanges.length };
+  }
+
+  async function saveTurnText(turnIndex, value) {
+    const item = currentItem();
+    const turn = item?.turns?.[turnIndex];
+    if (!turn || !state.data) return;
+
+    const text = String(value ?? '').trim();
+    if (!text) {
+      setNotice('Câu thoại không được để trống.');
+      return;
+    }
+
+    const rebased = rebaseFillBlankMarks(item, turnIndex, text);
+    if (!rebased.ok) {
+      setNotice(`Không thể lưu: câu này phải giữ từ điền “${rebased.missing}”.`);
+      return;
+    }
+
+    if (text === String(turn.text ?? '')) {
+      state.openEdit = null;
+      render();
+      return;
+    }
+
+    turn.text = text;
+    state.data.updated_at = new Date().toISOString();
+    state.data.storage = state.fileHandle
+      ? 'browser-file-system-access'
+      : 'browser-localStorage';
+    state.openEdit = null;
+    render();
+
+    if (state.fileHandle) {
+      const written = await persistCurrentFileSilently();
+      setNotice(written
+        ? 'Đã sửa câu thoại và ghi trực tiếp vào file JSON.'
+        : 'Đã sửa câu thoại trong dữ liệu hiện tại, nhưng chưa ghi được file.');
+    } else {
+      const persisted = persistTurnTextPatch(item, turnIndex);
+      setNotice(persisted
+        ? 'Đã sửa câu thoại. Reload vẫn giữ nguyên.'
+        : 'Đã sửa câu thoại, nhưng trình duyệt không lưu được localStorage.');
+    }
+  }
+
+  function toggleEditEditor(turnIndex, forceOpen = null) {
+    const item = currentItem();
+    if (!item || !item.turns?.[turnIndex]) return;
+
+    const isOpen = Boolean(
+      state.openEdit
+      && state.openEdit.dialogueId === item.dialogue_id
+      && state.openEdit.turnIndex === turnIndex
+    );
+    const shouldOpen = forceOpen === null ? !isOpen : Boolean(forceOpen);
+
+    state.openNote = null;
+    state.openEdit = shouldOpen
+      ? { dialogueId: item.dialogue_id, turnIndex }
+      : null;
+
+    render();
+
+    if (shouldOpen) {
+      window.requestAnimationFrame(() => {
+        const input = document.querySelector(`[data-edit-input="${turnIndex}"]`);
+        if (!input) return;
+        input.focus();
+        input.setSelectionRange(input.value.length, input.value.length);
+      });
+    }
+  }
+
   async function saveTurnNote(turnIndex, value) {
     const item = currentItem();
     const turn = item?.turns?.[turnIndex];
@@ -626,6 +785,7 @@
     );
     const shouldOpen = forceOpen === null ? !isOpen : Boolean(forceOpen);
 
+    state.openEdit = null;
     state.openNote = shouldOpen
       ? { dialogueId: item.dialogue_id, turnIndex }
       : null;
@@ -677,6 +837,39 @@
           ? 'Đã xác minh. Reload vẫn giữ nguyên.'
           : 'Đã bỏ xác minh. Reload vẫn giữ nguyên.')
       : 'Đã đổi trạng thái, nhưng trình duyệt không lưu được localStorage.');
+  }
+
+  function clearReviewLocalStorage() {
+    const patchCount = localPatchCount();
+    const confirmed = window.confirm(
+      patchCount
+        ? `Xóa localStorage của Dialogue Review? ${patchCount} hội thoại đang có dữ liệu lưu cục bộ sẽ được reset về JSON nguồn.`
+        : 'Xóa localStorage của Dialogue Review?'
+    );
+    if (!confirmed) return;
+
+    try {
+      window.localStorage.removeItem(LOCAL_REVIEW_STORAGE_KEY);
+    } catch (error) {
+      console.warn('Không xóa được localStorage review state:', error);
+      setNotice('Không xóa được localStorage trên trình duyệt này.');
+      return;
+    }
+
+    state.localPatches = { items: {} };
+    state.openNote = null;
+    state.openEdit = null;
+
+    if (!state.fileHandle && state.sourceSnapshot) {
+      state.data = normalizeData(clone(state.sourceSnapshot));
+      state.currentId = '';
+      fillFilters({ resetLesson: true, resetActivity: true });
+      rebuildVisible({ preserveCurrent: false });
+      setNotice('Đã xóa localStorage và reset dữ liệu về JSON nguồn.');
+      return;
+    }
+
+    setNotice('Đã xóa localStorage của Dialogue Review. File JSON đang mở không bị thay đổi.');
   }
 
   function setNotice(message) {
@@ -837,6 +1030,7 @@
     const file = await handle.getFile();
     const payload = JSON.parse(await file.text());
     state.fileHandle = handle;
+    state.sourceSnapshot = clone(payload);
     state.data = normalizeData(payload);
     state.currentId = '';
     $('saveJsonBtn').hidden = false;
@@ -863,6 +1057,7 @@
     try {
       const payload = JSON.parse(await file.text());
       state.fileHandle = null;
+      state.sourceSnapshot = clone(payload);
       state.data = normalizeData(payload);
       state.currentId = '';
       $('saveJsonBtn').hidden = true;
@@ -881,7 +1076,9 @@
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       state.fileHandle = null;
       state.localPatches = readLocalReviewPatches();
-      state.data = applyLocalReviewPatches(normalizeData(await response.json()));
+      const payload = await response.json();
+      state.sourceSnapshot = clone(payload);
+      state.data = applyLocalReviewPatches(normalizeData(payload));
       fillFilters({ resetLesson: true, resetActivity: true });
       rebuildVisible({ preserveCurrent: false });
       setNotice(localPatchCount()
@@ -896,6 +1093,26 @@
   }
 
   $('dialogueList').addEventListener('click', event => {
+    const editToggle = event.target.closest('[data-edit-toggle]');
+    if (editToggle) {
+      toggleEditEditor(Number(editToggle.dataset.editToggle));
+      return;
+    }
+
+    const editSave = event.target.closest('[data-edit-save]');
+    if (editSave) {
+      const index = Number(editSave.dataset.editSave);
+      const input = document.querySelector(`[data-edit-input="${index}"]`);
+      saveTurnText(index, input?.value || '');
+      return;
+    }
+
+    const editCancel = event.target.closest('[data-edit-cancel]');
+    if (editCancel) {
+      toggleEditEditor(Number(editCancel.dataset.editCancel), false);
+      return;
+    }
+
     const toggle = event.target.closest('[data-note-toggle]');
     if (toggle) {
       toggleNoteEditor(Number(toggle.dataset.noteToggle));
@@ -917,6 +1134,20 @@
   });
 
   $('dialogueList').addEventListener('keydown', event => {
+    if (event.target.matches('[data-edit-input]')) {
+      const index = Number(event.target.dataset.editInput);
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        toggleEditEditor(index, false);
+        return;
+      }
+      if (event.key === 'Enter' && (event.ctrlKey || event.metaKey)) {
+        event.preventDefault();
+        saveTurnText(index, event.target.value);
+        return;
+      }
+    }
+
     if (event.key !== 'Enter' || !event.target.matches('[data-note-input]')) return;
     event.preventDefault();
     const index = Number(event.target.dataset.noteInput);
@@ -932,6 +1163,7 @@
   $('exportJsonBtn').addEventListener('click', downloadJson);
   $('saveJsonBtn').addEventListener('click', saveToHandle);
   $('openJsonBtn').addEventListener('click', openJson);
+  $('clearLocalStorageBtn').addEventListener('click', clearReviewLocalStorage);
   $('fileInput').addEventListener('change', event => {
     loadUploadedFile(event.target.files?.[0]);
     event.target.value = '';
@@ -939,23 +1171,27 @@
 
   $('moduleFilter').addEventListener('change', () => {
     state.openNote = null;
+    state.openEdit = null;
     fillFilters({ resetLesson: true, resetActivity: true });
     rebuildVisible({ preserveCurrent: false });
   });
 
   $('lessonFilter').addEventListener('change', () => {
     state.openNote = null;
+    state.openEdit = null;
     fillFilters({ resetActivity: true });
     rebuildVisible({ preserveCurrent: false });
   });
 
   $('activityFilter').addEventListener('change', () => {
     state.openNote = null;
+    state.openEdit = null;
     rebuildVisible({ preserveCurrent: false });
   });
 
   $('statusFilter').addEventListener('change', () => {
     state.openNote = null;
+    state.openEdit = null;
     rebuildVisible({ preserveCurrent: false });
   });
 
