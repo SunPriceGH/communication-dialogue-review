@@ -67,15 +67,52 @@
     const text = noteText(next);
 
     if (text) {
-      const updatedAt = next.note && typeof next.note === 'object'
-        ? (next.note.updated_at || null)
-        : null;
-      next.note = { text, updated_at: updatedAt };
+      const noteObject = next.note && typeof next.note === 'object'
+        ? { ...next.note }
+        : {};
+      next.note = {
+        ...noteObject,
+        text,
+        updated_at: noteObject.updated_at || null
+      };
     } else {
       delete next.note;
     }
 
     return next;
+  }
+
+  function formatEditNote(oldText, newText) {
+    return `[${JSON.stringify(String(oldText ?? ''))}] -> [${JSON.stringify(String(newText ?? ''))}]`;
+  }
+
+  function buildAutoEditNote(turn, oldText, newText) {
+    const existingNote = turn?.note && typeof turn.note === 'object'
+      ? turn.note
+      : null;
+    const existingAuto = existingNote?.auto_edit && typeof existingNote.auto_edit === 'object'
+      ? existingNote.auto_edit
+      : null;
+
+    const originalText = typeof existingAuto?.original_text === 'string'
+      ? existingAuto.original_text
+      : String(oldText ?? '');
+
+    // Nếu trước đó là NOTE thủ công thì giữ lại bên dưới NOTE thay đổi tự động.
+    const manualNote = typeof existingAuto?.manual_note === 'string'
+      ? existingAuto.manual_note
+      : (existingNote && !existingAuto ? noteText(turn) : '');
+
+    const editLine = formatEditNote(originalText, newText);
+    return {
+      text: manualNote ? `${editLine}\n${manualNote}` : editLine,
+      updated_at: new Date().toISOString(),
+      auto_edit: {
+        original_text: originalText,
+        current_text: String(newText ?? ''),
+        manual_note: manualNote || ''
+      }
+    };
   }
 
   function itemHasNote(item) {
@@ -204,12 +241,7 @@
     if (!patch.notes || typeof patch.notes !== 'object') patch.notes = {};
     const text = noteText(turn);
     patch.notes[String(turnIndex)] = text
-      ? {
-          text,
-          updated_at: turn.note && typeof turn.note === 'object'
-            ? (turn.note.updated_at || null)
-            : null
-        }
+      ? normalizeTurn({ note: clone(turn.note) }).note
       : null;
     return writeLocalReviewPatches();
   }
@@ -261,10 +293,7 @@
           const turn = item.turns[turnIndex];
           if (!turn) return;
           if (notePatch && String(notePatch.text || '').trim()) {
-            turn.note = {
-              text: String(notePatch.text).trim(),
-              updated_at: notePatch.updated_at || null
-            };
+            turn.note = normalizeTurn({ note: clone(notePatch) }).note;
           } else {
             delete turn.note;
           }
@@ -681,30 +710,37 @@
       return;
     }
 
-    if (text === String(turn.text ?? '')) {
+    const oldText = String(turn.text ?? '');
+    if (text === oldText) {
       state.openEdit = null;
       render();
       return;
     }
 
+    // Câu mới được hiển thị ngay trong hội thoại; NOTE giữ dấu vết câu cũ -> câu mới
+    // để activity tự lọt vào nhóm “Có ghi chú” khi xuất JSON phục vụ upsert.
+    turn.note = buildAutoEditNote(turn, oldText, text);
     turn.text = text;
     state.data.updated_at = new Date().toISOString();
     state.data.storage = state.fileHandle
       ? 'browser-file-system-access'
       : 'browser-localStorage';
     state.openEdit = null;
-    render();
+    // NOTE tự động phải phản ánh ngay ở badge/filter “Có ghi chú”.
+    fillFilters();
+    rebuildVisible({ preserveCurrent: true });
 
     if (state.fileHandle) {
       const written = await persistCurrentFileSilently();
       setNotice(written
-        ? 'Đã sửa câu thoại và ghi trực tiếp vào file JSON.'
-        : 'Đã sửa câu thoại trong dữ liệu hiện tại, nhưng chưa ghi được file.');
+        ? 'Đã sửa câu thoại, tự tạo NOTE câu cũ -> câu mới và ghi trực tiếp vào file JSON.'
+        : 'Đã sửa câu thoại và tạo NOTE trong dữ liệu hiện tại, nhưng chưa ghi được file.');
     } else {
-      const persisted = persistTurnTextPatch(item, turnIndex);
-      setNotice(persisted
-        ? 'Đã sửa câu thoại. Reload vẫn giữ nguyên.'
-        : 'Đã sửa câu thoại, nhưng trình duyệt không lưu được localStorage.');
+      const textPersisted = persistTurnTextPatch(item, turnIndex);
+      const notePersisted = persistNotePatch(item, turnIndex);
+      setNotice(textPersisted && notePersisted
+        ? 'Đã sửa câu thoại và tự tạo NOTE câu cũ -> câu mới. Reload vẫn giữ nguyên.'
+        : 'Đã sửa câu thoại và tạo NOTE, nhưng trình duyệt không lưu được đầy đủ localStorage.');
     }
   }
 
