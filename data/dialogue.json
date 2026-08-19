@@ -1,0 +1,1289 @@
+{
+  "schema_version": 1,
+  "export_type": "communication_dialogue_review",
+  "exported_at": "2026-08-19T16:53:00+07:00",
+  "storage": "standalone-json-review",
+  "navigation_status": "all",
+  "summary": {
+    "dialogues": 16,
+    "verified": 16,
+    "unverified": 0
+  },
+  "items": [
+    {
+      "dialogue_id": "dlg_637_17ca2649",
+      "verified": true,
+      "verified_at": "2026-08-19T16:53:00+07:00",
+      "course_key": "communication-basic",
+      "course_title": "Giao tiếp cơ bản",
+      "module_key": "basic-module-05",
+      "module_title": "Mua sắm",
+      "lesson_key": "basic-05-01",
+      "lesson_title": "Price and Size",
+      "activity_id": 637,
+      "activity_key": "basic-05-01-drag-fill-dialogue",
+      "activity_title": "Drag-fill Dialogue",
+      "activity_type": "warmup",
+      "activity_sort_order": 4,
+      "dialogue_index": 1,
+      "source_path": "content.dragFillDialogue.lines",
+      "turn_count": 10,
+      "turns": [
+        {
+          "speaker": "Clerk",
+          "text": "This backpack is very popular."
+        },
+        {
+          "speaker": "Minh",
+          "text": "What size is it?"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "This one is small.",
+          "note": {
+            "text": "sửa toàn bộ! người ta đã nói có 2 sizes còn hỏi nữa à?",
+            "updated_at": "2026-08-18T11:24:30.725Z"
+          }
+        },
+        {
+          "speaker": "Minh",
+          "text": "Do you have a larger one?",
+          "note": {
+            "text": "sửa toàn bộ! người ta đã nói có 2 sizes còn hỏi nữa à?",
+            "updated_at": "2026-08-18T11:24:33.604Z"
+          }
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Yes. Here is the large one."
+        },
+        {
+          "speaker": "Minh",
+          "text": "It looks good. How much is this?"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "It is one hundred and twenty dollars."
+        },
+        {
+          "speaker": "Minh",
+          "text": "That is too expensive. Do you have a cheaper bag?"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Yes. This gray one is seventy dollars."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Great. I would like to see that one."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "dlg_370_8df92e57",
+      "verified": true,
+      "verified_at": "2026-08-19T16:53:00+07:00",
+      "course_key": "communication-basic",
+      "course_title": "Giao tiếp cơ bản",
+      "module_key": "basic-module-05",
+      "module_title": "Mua sắm",
+      "lesson_key": "basic-05-01",
+      "lesson_title": "Price and Size",
+      "activity_id": 370,
+      "activity_key": "basic-05-01-reading",
+      "activity_title": "Reading — Fill Blank",
+      "activity_type": "reading",
+      "activity_sort_order": 9,
+      "dialogue_index": 1,
+      "source_path": "content.fillBlankDialogue",
+      "turn_count": 10,
+      "turns": [
+        {
+          "speaker": "Clerk",
+          "text": "The price of this jacket is fifty dollars."
+        },
+        {
+          "speaker": "Anna",
+          "text": "That sounds quite cheap."
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Yes, and this one is on sale today.",
+          "note": {
+            "text": "Yes, and this one is on sale today.",
+            "updated_at": "2026-08-18T11:25:23.646Z"
+          }
+        },
+        {
+          "speaker": "Anna",
+          "text": "But the small one is too short for me.",
+          "note": {
+            "text": "But it is too short for me.",
+            "updated_at": "2026-08-18T11:25:41.598Z"
+          }
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Then try the large one."
+        },
+        {
+          "speaker": "Anna",
+          "text": "How much does the large one cost?"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "It is eighty dollars."
+        },
+        {
+          "speaker": "Anna",
+          "text": "That is more expensive than I expected."
+        },
+        {
+          "speaker": "Clerk",
+          "text": "I can show you another style for sixty dollars."
+        },
+        {
+          "speaker": "Anna",
+          "text": "Yes, please. I would like to compare them."
+        }
+      ],
+      "fill_blank_words": [
+        "price",
+        "cheap",
+        "small",
+        "large",
+        "cost",
+        "expensive"
+      ],
+      "fill_blank_marks": [
+        {
+          "turn_index": 0,
+          "start": 4,
+          "end": 9,
+          "word": "price",
+          "blank_id": "l1-read-b01"
+        },
+        {
+          "turn_index": 1,
+          "start": 18,
+          "end": 23,
+          "word": "cheap",
+          "blank_id": "l1-read-b02"
+        },
+        {
+          "turn_index": 3,
+          "start": 8,
+          "end": 13,
+          "word": "small",
+          "blank_id": "l1-read-b03"
+        },
+        {
+          "turn_index": 4,
+          "start": 13,
+          "end": 18,
+          "word": "large",
+          "blank_id": "l1-read-b04"
+        },
+        {
+          "turn_index": 5,
+          "start": 28,
+          "end": 32,
+          "word": "cost",
+          "blank_id": "l1-read-b05"
+        },
+        {
+          "turn_index": 7,
+          "start": 13,
+          "end": 22,
+          "word": "expensive",
+          "blank_id": "l1-read-b06"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "dlg_372_ea9660e6",
+      "verified": true,
+      "verified_at": "2026-08-19T16:53:00+07:00",
+      "course_key": "communication-basic",
+      "course_title": "Giao tiếp cơ bản",
+      "module_key": "basic-module-05",
+      "module_title": "Mua sắm",
+      "lesson_key": "basic-05-01",
+      "lesson_title": "Price and Size",
+      "activity_id": 372,
+      "activity_key": "basic-05-01-guided-dialogue",
+      "activity_title": "Guided Dialogue",
+      "activity_type": "dialogue",
+      "activity_sort_order": 11,
+      "dialogue_index": 1,
+      "source_path": "content.questions[canonical]",
+      "turn_count": 10,
+      "turns": [
+        {
+          "speaker": "Nhân vật",
+          "text": "Hello. Can I help you?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "How much is this green jacket?"
+        },
+        {
+          "speaker": "Nhân vật",
+          "text": "It is sixty dollars. Would you like to try it?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Not yet. What size is it?",
+          "note": {
+            "text": "Not yet. What size is it?",
+            "updated_at": "2026-08-18T11:26:32.753Z"
+          }
+        },
+        {
+          "speaker": "Nhân vật",
+          "text": "It is a medium.",
+          "note": {
+            "text": "\"It is a medium.\"",
+            "updated_at": "2026-08-18T11:26:46.113Z"
+          }
+        },
+        {
+          "speaker": "Bạn",
+          "text": "That's too small for me. Do you have a larger one?"
+        },
+        {
+          "speaker": "Nhân vật",
+          "text": "Yes. The large one is eighty-five dollars."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "That is too expensive for me."
+        },
+        {
+          "speaker": "Nhân vật",
+          "text": "I understand. I have another large jacket for fifty-five dollars."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "That price works for me. I would like to see it."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "dlg_373_44d6bc29",
+      "verified": true,
+      "verified_at": "2026-08-19T16:53:00+07:00",
+      "course_key": "communication-basic",
+      "course_title": "Giao tiếp cơ bản",
+      "module_key": "basic-module-05",
+      "module_title": "Mua sắm",
+      "lesson_key": "basic-05-01",
+      "lesson_title": "Price and Size",
+      "activity_id": 373,
+      "activity_key": "basic-05-01-roleplay",
+      "activity_title": "Roleplay",
+      "activity_type": "roleplay",
+      "activity_sort_order": 12,
+      "dialogue_index": 1,
+      "source_path": "content.turns[roleplay-canonical]",
+      "turn_count": 10,
+      "turns": [
+        {
+          "speaker": "Mia",
+          "text": "These two backpacks are popular. The black one is forty dollars and the gray one is sixty dollars. Which one is better for you?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "The black one is better for me."
+        },
+        {
+          "speaker": "Mia",
+          "text": "The black backpack is a small size. Do you need something bigger?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Yes, I need a larger one, please."
+        },
+        {
+          "speaker": "Mia",
+          "text": "The larger black backpack is fifty dollars. Is that price okay?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Yes, fifty dollars is okay for me."
+        },
+        {
+          "speaker": "Mia",
+          "text": "The larger backpack also comes in blue. Would you like to see it?",
+          "note": {
+            "text": "\" Which color would you like to see?\" -> \"Would you like to see it?\"",
+            "updated_at": "2026-08-18T11:28:22.085Z"
+          }
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Yes, I would like to see the blue one, please.",
+          "note": {
+            "text": "\"Yes, I would like to see the blue one, please.\"",
+            "updated_at": "2026-08-18T11:28:52.054Z"
+          }
+        },
+        {
+          "speaker": "Mia",
+          "text": "Here it is.",
+          "note": {
+            "text": "\"Here it is.\"",
+            "updated_at": "2026-08-18T11:29:23.408Z"
+          }
+        },
+        {
+          "speaker": "Bạn",
+          "text": "The blue one is prettier. I would like to buy it.",
+          "note": {
+            "text": "\"The blue one is prettier, I would like to buy it.\"",
+            "updated_at": "2026-08-18T11:29:54.794Z"
+          }
+        }
+      ]
+    },
+    {
+      "dialogue_id": "dlg_383_09f39ec2",
+      "verified": true,
+      "verified_at": "2026-08-19T16:53:00+07:00",
+      "course_key": "communication-basic",
+      "course_title": "Giao tiếp cơ bản",
+      "module_key": "basic-module-05",
+      "module_title": "Mua sắm",
+      "lesson_key": "basic-05-02",
+      "lesson_title": "Choosing Products",
+      "activity_id": 383,
+      "activity_key": "basic-05-02-roleplay",
+      "activity_title": "Roleplay",
+      "activity_type": "roleplay",
+      "activity_sort_order": 8,
+      "dialogue_index": 1,
+      "source_path": "content.turns[roleplay-canonical]",
+      "turn_count": 10,
+      "turns": [
+        {
+          "speaker": "Leo",
+          "text": "We have two desk lamps. The white lamp is brighter, and the black lamp is smaller. Which one do you prefer?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "I prefer the white lamp because I need more light."
+        },
+        {
+          "speaker": "Leo",
+          "text": "The white lamp has a metal base. Is that okay for you?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Yes, metal is fine for me."
+        },
+        {
+          "speaker": "Leo",
+          "text": "We also have the same lamp in blue. Would you like to see it?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Yes, please. I would like to compare it with the white one."
+        },
+        {
+          "speaker": "Leo",
+          "text": "Here is the blue lamp. It is also nice, but it costs five dollars more.",
+          "note": {
+            "text": "bỏ \"Which one costs less?\"",
+            "updated_at": "2026-08-18T11:35:34.200Z"
+          }
+        },
+        {
+          "speaker": "Bạn",
+          "text": "It's a bit expensive.",
+          "note": {
+            "text": "\"It's a bit expensive.\"",
+            "updated_at": "2026-08-18T11:36:05.793Z"
+          }
+        },
+        {
+          "speaker": "Leo",
+          "text": "Then would you like the white metal lamp?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Yes, I think I'll choose the white lamp."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "dlg_389_1ae0549c",
+      "verified": true,
+      "verified_at": "2026-08-19T16:53:00+07:00",
+      "course_key": "communication-basic",
+      "course_title": "Giao tiếp cơ bản",
+      "module_key": "basic-module-05",
+      "module_title": "Mua sắm",
+      "lesson_key": "basic-05-03",
+      "lesson_title": "Trying Things On",
+      "activity_id": 389,
+      "activity_key": "basic-05-03-opening",
+      "activity_title": "Opening — Dialogue Order",
+      "activity_type": "patterns",
+      "activity_sort_order": 1,
+      "dialogue_index": 1,
+      "source_path": "content.dialogueOrder.turns",
+      "turn_count": 9,
+      "turns": [
+        {
+          "speaker": "Minh",
+          "text": "Can I try this on?"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Of course."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Where is the fitting room? I don't see the sign."
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Go past the mirror near the back wall and turn right."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Thanks. This one feels a little tight."
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Would you like to try a different size?"
+        },
+        {
+          "speaker": "Minh",
+          "text": "Yes, please. Do you have a larger size?",
+          "note": {
+            "text": "\"Yes, please. Do you have a larger size?\"",
+            "updated_at": "2026-08-18T11:46:29.962Z"
+          }
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Yes. Try this one.",
+          "note": {
+            "text": "\" Yes. Try this one.\"",
+            "updated_at": "2026-08-18T11:46:40.322Z"
+          }
+        },
+        {
+          "speaker": "Minh",
+          "text": "Thanks. It fits well and feels comfortable."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "dlg_638_cb112e86",
+      "verified": true,
+      "verified_at": "2026-08-19T16:53:00+07:00",
+      "course_key": "communication-basic",
+      "course_title": "Giao tiếp cơ bản",
+      "module_key": "basic-module-05",
+      "module_title": "Mua sắm",
+      "lesson_key": "basic-05-03",
+      "lesson_title": "Trying Things On",
+      "activity_id": 638,
+      "activity_key": "basic-05-03-drag-fill-dialogue",
+      "activity_title": "Drag-fill Dialogue",
+      "activity_type": "warmup",
+      "activity_sort_order": 4,
+      "dialogue_index": 1,
+      "source_path": "content.dragFillDialogue.lines",
+      "turn_count": 10,
+      "turns": [
+        {
+          "speaker": "Clerk",
+          "text": "Would you like to take a look at this jacket?",
+          "note": {
+            "text": "Would you like to take a look at this jacket?",
+            "updated_at": "2026-08-18T11:47:01.947Z"
+          }
+        },
+        {
+          "speaker": "Minh",
+          "text": "Yes. Can I try this on?"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Certainly."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Where is the fitting room?"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "It's next to the large mirror."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Thanks. This size feels a little tight."
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Would you like a different one?"
+        },
+        {
+          "speaker": "Minh",
+          "text": "Yes. Do you have a larger size?",
+          "note": {
+            "text": "Yes. Do you have a larger size?",
+            "updated_at": "2026-08-18T11:47:27.612Z"
+          }
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Here is the next size up."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Much better. It fits well."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "dlg_639_e6367d39",
+      "verified": true,
+      "verified_at": "2026-08-19T16:53:00+07:00",
+      "course_key": "communication-basic",
+      "course_title": "Giao tiếp cơ bản",
+      "module_key": "basic-module-05",
+      "module_title": "Mua sắm",
+      "lesson_key": "basic-05-04",
+      "lesson_title": "Returns and Money Back",
+      "activity_id": 639,
+      "activity_key": "basic-05-04-drag-fill-dialogue",
+      "activity_title": "Drag-fill Dialogue",
+      "activity_type": "warmup",
+      "activity_sort_order": 4,
+      "dialogue_index": 1,
+      "source_path": "content.dragFillDialogue.lines",
+      "turn_count": 10,
+      "turns": [
+        {
+          "speaker": "Clerk",
+          "text": "Hello. What can I do for you?"
+        },
+        {
+          "speaker": "Minh",
+          "text": "I would like to return this."
+        },
+        {
+          "speaker": "Clerk",
+          "text": "When did you buy it?"
+        },
+        {
+          "speaker": "Minh",
+          "text": "I bought it yesterday."
+        },
+        {
+          "speaker": "Clerk",
+          "text": "What seems to be wrong?"
+        },
+        {
+          "speaker": "Minh",
+          "text": "It does not work."
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Could you please show me your receipt?",
+          "note": {
+            "text": "\"Could you please show me your receipt?\"",
+            "updated_at": "2026-08-18T17:18:45.419Z"
+          }
+        },
+        {
+          "speaker": "Minh",
+          "text": "Yes, here it is.",
+          "note": {
+            "text": "\"Yes, here it is.\"",
+            "updated_at": "2026-08-18T17:19:09.260Z"
+          }
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Okay. I can give you another one.",
+          "note": {
+            "text": "\"Ok, I can give you another one.\"",
+            "updated_at": "2026-08-18T17:19:46.221Z"
+          }
+        },
+        {
+          "speaker": "Minh",
+          "text": "No, thank you. Can I get my money back?",
+          "note": {
+            "text": "Thanks, but I just want my money back.",
+            "updated_at": "2026-08-18T17:19:59.382Z"
+          }
+        }
+      ]
+    },
+    {
+      "dialogue_id": "dlg_410_3817b1e1",
+      "verified": true,
+      "verified_at": "2026-08-19T16:53:00+07:00",
+      "course_key": "communication-basic",
+      "course_title": "Giao tiếp cơ bản",
+      "module_key": "basic-module-05",
+      "module_title": "Mua sắm",
+      "lesson_key": "basic-05-04",
+      "lesson_title": "Returns and Money Back",
+      "activity_id": 410,
+      "activity_key": "basic-05-04-guided-dialogue",
+      "activity_title": "Guided Dialogue",
+      "activity_type": "dialogue",
+      "activity_sort_order": 11,
+      "dialogue_index": 1,
+      "source_path": "content.questions[canonical]",
+      "turn_count": 10,
+      "turns": [
+        {
+          "speaker": "Nhân vật",
+          "text": "Hello. How can I help you?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "I would like to return this speaker."
+        },
+        {
+          "speaker": "Nhân vật",
+          "text": "I can help with that. What is wrong with it?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "It does not work."
+        },
+        {
+          "speaker": "Nhân vật",
+          "text": "I am sorry. When did you buy it?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "I bought it yesterday."
+        },
+        {
+          "speaker": "Nhân vật",
+          "text": "Thank you. We can give you a new one."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "No, thank you. I just want my money back.",
+          "note": {
+            "text": "\" No, thank you. I just want my money back.\"",
+            "updated_at": "2026-08-18T17:22:37.956Z"
+          }
+        },
+        {
+          "speaker": "Nhân vật",
+          "text": "No problem. Would you like the refund in cash or back on your card?",
+          "note": {
+            "text": "\"No problem. [muốn tiền mặt hay chuyển qua thẻ]?\"",
+            "updated_at": "2026-08-18T17:23:17.870Z"
+          }
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Cash, if possible. If not, my card is fine.",
+          "note": {
+            "text": "\"[muốn tiền mặt nếu có thể, còn không thì qua thẻ]\"",
+            "updated_at": "2026-08-18T18:22:38.416Z"
+          }
+        }
+      ]
+    },
+    {
+      "dialogue_id": "dlg_411_9220c61c",
+      "verified": true,
+      "verified_at": "2026-08-19T16:53:00+07:00",
+      "course_key": "communication-basic",
+      "course_title": "Giao tiếp cơ bản",
+      "module_key": "basic-module-05",
+      "module_title": "Mua sắm",
+      "lesson_key": "basic-05-04",
+      "lesson_title": "Returns and Money Back",
+      "activity_id": 411,
+      "activity_key": "basic-05-04-roleplay",
+      "activity_title": "Roleplay",
+      "activity_type": "roleplay",
+      "activity_sort_order": 12,
+      "dialogue_index": 1,
+      "source_path": "content.turns[roleplay-canonical]",
+      "turn_count": 10,
+      "turns": [
+        {
+          "speaker": "Leo",
+          "text": "Hello. I see you brought a coffee maker back. What can I do for you?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "I would like to exchange this coffee maker for another one, please."
+        },
+        {
+          "speaker": "Leo",
+          "text": "Of course. What's wrong with it?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "The water tank is broken. Water leaks out."
+        },
+        {
+          "speaker": "Leo",
+          "text": "I'm sorry about that. When did you buy it?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "I bought it three days ago."
+        },
+        {
+          "speaker": "Leo",
+          "text": "We have the same model here, so I can give you another one today. Is that what you want?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Yes, I would like the same model if it works."
+        },
+        {
+          "speaker": "Leo",
+          "text": "Great. I'll bring a new coffee maker, and we can check it together.",
+          "note": {
+            "text": "\"Great. I will bring a new coffee maker and we can check it together.\"",
+            "updated_at": "2026-08-18T18:21:25.645Z"
+          }
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Thank you. You've been very helpful.",
+          "note": {
+            "text": "\"Thank you. Your service is perfect.\" <<< tự nhiên không?",
+            "updated_at": "2026-08-18T18:22:12.263Z"
+          }
+        }
+      ]
+    },
+    {
+      "dialogue_id": "dlg_414_cb1fdde5",
+      "verified": true,
+      "verified_at": "2026-08-19T16:53:00+07:00",
+      "course_key": "communication-basic",
+      "course_title": "Giao tiếp cơ bản",
+      "module_key": "basic-module-05",
+      "module_title": "Mua sắm",
+      "lesson_key": "basic-05-05",
+      "lesson_title": "Shopping Challenge",
+      "activity_id": 414,
+      "activity_key": "basic-05-05-opening",
+      "activity_title": "Opening — Dialogue Order",
+      "activity_type": "patterns",
+      "activity_sort_order": 1,
+      "dialogue_index": 1,
+      "source_path": "content.dialogueOrder.turns",
+      "turn_count": 10,
+      "turns": [
+        {
+          "speaker": "Clerk",
+          "text": "Hello. How can I help you today?"
+        },
+        {
+          "speaker": "Minh",
+          "text": "I would like to return this gray jacket. The zipper is broken. Can I get my money back?",
+          "note": {
+            "text": "SAO lại đòi hoàn tiền mà ko có lý do?!",
+            "updated_at": "2026-08-18T18:49:15.201Z"
+          }
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Of course. Do you have the receipt?"
+        },
+        {
+          "speaker": "Minh",
+          "text": "Yes, here it is. I also like this blue jacket. Can I try it on?"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Sure. The fitting room is right beside the counter."
+        },
+        {
+          "speaker": "Minh",
+          "text": "It fits well. How much is this?"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "It's forty-five dollars. Would you like to take it?",
+          "note": {
+            "text": "gì mà lung tung vậy?! saon5 lại hết HT này!",
+            "updated_at": "2026-08-18T18:49:42.539Z"
+          }
+        },
+        {
+          "speaker": "Minh",
+          "text": "Yes, please. Can I pay by card?"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Of course. I'll refund the gray jacket first, then you can pay for the blue one by card."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Perfect. Thank you."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "dlg_640_43b3391f",
+      "verified": true,
+      "verified_at": "2026-08-19T16:53:00+07:00",
+      "course_key": "communication-basic",
+      "course_title": "Giao tiếp cơ bản",
+      "module_key": "basic-module-05",
+      "module_title": "Mua sắm",
+      "lesson_key": "basic-05-05",
+      "lesson_title": "Shopping Challenge",
+      "activity_id": 640,
+      "activity_key": "basic-05-05-drag-fill-dialogue",
+      "activity_title": "Drag-fill Dialogue",
+      "activity_type": "warmup",
+      "activity_sort_order": 5,
+      "dialogue_index": 1,
+      "source_path": "content.dragFillDialogue.lines",
+      "turn_count": 10,
+      "turns": [
+        {
+          "speaker": "Clerk",
+          "text": "Hello. I see you brought a jacket back."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Yes. I would like to return this."
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Of course. What is wrong with it?"
+        },
+        {
+          "speaker": "Minh",
+          "text": "The zipper is broken. Can I get my money back?"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Yes. I can do that. Would you like to look at another jacket?"
+        },
+        {
+          "speaker": "Minh",
+          "text": "The blue jacket looks good. I like this one. How much is this?"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "It is sixty dollars. It's a little more expensive than the one you're returning.",
+          "note": {
+            "text": "[It is sixty dollars.  nó mắc hơn cái bạn trả lại một tí.]",
+            "updated_at": "2026-08-18T18:53:10.075Z"
+          }
+        },
+        {
+          "speaker": "Minh",
+          "text": "Can I try this on? If it fits, I'd like to exchange the broken one for this one.",
+          "note": {
+            "text": "\"Can I try this on? [nếu được, tôi sẽ đổi cái bị hư lấy cái này]\"",
+            "updated_at": "2026-08-18T18:53:45.668Z"
+          }
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Of course. The fitting room is over there."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Thanks. It fits well. I'll take this one.",
+          "note": {
+            "text": "Thanks. It fits well. I would like to [lấy cái này].",
+            "updated_at": "2026-08-18T18:54:26.030Z"
+          }
+        }
+      ]
+    },
+    {
+      "dialogue_id": "dlg_418_5c2cba7f",
+      "verified": true,
+      "verified_at": "2026-08-19T16:53:00+07:00",
+      "course_key": "communication-basic",
+      "course_title": "Giao tiếp cơ bản",
+      "module_key": "basic-module-05",
+      "module_title": "Mua sắm",
+      "lesson_key": "basic-05-05",
+      "lesson_title": "Shopping Challenge",
+      "activity_id": 418,
+      "activity_key": "basic-05-05-listening",
+      "activity_title": "Listening",
+      "activity_type": "dialogue",
+      "activity_sort_order": 6,
+      "dialogue_index": 1,
+      "source_path": "content.lines",
+      "turn_count": 10,
+      "turns": [
+        {
+          "speaker": "Emma",
+          "text": "Did you find a jacket for your trip?"
+        },
+        {
+          "speaker": "Minh",
+          "text": "Yes. I bought a green one at a clothing store near my house.",
+          "note": {
+            "text": "[Yes, tôi đã mua nó tại cửa hàng thời trang gần nhà.]",
+            "updated_at": "2026-08-19T08:15:06.498Z"
+          }
+        },
+        {
+          "speaker": "Emma",
+          "text": "What is it like?",
+          "note": {
+            "text": "[nó thế nào?]",
+            "updated_at": "2026-08-19T08:15:16.234Z"
+          }
+        },
+        {
+          "speaker": "Minh",
+          "text": "The color looks good, and the jacket feels sturdy.",
+          "note": {
+            "text": "[h The color looked good, and the jacket felt sturdy.]",
+            "updated_at": "2026-08-19T08:15:28.858Z"
+          }
+        },
+        {
+          "speaker": "Emma",
+          "text": "Was it expensive?"
+        },
+        {
+          "speaker": "Minh",
+          "text": "It was seventy dollars, so it was a little expensive."
+        },
+        {
+          "speaker": "Emma",
+          "text": "Did you try it on first?"
+        },
+        {
+          "speaker": "Minh",
+          "text": "Yes. The medium fit well, so I bought it. But when I got home, I found a problem with it.",
+          "note": {
+            "text": "[Yes. it fit well, so I bought it. Nhưng khi về nhà tôi phát hiện nó có vấn đề]",
+            "updated_at": "2026-08-19T08:16:53.046Z"
+          }
+        },
+        {
+          "speaker": "Emma",
+          "text": "What was wrong with the jacket?",
+          "note": {
+            "text": "[Hỏi cái jacket có vấn đề gì à?]",
+            "updated_at": "2026-08-19T08:17:16.527Z"
+          }
+        },
+        {
+          "speaker": "Minh",
+          "text": "The zipper was broken, so I'm going to return it and ask for my money back tomorrow."
+        }
+      ]
+    },
+    {
+      "dialogue_id": "dlg_420_6b8b6d79",
+      "verified": true,
+      "verified_at": "2026-08-19T16:53:00+07:00",
+      "course_key": "communication-basic",
+      "course_title": "Giao tiếp cơ bản",
+      "module_key": "basic-module-05",
+      "module_title": "Mua sắm",
+      "lesson_key": "basic-05-05",
+      "lesson_title": "Shopping Challenge",
+      "activity_id": 420,
+      "activity_key": "basic-05-05-reading",
+      "activity_title": "Reading — Fill Blank",
+      "activity_type": "reading",
+      "activity_sort_order": 8,
+      "dialogue_index": 1,
+      "source_path": "content.fillBlankDialogue",
+      "turn_count": 10,
+      "turns": [
+        {
+          "speaker": "Clerk",
+          "text": "The price of this shirt is thirty-five dollars."
+        },
+        {
+          "speaker": "Anna",
+          "text": "That is not too expensive for me."
+        },
+        {
+          "speaker": "Clerk",
+          "text": "It also comes in three colors."
+        },
+        {
+          "speaker": "Anna",
+          "text": "I like the blue color."
+        },
+        {
+          "speaker": "Clerk",
+          "text": "The material feels strong.",
+          "note": {
+            "text": "[Đĩ mẹ mày ngu à? sao thoại gì kì vậy? Sửa thành: cái áo này rất chắn chắn là dc rồi]",
+            "updated_at": "2026-08-19T08:19:19.267Z"
+          }
+        },
+        {
+          "speaker": "Anna",
+          "text": "Can I try the medium size?"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Of course. I think the medium will be a good fit for you.",
+          "note": {
+            "text": "sửa thành: \"Of course, I think cái medium sẽ fit bạn tốt hơn.\"",
+            "updated_at": "2026-08-19T08:19:49.141Z"
+          }
+        },
+        {
+          "speaker": "Anna",
+          "text": "You're right. I'll buy it. Do you accept credit cards?",
+          "note": {
+            "text": "[You're right. I will buy it. Do you accept credit card?]",
+            "updated_at": "2026-08-19T08:20:22.006Z"
+          }
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Yes. We accept both cash and cards.",
+          "note": {
+            "text": "[Có, chúng tôi chấp nhận tiền mặt lẫn thẻ.]",
+            "updated_at": "2026-08-19T08:20:43.095Z"
+          }
+        },
+        {
+          "speaker": "Anna",
+          "text": "Could I have a receipt? I'll need it if I have to ask for my money back.",
+          "note": {
+            "text": "[Tôi có thể có hóa đơn không? Tôi sẽ cần nó nếu tôi cần yêu cầu hoàn tiền]",
+            "updated_at": "2026-08-19T08:21:16.336Z"
+          }
+        }
+      ],
+      "fill_blank_words": [
+        "price",
+        "expensive",
+        "color",
+        "strong",
+        "fit",
+        "money"
+      ],
+      "fill_blank_marks": [
+        {
+          "turn_index": 0,
+          "start": 4,
+          "end": 9,
+          "word": "price",
+          "blank_id": "l5-read-b01"
+        },
+        {
+          "turn_index": 1,
+          "start": 16,
+          "end": 25,
+          "word": "expensive",
+          "blank_id": "l5-read-b02"
+        },
+        {
+          "turn_index": 3,
+          "start": 16,
+          "end": 21,
+          "word": "color",
+          "blank_id": "l5-read-b03"
+        },
+        {
+          "turn_index": 4,
+          "start": 19,
+          "end": 25,
+          "word": "strong",
+          "blank_id": "l5-read-b04"
+        },
+        {
+          "turn_index": 6,
+          "start": 45,
+          "end": 48,
+          "word": "fit",
+          "blank_id": "l5-read-b05"
+        },
+        {
+          "turn_index": 9,
+          "start": 61,
+          "end": 66,
+          "word": "money",
+          "blank_id": "l5-read-b06"
+        }
+      ]
+    },
+    {
+      "dialogue_id": "dlg_422_afe30c3c",
+      "verified": true,
+      "verified_at": "2026-08-19T16:53:00+07:00",
+      "course_key": "communication-basic",
+      "course_title": "Giao tiếp cơ bản",
+      "module_key": "basic-module-05",
+      "module_title": "Mua sắm",
+      "lesson_key": "basic-05-05",
+      "lesson_title": "Shopping Challenge",
+      "activity_id": 422,
+      "activity_key": "basic-05-05-guided-dialogue",
+      "activity_title": "Guided Dialogue",
+      "activity_type": "dialogue",
+      "activity_sort_order": 10,
+      "dialogue_index": 1,
+      "source_path": "content.questions[canonical]",
+      "turn_count": 10,
+      "turns": [
+        {
+          "speaker": "Nhân vật",
+          "text": "Welcome. How can I help you?",
+          "note": {
+            "text": "Welcome. [Tôi có thể giúp gì cho bạn?]",
+            "updated_at": "2026-08-19T08:21:42.466Z"
+          }
+        },
+        {
+          "speaker": "Bạn",
+          "text": "How much is this jacket?",
+          "note": {
+            "text": "[\"How much is this jacket?\"]",
+            "updated_at": "2026-08-19T08:21:56.954Z"
+          }
+        },
+        {
+          "speaker": "Nhân vật",
+          "text": "It is fifty dollars. There is also a black one at the same price. Which do you like?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "I like this blue one."
+        },
+        {
+          "speaker": "Nhân vật",
+          "text": "Would you like to check the size before you buy it?",
+          "note": {
+            "text": "\"Would you like to check the size before you buy it?\"",
+            "updated_at": "2026-08-19T08:22:21.731Z"
+          }
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Yes, please. Can I try this on?"
+        },
+        {
+          "speaker": "Nhân vật",
+          "text": "Of course. The fitting room is over there. Just go straight ahead.",
+          "note": {
+            "text": "Of course. The fitting room is there. [câu hướng dẫn đơn giản đi đến đó] (bỏ How is the medium size?)",
+            "updated_at": "2026-08-19T08:23:03.133Z"
+          }
+        },
+        {
+          "speaker": "Bạn",
+          "text": "It fits well. I would like to buy it.",
+          "note": {
+            "text": "It fits well. I would like to buy it.",
+            "updated_at": "2026-08-19T08:23:39.367Z"
+          }
+        },
+        {
+          "speaker": "Nhân vật",
+          "text": "Great. The jacket looks good on you. Would you like to pay in cash or by bank transfer?",
+          "note": {
+            "text": "Great. The jacket looks good on you. [Hỏi muốn thanh toàn bằng tiền mặt hay chuyển khoản?]",
+            "updated_at": "2026-08-19T08:24:11.632Z"
+          }
+        },
+        {
+          "speaker": "Bạn",
+          "text": "I would like to pay in cash.",
+          "note": {
+            "text": "[tôi muốn thanh toàn bằng tiền mặt.]",
+            "updated_at": "2026-08-19T08:24:23.520Z"
+          }
+        }
+      ]
+    },
+    {
+      "dialogue_id": "dlg_423_b402f2db",
+      "verified": true,
+      "verified_at": "2026-08-19T16:53:00+07:00",
+      "course_key": "communication-basic",
+      "course_title": "Giao tiếp cơ bản",
+      "module_key": "basic-module-05",
+      "module_title": "Mua sắm",
+      "lesson_key": "basic-05-05",
+      "lesson_title": "Shopping Challenge",
+      "activity_id": 423,
+      "activity_key": "basic-05-05-roleplay",
+      "activity_title": "Roleplay",
+      "activity_type": "roleplay",
+      "activity_sort_order": 11,
+      "dialogue_index": 1,
+      "source_path": "content.turns[roleplay-canonical]",
+      "turn_count": 10,
+      "turns": [
+        {
+          "speaker": "Mia",
+          "text": "Hello. Are you looking for a travel bag?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Yes. I would like to see the blue bag."
+        },
+        {
+          "speaker": "Mia",
+          "text": "Here is the blue bag. It is sixty dollars."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "That is too expensive for me. Do you have a cheaper one?"
+        },
+        {
+          "speaker": "Mia",
+          "text": "Yes. The black bag is forty-five dollars."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "I would like to see the black one."
+        },
+        {
+          "speaker": "Mia",
+          "text": "The black bag comes in small and large sizes. Which size would you like?",
+          "note": {
+            "text": "The black bag comes in small and large sizes. [Which size bạn cần?]",
+            "updated_at": "2026-08-19T08:25:29.763Z"
+          }
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Can I see the large one, please?"
+        },
+        {
+          "speaker": "Mia",
+          "text": "Of course. Here is the large black bag."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "This travel bag is perfect for me. I would like to buy it.",
+          "note": {
+            "text": "This travel bag is perfect for me. I would like to buy it.",
+            "updated_at": "2026-08-19T08:26:10.357Z"
+          }
+        }
+      ]
+    }
+  ],
+  "updated_at": "2026-08-19T16:53:00+07:00",
+  "export_scope": "activities_with_notes",
+  "noted_activity_count": 16
+}
