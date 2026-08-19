@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "export_type": "communication_dialogue_review",
-  "exported_at": "2026-08-19T10:36:00.000Z",
+  "exported_at": "2026-08-19T17:46:00+07:00",
   "storage": "standalone-json-review",
   "navigation_status": "all",
   "summary": {
@@ -6747,7 +6747,7 @@
     {
       "dialogue_id": "dlg_637_17ca2649",
       "verified": true,
-      "verified_at": "2026-08-19T16:53:00+07:00",
+      "verified_at": "2026-08-19T17:46:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -6869,7 +6869,7 @@
     {
       "dialogue_id": "dlg_370_8df92e57",
       "verified": true,
-      "verified_at": "2026-08-19T16:53:00+07:00",
+      "verified_at": "2026-08-19T17:46:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -6951,8 +6951,8 @@
         },
         {
           "turn_index": 3,
-          "start": 8,
-          "end": 13,
+          "start": 4,
+          "end": 9,
           "word": "small",
           "blank_id": "l1-read-b03"
         },
@@ -6982,7 +6982,7 @@
     {
       "dialogue_id": "dlg_372_ea9660e6",
       "verified": true,
-      "verified_at": "2026-08-19T16:53:00+07:00",
+      "verified_at": "2026-08-19T17:46:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7043,7 +7043,7 @@
     {
       "dialogue_id": "dlg_373_44d6bc29",
       "verified": true,
-      "verified_at": "2026-08-19T16:53:00+07:00",
+      "verified_at": "2026-08-19T17:46:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7226,7 +7226,7 @@
     {
       "dialogue_id": "dlg_383_09f39ec2",
       "verified": true,
-      "verified_at": "2026-08-19T16:53:00+07:00",
+      "verified_at": "2026-08-19T17:46:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7287,7 +7287,7 @@
     {
       "dialogue_id": "dlg_389_1ae0549c",
       "verified": true,
-      "verified_at": "2026-08-19T16:53:00+07:00",
+      "verified_at": "2026-08-19T17:46:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7344,7 +7344,7 @@
     {
       "dialogue_id": "dlg_638_cb112e86",
       "verified": true,
-      "verified_at": "2026-08-19T16:53:00+07:00",
+      "verified_at": "2026-08-19T17:46:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7637,7 +7637,7 @@
     {
       "dialogue_id": "dlg_639_e6367d39",
       "verified": true,
-      "verified_at": "2026-08-19T16:53:00+07:00",
+      "verified_at": "2026-08-19T17:46:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7691,7 +7691,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "No, thank you. Can I get my money back?"
+          "text": "Thanks, but can I get my money back instead?"
         }
       ]
     },
@@ -7872,7 +7872,7 @@
     {
       "dialogue_id": "dlg_410_3817b1e1",
       "verified": true,
-      "verified_at": "2026-08-19T16:53:00+07:00",
+      "verified_at": "2026-08-19T17:46:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7933,7 +7933,7 @@
     {
       "dialogue_id": "dlg_411_9220c61c",
       "verified": true,
-      "verified_at": "2026-08-19T16:53:00+07:00",
+      "verified_at": "2026-08-19T17:46:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7994,7 +7994,7 @@
     {
       "dialogue_id": "dlg_414_cb1fdde5",
       "verified": true,
-      "verified_at": "2026-08-19T16:53:00+07:00",
+      "verified_at": "2026-08-19T17:46:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -8055,7 +8055,7 @@
     {
       "dialogue_id": "dlg_640_43b3391f",
       "verified": true,
-      "verified_at": "2026-08-19T16:53:00+07:00",
+      "verified_at": "2026-08-19T17:46:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -8116,7 +8116,7 @@
     {
       "dialogue_id": "dlg_418_5c2cba7f",
       "verified": true,
-      "verified_at": "2026-08-19T16:53:00+07:00",
+      "verified_at": "2026-08-19T17:46:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -8177,7 +8177,7 @@
     {
       "dialogue_id": "dlg_420_6b8b6d79",
       "verified": true,
-      "verified_at": "2026-08-19T16:53:00+07:00",
+      "verified_at": "2026-08-19T17:46:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -8266,22 +8266,22 @@
         },
         {
           "turn_index": 4,
-          "start": 19,
-          "end": 25,
+          "start": 16,
+          "end": 22,
           "word": "strong",
           "blank_id": "l5-read-b04"
         },
         {
           "turn_index": 6,
-          "start": 45,
-          "end": 48,
+          "start": 22,
+          "end": 25,
           "word": "fit",
           "blank_id": "l5-read-b05"
         },
         {
           "turn_index": 9,
-          "start": 61,
-          "end": 66,
+          "start": 42,
+          "end": 47,
           "word": "money",
           "blank_id": "l5-read-b06"
         }
@@ -8290,7 +8290,7 @@
     {
       "dialogue_id": "dlg_422_afe30c3c",
       "verified": true,
-      "verified_at": "2026-08-19T16:53:00+07:00",
+      "verified_at": "2026-08-19T17:46:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -8351,7 +8351,7 @@
     {
       "dialogue_id": "dlg_423_b402f2db",
       "verified": true,
-      "verified_at": "2026-08-19T16:53:00+07:00",
+      "verified_at": "2026-08-19T17:46:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -13440,5 +13440,5 @@
       ]
     }
   ],
-  "updated_at": "2026-08-18T11:19:14.993Z"
+  "updated_at": "2026-08-19T17:46:00+07:00"
 }
