@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "export_type": "communication_dialogue_review",
-  "exported_at": "2026-08-19T10:34:17.840Z",
+  "exported_at": "2026-08-19T10:36:00.000Z",
   "storage": "standalone-json-review",
   "navigation_status": "all",
   "summary": {
@@ -6773,19 +6773,11 @@
         },
         {
           "speaker": "Clerk",
-          "text": "This one is small.",
-          "note": {
-            "text": "sửa toàn bộ! người ta đã nói có 2 sizes còn hỏi nữa à?",
-            "updated_at": "2026-08-18T11:24:30.725Z"
-          }
+          "text": "This one is small."
         },
         {
           "speaker": "Minh",
-          "text": "Do you have a larger one?",
-          "note": {
-            "text": "sửa toàn bộ! người ta đã nói có 2 sizes còn hỏi nữa à?",
-            "updated_at": "2026-08-18T11:24:33.604Z"
-          }
+          "text": "Do you have a larger one?"
         },
         {
           "speaker": "Clerk",
@@ -6903,19 +6895,11 @@
         },
         {
           "speaker": "Clerk",
-          "text": "Yes, and this one is on sale today.",
-          "note": {
-            "text": "Yes, and this one is on sale today.",
-            "updated_at": "2026-08-18T11:25:23.646Z"
-          }
+          "text": "Yes, and this one is on sale today."
         },
         {
           "speaker": "Anna",
-          "text": "But the small one is too short for me.",
-          "note": {
-            "text": "But it is too short for me.",
-            "updated_at": "2026-08-18T11:25:41.598Z"
-          }
+          "text": "But the small one is too short for me."
         },
         {
           "speaker": "Clerk",
@@ -7028,19 +7012,11 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Not yet. What size is it?",
-          "note": {
-            "text": "Not yet. What size is it?",
-            "updated_at": "2026-08-18T11:26:32.753Z"
-          }
+          "text": "Not yet. What size is it?"
         },
         {
           "speaker": "Nhân vật",
-          "text": "It is a medium.",
-          "note": {
-            "text": "\"It is a medium.\"",
-            "updated_at": "2026-08-18T11:26:46.113Z"
-          }
+          "text": "It is a medium."
         },
         {
           "speaker": "Bạn",
@@ -7109,35 +7085,19 @@
         },
         {
           "speaker": "Mia",
-          "text": "The larger backpack also comes in blue. Would you like to see it?",
-          "note": {
-            "text": "\" Which color would you like to see?\" -> \"Would you like to see it?\"",
-            "updated_at": "2026-08-18T11:28:22.085Z"
-          }
+          "text": "The larger backpack also comes in blue. Would you like to see it?"
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, I would like to see the blue one, please.",
-          "note": {
-            "text": "\"Yes, I would like to see the blue one, please.\"",
-            "updated_at": "2026-08-18T11:28:52.054Z"
-          }
+          "text": "Yes, I would like to see the blue one, please."
         },
         {
           "speaker": "Mia",
-          "text": "Here it is.",
-          "note": {
-            "text": "\"Here it is.\"",
-            "updated_at": "2026-08-18T11:29:23.408Z"
-          }
+          "text": "Here it is."
         },
         {
           "speaker": "Bạn",
-          "text": "The blue one is prettier. I would like to buy it.",
-          "note": {
-            "text": "\"The blue one is prettier, I would like to buy it.\"",
-            "updated_at": "2026-08-18T11:29:54.794Z"
-          }
+          "text": "The blue one is prettier. I would like to buy it."
         }
       ]
     },
@@ -7308,19 +7268,11 @@
         },
         {
           "speaker": "Leo",
-          "text": "Here is the blue lamp. It is also nice, but it costs five dollars more.",
-          "note": {
-            "text": "bỏ \"Which one costs less?\"",
-            "updated_at": "2026-08-18T11:35:34.200Z"
-          }
+          "text": "Here is the blue lamp. It is also nice, but it costs five dollars more."
         },
         {
           "speaker": "Bạn",
-          "text": "It's a bit expensive.",
-          "note": {
-            "text": "\"It's a bit expensive.\"",
-            "updated_at": "2026-08-18T11:36:05.793Z"
-          }
+          "text": "It's a bit expensive."
         },
         {
           "speaker": "Leo",
@@ -7377,19 +7329,11 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes, please. Do you have a larger size?",
-          "note": {
-            "text": "\"Yes, please. Do you have a larger size?\"",
-            "updated_at": "2026-08-18T11:46:29.962Z"
-          }
+          "text": "Yes, please. Do you have a larger size?"
         },
         {
           "speaker": "Clerk",
-          "text": "Yes. Try this one.",
-          "note": {
-            "text": "\" Yes. Try this one.\"",
-            "updated_at": "2026-08-18T11:46:40.322Z"
-          }
+          "text": "Yes. Try this one."
         },
         {
           "speaker": "Minh",
@@ -7418,11 +7362,7 @@
       "turns": [
         {
           "speaker": "Clerk",
-          "text": "Would you like to take a look at this jacket?",
-          "note": {
-            "text": "Would you like to take a look at this jacket?",
-            "updated_at": "2026-08-18T11:47:01.947Z"
-          }
+          "text": "Would you like to take a look at this jacket?"
         },
         {
           "speaker": "Minh",
@@ -7450,11 +7390,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes. Do you have a larger size?",
-          "note": {
-            "text": "Yes. Do you have a larger size?",
-            "updated_at": "2026-08-18T11:47:27.612Z"
-          }
+          "text": "Yes. Do you have a larger size?"
         },
         {
           "speaker": "Clerk",
@@ -7743,35 +7679,19 @@
         },
         {
           "speaker": "Clerk",
-          "text": "Could you please show me your receipt?",
-          "note": {
-            "text": "\"Could you please show me your receipt?\"",
-            "updated_at": "2026-08-18T17:18:45.419Z"
-          }
+          "text": "Could you please show me your receipt?"
         },
         {
           "speaker": "Minh",
-          "text": "Yes, here it is.",
-          "note": {
-            "text": "\"Yes, here it is.\"",
-            "updated_at": "2026-08-18T17:19:09.260Z"
-          }
+          "text": "Yes, here it is."
         },
         {
           "speaker": "Clerk",
-          "text": "Okay. I can give you another one.",
-          "note": {
-            "text": "\"Ok, I can give you another one.\"",
-            "updated_at": "2026-08-18T17:19:46.221Z"
-          }
+          "text": "Okay. I can give you another one."
         },
         {
           "speaker": "Minh",
-          "text": "No, thank you. Can I get my money back?",
-          "note": {
-            "text": "Thanks, but I just want my money back.",
-            "updated_at": "2026-08-18T17:19:59.382Z"
-          }
+          "text": "No, thank you. Can I get my money back?"
         }
       ]
     },
@@ -7998,27 +7918,15 @@
         },
         {
           "speaker": "Bạn",
-          "text": "No, thank you. I just want my money back.",
-          "note": {
-            "text": "\" No, thank you. I just want my money back.\"",
-            "updated_at": "2026-08-18T17:22:37.956Z"
-          }
+          "text": "No, thank you. I just want my money back."
         },
         {
           "speaker": "Nhân vật",
-          "text": "No problem. Would you like the refund in cash or back on your card?",
-          "note": {
-            "text": "\"No problem. [muốn tiền mặt hay chuyển qua thẻ]?\"",
-            "updated_at": "2026-08-18T17:23:17.870Z"
-          }
+          "text": "No problem. Would you like the refund in cash or back on your card?"
         },
         {
           "speaker": "Bạn",
-          "text": "Cash, if possible. If not, my card is fine.",
-          "note": {
-            "text": "\"[muốn tiền mặt nếu có thể, còn không thì qua thẻ]\"",
-            "updated_at": "2026-08-18T18:22:38.416Z"
-          }
+          "text": "Cash, if possible. If not, my card is fine."
         }
       ]
     },
@@ -8075,19 +7983,11 @@
         },
         {
           "speaker": "Leo",
-          "text": "Great. I'll bring a new coffee maker, and we can check it together.",
-          "note": {
-            "text": "\"Great. I will bring a new coffee maker and we can check it together.\"",
-            "updated_at": "2026-08-18T18:21:25.645Z"
-          }
+          "text": "Great. I'll bring a new coffee maker, and we can check it together."
         },
         {
           "speaker": "Bạn",
-          "text": "Thank you. You've been very helpful.",
-          "note": {
-            "text": "\"Thank you. Your service is perfect.\" <<< tự nhiên không?",
-            "updated_at": "2026-08-18T18:22:12.263Z"
-          }
+          "text": "Thank you. You've been very helpful."
         }
       ]
     },
@@ -8116,11 +8016,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "I would like to return this gray jacket. The zipper is broken. Can I get my money back?",
-          "note": {
-            "text": "SAO lại đòi hoàn tiền mà ko có lý do?!",
-            "updated_at": "2026-08-18T18:49:15.201Z"
-          }
+          "text": "I would like to return this gray jacket. The zipper is broken. Can I get my money back?"
         },
         {
           "speaker": "Clerk",
@@ -8140,11 +8036,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "It's forty-five dollars. Would you like to take it?",
-          "note": {
-            "text": "gì mà lung tung vậy?! saon5 lại hết HT này!",
-            "updated_at": "2026-08-18T18:49:42.539Z"
-          }
+          "text": "It's forty-five dollars. Would you like to take it?"
         },
         {
           "speaker": "Minh",
@@ -8205,19 +8097,11 @@
         },
         {
           "speaker": "Clerk",
-          "text": "It is sixty dollars. It's a little more expensive than the one you're returning.",
-          "note": {
-            "text": "[It is sixty dollars.  nó mắc hơn cái bạn trả lại một tí.]",
-            "updated_at": "2026-08-18T18:53:10.075Z"
-          }
+          "text": "It is sixty dollars. It's a little more expensive than the one you're returning."
         },
         {
           "speaker": "Minh",
-          "text": "Can I try this on? If it fits, I'd like to exchange the broken one for this one.",
-          "note": {
-            "text": "\"Can I try this on? [nếu được, tôi sẽ đổi cái bị hư lấy cái này]\"",
-            "updated_at": "2026-08-18T18:53:45.668Z"
-          }
+          "text": "Can I try this on? If it fits, I'd like to exchange the broken one for this one."
         },
         {
           "speaker": "Clerk",
@@ -8225,11 +8109,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Thanks. It fits well. I'll take this one.",
-          "note": {
-            "text": "Thanks. It fits well. I would like to [lấy cái này].",
-            "updated_at": "2026-08-18T18:54:26.030Z"
-          }
+          "text": "Thanks. It fits well. I'll take this one."
         }
       ]
     },
@@ -8258,27 +8138,15 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes. I bought a green one at a clothing store near my house.",
-          "note": {
-            "text": "[Yes, tôi đã mua nó tại cửa hàng thời trang gần nhà.]",
-            "updated_at": "2026-08-19T08:15:06.498Z"
-          }
+          "text": "Yes. I bought a green one at a clothing store near my house."
         },
         {
           "speaker": "Emma",
-          "text": "What is it like?",
-          "note": {
-            "text": "[nó thế nào?]",
-            "updated_at": "2026-08-19T08:15:16.234Z"
-          }
+          "text": "What is it like?"
         },
         {
           "speaker": "Minh",
-          "text": "The color looks good, and the jacket feels sturdy.",
-          "note": {
-            "text": "[h The color looked good, and the jacket felt sturdy.]",
-            "updated_at": "2026-08-19T08:15:28.858Z"
-          }
+          "text": "The color looks good, and the jacket feels sturdy."
         },
         {
           "speaker": "Emma",
@@ -8294,19 +8162,11 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes. The medium fit well, so I bought it. But when I got home, I found a problem with it.",
-          "note": {
-            "text": "[Yes. it fit well, so I bought it. Nhưng khi về nhà tôi phát hiện nó có vấn đề]",
-            "updated_at": "2026-08-19T08:16:53.046Z"
-          }
+          "text": "Yes. The medium fit well, so I bought it. But when I got home, I found a problem with it."
         },
         {
           "speaker": "Emma",
-          "text": "What was wrong with the jacket?",
-          "note": {
-            "text": "[Hỏi cái jacket có vấn đề gì à?]",
-            "updated_at": "2026-08-19T08:17:16.527Z"
-          }
+          "text": "What was wrong with the jacket?"
         },
         {
           "speaker": "Minh",
@@ -8351,11 +8211,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "The material feels strong.",
-          "note": {
-            "text": "[Đĩ mẹ mày ngu à? sao thoại gì kì vậy? Sửa thành: cái áo này rất chắn chắn là dc rồi]",
-            "updated_at": "2026-08-19T08:19:19.267Z"
-          }
+          "text": "The material feels strong."
         },
         {
           "speaker": "Anna",
@@ -8363,35 +8219,19 @@
         },
         {
           "speaker": "Clerk",
-          "text": "Of course. I think the medium will be a good fit for you.",
-          "note": {
-            "text": "sửa thành: \"Of course, I think cái medium sẽ fit bạn tốt hơn.\"",
-            "updated_at": "2026-08-19T08:19:49.141Z"
-          }
+          "text": "Of course. I think the medium will be a good fit for you."
         },
         {
           "speaker": "Anna",
-          "text": "You're right. I'll buy it. Do you accept credit cards?",
-          "note": {
-            "text": "[You're right. I will buy it. Do you accept credit card?]",
-            "updated_at": "2026-08-19T08:20:22.006Z"
-          }
+          "text": "You're right. I'll buy it. Do you accept credit cards?"
         },
         {
           "speaker": "Clerk",
-          "text": "Yes. We accept both cash and cards.",
-          "note": {
-            "text": "[Có, chúng tôi chấp nhận tiền mặt lẫn thẻ.]",
-            "updated_at": "2026-08-19T08:20:43.095Z"
-          }
+          "text": "Yes. We accept both cash and cards."
         },
         {
           "speaker": "Anna",
-          "text": "Could I have a receipt? I'll need it if I have to ask for my money back.",
-          "note": {
-            "text": "[Tôi có thể có hóa đơn không? Tôi sẽ cần nó nếu tôi cần yêu cầu hoàn tiền]",
-            "updated_at": "2026-08-19T08:21:16.336Z"
-          }
+          "text": "Could I have a receipt? I'll need it if I have to ask for my money back."
         }
       ],
       "fill_blank_words": [
@@ -8468,19 +8308,11 @@
       "turns": [
         {
           "speaker": "Nhân vật",
-          "text": "Welcome. How can I help you?",
-          "note": {
-            "text": "Welcome. [Tôi có thể giúp gì cho bạn?]",
-            "updated_at": "2026-08-19T08:21:42.466Z"
-          }
+          "text": "Welcome. How can I help you?"
         },
         {
           "speaker": "Bạn",
-          "text": "How much is this jacket?",
-          "note": {
-            "text": "[\"How much is this jacket?\"]",
-            "updated_at": "2026-08-19T08:21:56.954Z"
-          }
+          "text": "How much is this jacket?"
         },
         {
           "speaker": "Nhân vật",
@@ -8492,11 +8324,7 @@
         },
         {
           "speaker": "Nhân vật",
-          "text": "Would you like to check the size before you buy it?",
-          "note": {
-            "text": "\"Would you like to check the size before you buy it?\"",
-            "updated_at": "2026-08-19T08:22:21.731Z"
-          }
+          "text": "Would you like to check the size before you buy it?"
         },
         {
           "speaker": "Bạn",
@@ -8504,35 +8332,19 @@
         },
         {
           "speaker": "Nhân vật",
-          "text": "Of course. The fitting room is over there. Just go straight ahead.",
-          "note": {
-            "text": "Of course. The fitting room is there. [câu hướng dẫn đơn giản đi đến đó] (bỏ How is the medium size?)",
-            "updated_at": "2026-08-19T08:23:03.133Z"
-          }
+          "text": "Of course. The fitting room is over there. Just go straight ahead."
         },
         {
           "speaker": "Bạn",
-          "text": "It fits well. I would like to buy it.",
-          "note": {
-            "text": "It fits well. I would like to buy it.",
-            "updated_at": "2026-08-19T08:23:39.367Z"
-          }
+          "text": "It fits well. I would like to buy it."
         },
         {
           "speaker": "Nhân vật",
-          "text": "Great. The jacket looks good on you. Would you like to pay in cash or by bank transfer?",
-          "note": {
-            "text": "Great. The jacket looks good on you. [Hỏi muốn thanh toàn bằng tiền mặt hay chuyển khoản?]",
-            "updated_at": "2026-08-19T08:24:11.632Z"
-          }
+          "text": "Great. The jacket looks good on you. Would you like to pay in cash or by bank transfer?"
         },
         {
           "speaker": "Bạn",
-          "text": "I would like to pay in cash.",
-          "note": {
-            "text": "[tôi muốn thanh toàn bằng tiền mặt.]",
-            "updated_at": "2026-08-19T08:24:23.520Z"
-          }
+          "text": "I would like to pay in cash."
         }
       ]
     },
@@ -8581,11 +8393,7 @@
         },
         {
           "speaker": "Mia",
-          "text": "The black bag comes in small and large sizes. Which size would you like?",
-          "note": {
-            "text": "The black bag comes in small and large sizes. [Which size bạn cần?]",
-            "updated_at": "2026-08-19T08:25:29.763Z"
-          }
+          "text": "The black bag comes in small and large sizes. Which size would you like?"
         },
         {
           "speaker": "Bạn",
@@ -8597,11 +8405,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "This travel bag is perfect for me. I would like to buy it.",
-          "note": {
-            "text": "This travel bag is perfect for me. I would like to buy it.",
-            "updated_at": "2026-08-19T08:26:10.357Z"
-          }
+          "text": "This travel bag is perfect for me. I would like to buy it."
         }
       ]
     },
