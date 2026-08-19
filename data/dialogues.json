@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "export_type": "communication_dialogue_review",
-  "exported_at": "2026-08-19T17:46:00+07:00",
+  "exported_at": "2026-08-20T00:19:00+07:00",
   "storage": "standalone-json-review",
   "navigation_status": "all",
   "summary": {
     "dialogues": 209,
-    "verified": 121,
-    "unverified": 88
+    "verified": 147,
+    "unverified": 62
   },
   "items": [
     {
@@ -8411,8 +8411,8 @@
     },
     {
       "dialogue_id": "dlg_426_81d6055a",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8430,11 +8430,11 @@
       "turns": [
         {
           "speaker": "Mia",
-          "text": "Excuse me. Is there a pharmacy near here?"
+          "text": "Hi, Minh. I'm new to this town. Is there a pharmacy near here?"
         },
         {
           "speaker": "Minh",
-          "text": "Yes. It's next to the supermarket."
+          "text": "Yes. There's one next to the supermarket."
         },
         {
           "speaker": "Mia",
@@ -8442,11 +8442,11 @@
         },
         {
           "speaker": "Minh",
-          "text": "It's across from the supermarket."
+          "text": "It's across from the supermarket, on King Street."
         },
         {
           "speaker": "Mia",
-          "text": "Thanks. Is there a hospital near the station?"
+          "text": "Good to know. Is there a hospital in this area too?"
         },
         {
           "speaker": "Minh",
@@ -8454,18 +8454,18 @@
         },
         {
           "speaker": "Mia",
-          "text": "Perfect. Thank you."
+          "text": "Nice. It sounds like most places are close together here."
         },
         {
           "speaker": "Minh",
-          "text": "You're welcome."
+          "text": "They are. This area is very convenient."
         }
       ]
     },
     {
       "dialogue_id": "dlg_641_cc5e4e08",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8483,34 +8483,34 @@
       "turns": [
         {
           "speaker": "Anna",
-          "text": "Excuse me. Where is the library?"
+          "text": "Hi. I just moved to this neighborhood. Is there a library near here?"
         },
         {
           "speaker": "Minh",
-          "text": "It is across from the bank."
+          "text": "Yes. The library is across from the bank."
         },
         {
           "speaker": "Anna",
-          "text": "Is it on this street?"
+          "text": "That's useful. Is there a supermarket nearby too?"
         },
         {
           "speaker": "Minh",
-          "text": "Yes. It is just ahead on your left."
+          "text": "Yes. It's next to the bank, on King Street."
         },
         {
           "speaker": "Anna",
-          "text": "Thank you."
+          "text": "Great. I'm starting to know the area."
         },
         {
           "speaker": "Minh",
-          "text": "You are welcome."
+          "text": "You'll find most of the useful places around King Street."
         }
       ]
     },
     {
       "dialogue_id": "dlg_431_86adb332",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8528,7 +8528,7 @@
       "turns": [
         {
           "speaker": "Emma",
-          "text": "Excuse me. Is there a hospital nearby?"
+          "text": "I'm new to this town. Is there a hospital nearby?"
         },
         {
           "speaker": "Minh",
@@ -8536,31 +8536,31 @@
         },
         {
           "speaker": "Emma",
-          "text": "Great. I am outside the pharmacy now. How do I get there?"
+          "text": "That's good to know. What about a pharmacy?"
         },
         {
           "speaker": "Minh",
-          "text": "Go straight until you reach the bank."
+          "text": "There's one across from the bank."
         },
         {
           "speaker": "Emma",
-          "text": "One second. Let me write that down. Okay, what comes next?"
+          "text": "Nice. Is there somewhere nearby to buy food and other things?"
         },
         {
           "speaker": "Minh",
-          "text": "Turn left and go past the supermarket."
+          "text": "Yes. The supermarket is next to the bank."
         },
         {
           "speaker": "Emma",
-          "text": "Okay, and then?"
+          "text": "And is there a library in this area?"
         },
         {
           "speaker": "Minh",
-          "text": "You will see the library. The hospital is right across from it."
+          "text": "Yes. The library is across from the station, near the hospital."
         },
         {
           "speaker": "Emma",
-          "text": "Got it. Thanks a lot."
+          "text": "Perfect. Now I know where the main places in town are."
         }
       ],
       "fill_blank_words": [
@@ -8618,8 +8618,8 @@
     },
     {
       "dialogue_id": "dlg_434_a892c26a",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8637,30 +8637,30 @@
       "turns": [
         {
           "speaker": "Mia",
-          "text": "Where is the supermarket?"
+          "text": "I'm still getting to know this neighborhood. What places are near here?"
         },
         {
           "speaker": "Minh",
-          "text": "It is next to the bank on King Street."
+          "text": "There's a supermarket next to the bank on King Street, and a pharmacy across from it."
         },
         {
           "speaker": "Mia",
-          "text": "Is it far from here?"
+          "text": "Is there a library in this area too?"
         },
         {
           "speaker": "Minh",
-          "text": "No. It is only a short walk."
+          "text": "Yes. It's near the station, and the hospital is across from the library."
         },
         {
           "speaker": "Mia",
-          "text": "Great. Thanks."
+          "text": "Great. That helps me understand the area much better."
         }
       ]
     },
     {
       "dialogue_id": "dlg_435_71e2405d",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8677,51 +8677,51 @@
       "turn_count": 10,
       "turns": [
         {
-          "speaker": "Nhân vật",
-          "text": "Can I help you?"
+          "speaker": "Mia",
+          "text": "Hi. You look new around here. Can I help you?"
         },
         {
           "speaker": "Bạn",
-          "text": "Yes. Where is the pharmacy?"
+          "text": "Yes, thanks. I'm new to this town. Is there a supermarket near here?"
         },
         {
-          "speaker": "Nhân vật",
-          "text": "It is across from the library."
-        },
-        {
-          "speaker": "Bạn",
-          "text": "Is it near here?"
-        },
-        {
-          "speaker": "Nhân vật",
-          "text": "Yes. It is only a few minutes away."
+          "speaker": "Mia",
+          "text": "Yes. There's one on King Street, next to the bank."
         },
         {
           "speaker": "Bạn",
-          "text": "Great. Which way should I go?"
+          "text": "Great. Is there a pharmacy nearby too?"
         },
         {
-          "speaker": "Nhân vật",
-          "text": "Go straight and turn left at the next corner. You will see the library on your right."
-        },
-        {
-          "speaker": "Bạn",
-          "text": "So the pharmacy is across from the library?"
-        },
-        {
-          "speaker": "Nhân vật",
-          "text": "Yes, exactly. You will see it there."
+          "speaker": "Mia",
+          "text": "Yes. It's across from the supermarket."
         },
         {
           "speaker": "Bạn",
-          "text": "Perfect. Thank you."
+          "text": "What places are near the station?"
+        },
+        {
+          "speaker": "Mia",
+          "text": "The library is across from the station, and the hospital is next to it."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "That's useful. Is the bank near the supermarket?"
+        },
+        {
+          "speaker": "Mia",
+          "text": "Yes. They're right next to each other."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Perfect. I'm starting to know the neighborhood now."
         }
       ]
     },
     {
       "dialogue_id": "dlg_436_7dfa85a3",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8739,50 +8739,50 @@
       "turns": [
         {
           "speaker": "Alex",
-          "text": "Hello. Can I help you?"
+          "text": "Hi. I haven't seen you around before. Are you new to the neighborhood?"
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, please. Where is the bus station?"
+          "text": "Yes. I just moved here. What places are near here?"
         },
         {
           "speaker": "Alex",
-          "text": "It is on Green Street, about a five-minute walk from here."
+          "text": "There are several useful places on King Street. There's a supermarket and a bank."
         },
         {
           "speaker": "Bạn",
-          "text": "Which way should I go?"
+          "text": "Is there a pharmacy nearby?"
         },
         {
           "speaker": "Alex",
-          "text": "Go straight for two blocks and turn right onto Green Street."
+          "text": "Yes. It's across from the supermarket."
         },
         {
           "speaker": "Bạn",
-          "text": "Is it on the left or the right?"
+          "text": "What about the bus station?"
         },
         {
           "speaker": "Alex",
-          "text": "It is on your left, next to the bank."
+          "text": "It's near the library, a few blocks from King Street."
         },
         {
           "speaker": "Bạn",
-          "text": "Do I need to cross the street?"
+          "text": "Is there a hospital near the station too?"
         },
         {
           "speaker": "Alex",
-          "text": "No. Stay on the same side. You will see the bus station just after the bank."
+          "text": "Yes. The hospital is next to the station, across from the library."
         },
         {
           "speaker": "Bạn",
-          "text": "Perfect. Thank you."
+          "text": "Great. That gives me a good idea of the area. Thanks."
         }
       ]
     },
     {
       "dialogue_id": "dlg_439_9513b086",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8826,8 +8826,8 @@
     },
     {
       "dialogue_id": "dlg_642_7cc54612",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8875,8 +8875,8 @@
     },
     {
       "dialogue_id": "dlg_444_14d9e812",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8932,8 +8932,8 @@
     },
     {
       "dialogue_id": "dlg_447_baecf5b7",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8951,50 +8951,50 @@
       "turns": [
         {
           "speaker": "Nhân vật",
-          "text": "Excuse me. Could you tell me how to get to the pharmacy one step at a time?"
+          "text": "Hello. Can I help you?"
         },
         {
           "speaker": "Bạn",
+          "text": "Yes, please. Could you tell me how to get to the pharmacy one step at a time?"
+        },
+        {
+          "speaker": "Nhân vật",
           "text": "Sure. First, go straight to the next corner."
         },
         {
-          "speaker": "Nhân vật",
-          "text": "Okay, the next corner. Got it. What comes next?"
+          "speaker": "Bạn",
+          "text": "Okay. What comes next?"
         },
         {
-          "speaker": "Bạn",
+          "speaker": "Nhân vật",
           "text": "Turn left at the corner."
         },
         {
-          "speaker": "Nhân vật",
-          "text": "Turn left. Got it. And then?"
+          "speaker": "Bạn",
+          "text": "And then?"
         },
         {
-          "speaker": "Bạn",
+          "speaker": "Nhân vật",
           "text": "Go past the bank. The pharmacy is on your right."
         },
         {
-          "speaker": "Nhân vật",
+          "speaker": "Bạn",
           "text": "Is it far from the bank?"
         },
         {
-          "speaker": "Bạn",
+          "speaker": "Nhân vật",
           "text": "No. It is only about five minutes on foot."
         },
         {
-          "speaker": "Nhân vật",
-          "text": "Great. I think I can find it now. Thank you."
-        },
-        {
           "speaker": "Bạn",
-          "text": "You are welcome."
+          "text": "Great. I think I can find it now. Thank you."
         }
       ]
     },
     {
       "dialogue_id": "dlg_448_809d5c8e",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9012,58 +9012,58 @@
       "turns": [
         {
           "speaker": "Leo",
-          "text": "Excuse me. I am trying to find the art center. How do I get there?"
+          "text": "Hi. Can I help you?"
         },
         {
           "speaker": "Bạn",
+          "text": "Yes, please. I'm trying to find the art center. How do I get there?"
+        },
+        {
+          "speaker": "Leo",
           "text": "Go straight along Oak Street, turn right at the second corner, then go past the cafe. The art center is on your left."
         },
         {
-          "speaker": "Leo",
+          "speaker": "Bạn",
           "text": "Sorry, that is a lot to remember. Could you say it again one step at a time?"
         },
         {
+          "speaker": "Leo",
+          "text": "Of course. First, go straight along Oak Street."
+        },
+        {
           "speaker": "Bạn",
-          "text": "Sure. First, go straight along Oak Street."
+          "text": "Okay. What comes next?"
         },
         {
           "speaker": "Leo",
-          "text": "Okay, along Oak Street. Got it. What is next?"
-        },
-        {
-          "speaker": "Bạn",
           "text": "Turn right at the second corner."
         },
         {
-          "speaker": "Leo",
-          "text": "Right at the second corner. And then?"
+          "speaker": "Bạn",
+          "text": "And then?"
         },
         {
-          "speaker": "Bạn",
+          "speaker": "Leo",
           "text": "Go past the cafe. The art center is on your left."
         },
         {
-          "speaker": "Leo",
-          "text": "Great. Is it far from there?"
+          "speaker": "Bạn",
+          "text": "Is it far from there?"
         },
         {
-          "speaker": "Bạn",
+          "speaker": "Leo",
           "text": "No. It is only a short walk."
         },
         {
-          "speaker": "Leo",
-          "text": "Thank you."
-        },
-        {
           "speaker": "Bạn",
-          "text": "You are welcome."
+          "text": "Great. Thank you."
         }
       ]
     },
     {
       "dialogue_id": "dlg_451_662e86aa",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9111,8 +9111,8 @@
     },
     {
       "dialogue_id": "dlg_457_a82742f6",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9168,8 +9168,8 @@
     },
     {
       "dialogue_id": "dlg_458_1d47aa68",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9229,8 +9229,8 @@
     },
     {
       "dialogue_id": "dlg_464_f9966a90",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9278,8 +9278,8 @@
     },
     {
       "dialogue_id": "dlg_643_f5027b19",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9319,8 +9319,8 @@
     },
     {
       "dialogue_id": "dlg_469_e6859e77",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9372,8 +9372,8 @@
     },
     {
       "dialogue_id": "dlg_471_856ea3eb",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9481,8 +9481,8 @@
     },
     {
       "dialogue_id": "dlg_473_4f7c790c",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9542,8 +9542,8 @@
     },
     {
       "dialogue_id": "dlg_474_b079964a",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9603,8 +9603,8 @@
     },
     {
       "dialogue_id": "dlg_477_5d21bfb1",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9664,8 +9664,8 @@
     },
     {
       "dialogue_id": "dlg_644_3959f10a",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9721,8 +9721,8 @@
     },
     {
       "dialogue_id": "dlg_481_fd82389e",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9782,8 +9782,8 @@
     },
     {
       "dialogue_id": "dlg_483_14a69688",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9895,8 +9895,8 @@
     },
     {
       "dialogue_id": "dlg_485_b2541162",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9956,8 +9956,8 @@
     },
     {
       "dialogue_id": "dlg_486_2a09bb1d",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
