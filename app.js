@@ -547,6 +547,8 @@
       $('prevBtn').disabled = true;
       $('nextBtn').disabled = true;
       $('verifyBtn').disabled = true;
+      $('copyModuleDialogueBtn').disabled = true;
+      $('copyLessonDialogueBtn').disabled = true;
       $('copyDialogueBtn').disabled = true;
       $('verifiedTick').hidden = true;
       renderFillBlankReference(null);
@@ -642,29 +644,123 @@
     verifyBtn.textContent = item.verified ? 'Đã xác minh' : 'Xác minh';
     verifyBtn.classList.toggle('is-verified', item.verified);
     verifyBtn.setAttribute('aria-pressed', item.verified ? 'true' : 'false');
-    $('copyDialogueBtn').disabled = !Array.isArray(item.turns) || item.turns.length === 0;
+    const currentHasTurns = Array.isArray(item.turns) && item.turns.length > 0;
+    const moduleHasTurns = Array.isArray(state.data?.items) && state.data.items.some(candidate =>
+      candidate.module_key === item.module_key
+      && Array.isArray(candidate.turns)
+      && candidate.turns.length > 0
+    );
+    const lessonHasTurns = Array.isArray(state.data?.items) && state.data.items.some(candidate =>
+      candidate.lesson_key === item.lesson_key
+      && Array.isArray(candidate.turns)
+      && candidate.turns.length > 0
+    );
+
+    $('copyModuleDialogueBtn').disabled = !moduleHasTurns;
+    $('copyLessonDialogueBtn').disabled = !lessonHasTurns;
+    $('copyDialogueBtn').disabled = !currentHasTurns;
     $('verifiedTick').hidden = !item.verified;
   }
 
-  function currentDialogueClipboardText() {
-    const item = currentItem();
-    if (!item || !Array.isArray(item.turns)) return '';
-
-    // Lấy trực tiếp turn.text hiện tại nên luôn ưu tiên bản mới nhất sau khi user bấm “Sửa”.
-    // NOTE không được đưa vào nội dung clipboard.
-    return item.turns
-      .map(turn => {
-        const speaker = String(turn?.speaker ?? '—').trim() || '—';
-        const text = String(turn?.text ?? '').trim();
-        return `${speaker} - ${text}`;
-      })
-      .join('\n');
+  function numericPart(value, fallback = 0) {
+    const match = String(value ?? '').match(/(\d+)/);
+    return match ? Number(match[1]) : fallback;
   }
 
-  async function copyCurrentDialogue() {
-    const text = currentDialogueClipboardText();
+  function moduleNumber(item) {
+    const match = String(item?.module_key ?? '').match(/module-(\d+)/i);
+    return match ? Number(match[1]) : numericPart(item?.module_key, 0);
+  }
+
+  function lessonNumber(item) {
+    const match = String(item?.lesson_key ?? '').match(/-(\d+)-(\d+)$/);
+    return match ? Number(match[2]) : numericPart(item?.lesson_key, 0);
+  }
+
+  function activityClipboardName(item) {
+    const activityKey = String(item?.activity_key ?? item?.dialogue_id ?? 'activity').trim();
+    const lessonKey = String(item?.lesson_key ?? '').trim();
+
+    if (lessonKey && activityKey.startsWith(`${lessonKey}-`)) {
+      return activityKey.slice(lessonKey.length + 1) || 'activity';
+    }
+
+    return activityKey || 'activity';
+  }
+
+  function dialogueClipboardHeader(item) {
+    const moduleNo = moduleNumber(item) || '?';
+    const lessonNo = lessonNumber(item) || '?';
+    const activity = activityClipboardName(item);
+    const slideNo = Number(item?.dialogue_index) > 0 ? Number(item.dialogue_index) : 1;
+
+    // Ví dụ: 5-1-[opening-slide1]
+    return `${moduleNo}-${lessonNo}-[${activity}-slide${slideNo}]`;
+  }
+
+  function oneDialogueClipboardText(item) {
+    if (!item || !Array.isArray(item.turns) || item.turns.length === 0) return '';
+
+    // Luôn lấy turn.text hiện tại, tức là bản mới nhất sau khi user bấm “Sửa”.
+    // NOTE tuyệt đối không được đưa vào clipboard.
+    const lines = item.turns.map(turn => {
+      const speaker = String(turn?.speaker ?? '—').trim() || '—';
+      const text = String(turn?.text ?? '').trim();
+      return `${speaker} - ${text}`;
+    });
+
+    return [dialogueClipboardHeader(item), ...lines].join('\n');
+  }
+
+  function sortDialogueItems(items) {
+    return [...items].sort((a, b) => {
+      const moduleDiff = moduleNumber(a) - moduleNumber(b);
+      if (moduleDiff) return moduleDiff;
+
+      const lessonDiff = lessonNumber(a) - lessonNumber(b);
+      if (lessonDiff) return lessonDiff;
+
+      const activityDiff = Number(a?.activity_sort_order ?? 0) - Number(b?.activity_sort_order ?? 0);
+      if (activityDiff) return activityDiff;
+
+      const slideDiff = Number(a?.dialogue_index ?? 1) - Number(b?.dialogue_index ?? 1);
+      if (slideDiff) return slideDiff;
+
+      return String(a?.activity_key ?? '').localeCompare(String(b?.activity_key ?? ''));
+    });
+  }
+
+  function scopedDialogueClipboardText(scope) {
+    const item = currentItem();
+    if (!item || !state.data || !Array.isArray(state.data.items)) return '';
+
+    let items = [];
+
+    if (scope === 'module') {
+      items = state.data.items.filter(candidate =>
+        candidate.module_key === item.module_key
+        && Array.isArray(candidate.turns)
+        && candidate.turns.length > 0
+      );
+    } else if (scope === 'lesson') {
+      items = state.data.items.filter(candidate =>
+        candidate.lesson_key === item.lesson_key
+        && Array.isArray(candidate.turns)
+        && candidate.turns.length > 0
+      );
+    } else {
+      items = [item];
+    }
+
+    return sortDialogueItems(items)
+      .map(oneDialogueClipboardText)
+      .filter(Boolean)
+      .join('\n\n');
+  }
+
+  async function writeClipboardText(text, successMessage) {
     if (!text) {
-      setNotice('Hội thoại hiện tại không có nội dung để copy.');
+      setNotice('Không có hội thoại để copy.');
       return;
     }
 
@@ -674,10 +770,9 @@
       } else {
         throw new Error('Clipboard API unavailable');
       }
-      setNotice('Đã copy hội thoại theo dạng Speaker - Thoại, mỗi lượt một dòng.');
+      setNotice(successMessage);
       return;
     } catch (error) {
-      // Fallback để vẫn hoạt động khi mở tool bằng file:// hoặc trình duyệt chặn Clipboard API.
       const textarea = document.createElement('textarea');
       textarea.value = text;
       textarea.setAttribute('readonly', '');
@@ -697,9 +792,30 @@
       }
 
       setNotice(copied
-        ? 'Đã copy hội thoại theo dạng Speaker - Thoại, mỗi lượt một dòng.'
+        ? successMessage
         : 'Không copy được vào clipboard. Hãy kiểm tra quyền clipboard của trình duyệt.');
     }
+  }
+
+  async function copyCurrentDialogue() {
+    return writeClipboardText(
+      scopedDialogueClipboardText('current'),
+      'Đã copy hội thoại hiện tại kèm mã Module-Lesson-Activity.'
+    );
+  }
+
+  async function copyLessonDialogues() {
+    return writeClipboardText(
+      scopedDialogueClipboardText('lesson'),
+      'Đã copy toàn bộ hội thoại của Lesson hiện tại theo đúng thứ tự activity.'
+    );
+  }
+
+  async function copyModuleDialogues() {
+    return writeClipboardText(
+      scopedDialogueClipboardText('module'),
+      'Đã copy toàn bộ hội thoại của Module hiện tại theo đúng thứ tự lesson và activity.'
+    );
   }
 
   async function persistCurrentFileSilently() {
@@ -1254,6 +1370,8 @@
   $('nextBtn').addEventListener('click', () => move(1));
   $('verifyBtn').addEventListener('click', () => toggleVerified());
   $('verifiedTick').addEventListener('click', () => toggleVerified(false));
+  $('copyModuleDialogueBtn').addEventListener('click', copyModuleDialogues);
+  $('copyLessonDialogueBtn').addEventListener('click', copyLessonDialogues);
   $('copyDialogueBtn').addEventListener('click', copyCurrentDialogue);
   $('exportJsonBtn').addEventListener('click', downloadJson);
   $('saveJsonBtn').addEventListener('click', saveToHandle);
