@@ -547,6 +547,7 @@
       $('prevBtn').disabled = true;
       $('nextBtn').disabled = true;
       $('verifyBtn').disabled = true;
+      $('copyDialogueBtn').disabled = true;
       $('verifiedTick').hidden = true;
       renderFillBlankReference(null);
       return;
@@ -641,7 +642,64 @@
     verifyBtn.textContent = item.verified ? 'Đã xác minh' : 'Xác minh';
     verifyBtn.classList.toggle('is-verified', item.verified);
     verifyBtn.setAttribute('aria-pressed', item.verified ? 'true' : 'false');
+    $('copyDialogueBtn').disabled = !Array.isArray(item.turns) || item.turns.length === 0;
     $('verifiedTick').hidden = !item.verified;
+  }
+
+  function currentDialogueClipboardText() {
+    const item = currentItem();
+    if (!item || !Array.isArray(item.turns)) return '';
+
+    // Lấy trực tiếp turn.text hiện tại nên luôn ưu tiên bản mới nhất sau khi user bấm “Sửa”.
+    // NOTE không được đưa vào nội dung clipboard.
+    return item.turns
+      .map(turn => {
+        const speaker = String(turn?.speaker ?? '—').trim() || '—';
+        const text = String(turn?.text ?? '').trim();
+        return `${speaker} - ${text}`;
+      })
+      .join('\n');
+  }
+
+  async function copyCurrentDialogue() {
+    const text = currentDialogueClipboardText();
+    if (!text) {
+      setNotice('Hội thoại hiện tại không có nội dung để copy.');
+      return;
+    }
+
+    try {
+      if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+        await navigator.clipboard.writeText(text);
+      } else {
+        throw new Error('Clipboard API unavailable');
+      }
+      setNotice('Đã copy hội thoại theo dạng Speaker - Thoại, mỗi lượt một dòng.');
+      return;
+    } catch (error) {
+      // Fallback để vẫn hoạt động khi mở tool bằng file:// hoặc trình duyệt chặn Clipboard API.
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.setAttribute('readonly', '');
+      textarea.style.position = 'fixed';
+      textarea.style.left = '-9999px';
+      textarea.style.top = '0';
+      document.body.appendChild(textarea);
+      textarea.select();
+
+      let copied = false;
+      try {
+        copied = document.execCommand('copy');
+      } catch (fallbackError) {
+        copied = false;
+      } finally {
+        textarea.remove();
+      }
+
+      setNotice(copied
+        ? 'Đã copy hội thoại theo dạng Speaker - Thoại, mỗi lượt một dòng.'
+        : 'Không copy được vào clipboard. Hãy kiểm tra quyền clipboard của trình duyệt.');
+    }
   }
 
   async function persistCurrentFileSilently() {
@@ -1196,6 +1254,7 @@
   $('nextBtn').addEventListener('click', () => move(1));
   $('verifyBtn').addEventListener('click', () => toggleVerified());
   $('verifiedTick').addEventListener('click', () => toggleVerified(false));
+  $('copyDialogueBtn').addEventListener('click', copyCurrentDialogue);
   $('exportJsonBtn').addEventListener('click', downloadJson);
   $('saveJsonBtn').addEventListener('click', saveToHandle);
   $('openJsonBtn').addEventListener('click', openJson);

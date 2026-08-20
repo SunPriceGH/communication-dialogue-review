@@ -373,6 +373,31 @@ h1 {
   color: #fff;
 }
 
+.copy-dialogue-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 14px 14px;
+  background: #fbfdfd;
+}
+
+.copy-dialogue-btn {
+  min-width: 130px;
+  padding: 9px 16px;
+  border: 1px solid #b8cbd3;
+  background: #fff;
+  color: #315363;
+}
+
+.copy-dialogue-btn:hover:not(:disabled) {
+  background: #f1f7f9;
+}
+
+.copy-dialogue-btn:disabled {
+  cursor: not-allowed;
+  opacity: .5;
+}
+
 .verify-btn.is-verified {
   background: #eaf7ee;
   color: #15803d;
