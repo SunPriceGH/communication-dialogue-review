@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "export_type": "communication_dialogue_review",
-  "exported_at": "2026-08-20T06:51:00.000Z",
+  "exported_at": "2026-08-20T10:09:00.000Z",
   "storage": "standalone-json-review",
   "navigation_status": "all",
   "summary": {
     "dialogues": 209,
-    "verified": 157,
-    "unverified": 52
+    "verified": 170,
+    "unverified": 39
   },
   "items": [
     {
@@ -10017,8 +10017,8 @@
     },
     {
       "dialogue_id": "dlg_489_3d2091ce",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:05:50.230Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10066,8 +10066,8 @@
     },
     {
       "dialogue_id": "dlg_645_52f9211d",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:05:57.677Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10127,8 +10127,8 @@
     },
     {
       "dialogue_id": "dlg_494_ca22e948",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:06:12.390Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10188,8 +10188,8 @@
     },
     {
       "dialogue_id": "dlg_496_b2364c60",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:06:13.966Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10301,8 +10301,8 @@
     },
     {
       "dialogue_id": "dlg_498_9230f52a",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T10:09:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10356,14 +10356,14 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Sure."
+          "text": "Sure, go ahead. Let me know if you need anything else from me."
         }
       ]
     },
     {
       "dialogue_id": "dlg_499_b5775a4b",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T10:09:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10417,14 +10417,14 @@
         },
         {
           "speaker": "Bạn",
-          "text": "I will."
+          "text": "Of course, I will tell you right away if I get worse."
         }
       ]
     },
     {
       "dialogue_id": "dlg_502_75ca05f1",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:31:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10474,11 +10474,11 @@
         },
         {
           "speaker": "Minh",
-          "text": "I agree. I need an early night."
+          "text": "I agree. I need to sleep early."
         },
         {
           "speaker": "Mia",
-          "text": "Get some rest."
+          "text": "Get more rest, and you should see a doctor."
         },
         {
           "speaker": "Minh",
@@ -10492,8 +10492,8 @@
     },
     {
       "dialogue_id": "dlg_508_4857a0df",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:09:50.343Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10553,8 +10553,8 @@
     },
     {
       "dialogue_id": "dlg_509_6218c287",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:31:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10572,7 +10572,7 @@
       "turns": [
         {
           "speaker": "Alex",
-          "text": "I slept only four hours last night, and I feel very tired. What do you think I should do first?"
+          "text": "I only slept four hours last night, and I feel really tired. What should I do?"
         },
         {
           "speaker": "Bạn",
@@ -10580,27 +10580,27 @@
         },
         {
           "speaker": "Alex",
-          "text": "I also noticed that I have hardly had any water today. What would you suggest?"
+          "text": "I'm thirsty. I haven't had much water today."
         },
         {
           "speaker": "Bạn",
-          "text": "You should drink some water."
+          "text": "You should drink some water. That might help."
         },
         {
           "speaker": "Alex",
-          "text": "I was planning to play games until midnight. Is that a good idea?"
+          "text": "I was planning to stay up late again tonight to do homework."
         },
         {
           "speaker": "Bạn",
-          "text": "You should not stay up late tonight."
+          "text": "You shouldn't stay up too late. You need rest."
         },
         {
           "speaker": "Alex",
-          "text": "Okay. I will rest, drink water, and go to bed earlier. What if I still feel unwell tomorrow?"
+          "text": "Okay, I'll rest, drink more water, and go to bed earlier. What if I still feel bad tomorrow?"
         },
         {
           "speaker": "Bạn",
-          "text": "You should see a doctor if you are still not feeling well."
+          "text": "If you still don't feel well, you should see a doctor."
         },
         {
           "speaker": "Alex",
@@ -10608,14 +10608,14 @@
         },
         {
           "speaker": "Bạn",
-          "text": "I hope you feel better tomorrow."
+          "text": "I hope you get better tomorrow."
         }
       ]
     },
     {
       "dialogue_id": "dlg_515_c053548b",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:31:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10633,7 +10633,7 @@
       "turns": [
         {
           "speaker": "Minh",
-          "text": "Excuse me. Can you help me? I need help."
+          "text": "Excuse me. Can you help me?"
         },
         {
           "speaker": "Receptionist",
@@ -10657,14 +10657,14 @@
         },
         {
           "speaker": "Minh",
-          "text": "Thank you. I will."
+          "text": "Thank you, I will."
         }
       ]
     },
     {
       "dialogue_id": "dlg_646_ae325c0f",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:31:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10682,7 +10682,7 @@
       "turns": [
         {
           "speaker": "Minh",
-          "text": "Excuse me. Can you help me?"
+          "text": "Excuse me. I need help. Can you help me?"
         },
         {
           "speaker": "Receptionist",
@@ -10690,27 +10690,27 @@
         },
         {
           "speaker": "Minh",
-          "text": "I need help."
+          "text": "My friend feels very weak and dizzy."
         },
         {
           "speaker": "Receptionist",
-          "text": "What is the problem?"
+          "text": "Where are you now?"
         },
         {
           "speaker": "Minh",
-          "text": "My friend feels very weak and dizzy and had to sit down near the entrance."
+          "text": "We are near the main entrance."
         },
         {
           "speaker": "Receptionist",
-          "text": "Okay. I can call a doctor."
+          "text": "Okay. I can call a doctor. Please stay there."
         },
         {
           "speaker": "Minh",
-          "text": "Yes. Please call a doctor."
+          "text": "Yes, please call a doctor right away. We are sitting right next to the entrance."
         },
         {
           "speaker": "Receptionist",
-          "text": "I will call one now."
+          "text": "A doctor is on the way to you now. Please don't go anywhere."
         },
         {
           "speaker": "Minh",
@@ -10781,8 +10781,8 @@
     },
     {
       "dialogue_id": "dlg_523_8f8e3a02",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T10:09:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10812,7 +10812,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "My friend feels very dizzy."
+          "text": "My friend feels very dizzy. She cannot stand up."
         },
         {
           "speaker": "Nhân vật",
@@ -10820,7 +10820,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "My friend is sitting near the entrance."
+          "text": "My friend is sitting near the main entrance."
         },
         {
           "speaker": "Nhân vật",
@@ -10828,7 +10828,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, please. Please call a doctor."
+          "text": "Yes, please call a doctor. She looks very pale."
         },
         {
           "speaker": "Nhân vật",
@@ -10836,14 +10836,14 @@
         },
         {
           "speaker": "Bạn",
-          "text": "I will. Thank you."
+          "text": "I will. Thank you for helping us."
         }
       ]
     },
     {
       "dialogue_id": "dlg_524_b1946a07",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T10:09:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10873,7 +10873,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "My group is called Green Team."
+          "text": "My group is called Green Team. There are about ten people in it."
         },
         {
           "speaker": "Mia",
@@ -10881,7 +10881,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Near the main entrance."
+          "text": "Near the main entrance. I last saw them about ten minutes ago."
         },
         {
           "speaker": "Mia",
@@ -10889,7 +10889,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Okay. I will wait here."
+          "text": "Okay, I'll wait here. Thank you for your help."
         },
         {
           "speaker": "Mia",
@@ -10897,7 +10897,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Great. Thank you for your help."
+          "text": "Great. Thank you so much. I feel better now."
         }
       ]
     },
@@ -13440,6 +13440,6 @@
       ]
     }
   ],
-  "updated_at": "2026-08-20T06:49:27.848Z",
+  "updated_at": "2026-08-20T09:29:51.770Z",
   "export_scope": "full"
 }
