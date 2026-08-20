@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "export_type": "communication_dialogue_review",
-  "exported_at": "2026-08-20T18:58:00+07:00",
+  "exported_at": "2026-08-21T01:03:00+07:00",
   "storage": "standalone-json-review",
   "navigation_status": "all",
   "summary": {
     "dialogues": 209,
-    "verified": 176,
-    "unverified": 33
+    "verified": 183,
+    "unverified": 26
   },
   "items": [
     {
@@ -10615,7 +10615,7 @@
     {
       "dialogue_id": "dlg_515_c053548b",
       "verified": true,
-      "verified_at": "2026-08-20T09:31:00.000Z",
+      "verified_at": "2026-08-21T01:03:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10649,7 +10649,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Near the entrance. Please call a doctor."
+          "text": "We are at the entrance. Please call a doctor."
         },
         {
           "speaker": "Receptionist",
@@ -10657,7 +10657,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Thank you, I will."
+          "text": "Thank you very much, I will stay here."
         }
       ]
     },
@@ -10720,8 +10720,8 @@
     },
     {
       "dialogue_id": "dlg_520_eb21f784",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T01:03:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10775,16 +10775,7 @@
         },
         {
           "speaker": "Guard",
-          "text": "Thank you. I will call the group leader, and ask him to go there.",
-          "note": {
-            "text": "[\"Thank you. The group leader is on the way.\"] -> [\"Thank you. I will call the group leader, and ask him to go there.\"]",
-            "updated_at": "2026-08-20T11:47:49.804Z",
-            "auto_edit": {
-              "original_text": "Thank you. The group leader is on the way.",
-              "current_text": "Thank you. I will call the group leader, and ask him to go there.",
-              "manual_note": ""
-            }
-          }
+          "text": "Thank you. I will call the group leader, and ask him to go there."
         }
       ]
     },
@@ -11330,8 +11321,8 @@
     },
     {
       "dialogue_id": "dlg_540_5b21feba",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T01:03:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -11365,15 +11356,15 @@
         },
         {
           "speaker": "Doctor",
-          "text": "Please rest for a moment. If you use any medicine later, make sure you understand the directions."
+          "text": "You can take a mild painkiller from the pharmacy. Ask the pharmacist about the directions before you take it."
         },
         {
           "speaker": "Minh",
-          "text": "Okay. I will."
+          "text": "Okay, I will. Thank you for your help."
         },
         {
           "speaker": "Pharmacist",
-          "text": "Hello. How can I help you?"
+          "text": "Here's your medicine. Do you need anything else?"
         },
         {
           "speaker": "Minh",
@@ -11381,18 +11372,18 @@
         },
         {
           "speaker": "Pharmacist",
-          "text": "The frequency is listed in the directions. Ask me if anything is unclear."
+          "text": "You should take one tablet every 6 hours. Read the directions carefully, and ask me if anything is unclear."
         },
         {
           "speaker": "Minh",
-          "text": "Thanks. I will read the directions carefully and ask if I need help."
+          "text": "Thanks, I'll check the directions carefully and ask if I need help."
         }
       ]
     },
     {
       "dialogue_id": "dlg_648_645a1fbc",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T01:03:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -11414,7 +11405,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Can you help me? I do not feel well."
+          "text": "Can you help me? I don't feel well. I need to see a doctor."
         },
         {
           "speaker": "Doctor",
@@ -11422,7 +11413,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "I have a headache."
+          "text": "I have a headache, and it is getting worse."
         },
         {
           "speaker": "Doctor",
@@ -11430,15 +11421,15 @@
         },
         {
           "speaker": "Minh",
-          "text": "It started this afternoon. I feel a little dizzy."
+          "text": "It started this afternoon. I feel a little dizzy too."
         },
         {
           "speaker": "Doctor",
-          "text": "Please sit down for a moment."
+          "text": "Please sit down for a moment. I'll get you some medicine."
         },
         {
           "speaker": "Minh",
-          "text": "Okay."
+          "text": "Okay, thank you."
         },
         {
           "speaker": "Doctor",
@@ -11446,14 +11437,14 @@
         },
         {
           "speaker": "Minh",
-          "text": "I will. Thank you."
+          "text": "I will."
         }
       ]
     },
     {
       "dialogue_id": "dlg_544_232f7ce0",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T01:03:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -11487,7 +11478,7 @@
         },
         {
           "speaker": "Emma",
-          "text": "About an hour ago."
+          "text": "About an hour ago when I was cooking dinner."
         },
         {
           "speaker": "Minh",
@@ -11495,18 +11486,18 @@
         },
         {
           "speaker": "Emma",
-          "text": "I will. If I need medicine later, I can ask a pharmacist about the directions."
+          "text": "I will. I hope the doctor can give me some medicine to help me feel better."
         },
         {
           "speaker": "Minh",
-          "text": "Yes. Ask if anything is unclear before you use it."
+          "text": "Yes. Make sure you understand the directions before you use any medicine."
         }
       ]
     },
     {
       "dialogue_id": "dlg_546_800f6d52",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T17:49:49.602Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -11618,8 +11609,8 @@
     },
     {
       "dialogue_id": "dlg_548_220dada3",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T01:03:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -11641,7 +11632,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "I do not feel well."
+          "text": "I don't feel well. I have been tired all day."
         },
         {
           "speaker": "Nhân vật",
@@ -11649,7 +11640,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "I have a headache."
+          "text": "I have a headache. It is right here in the front of my head."
         },
         {
           "speaker": "Nhân vật",
@@ -11657,7 +11648,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "It started this afternoon."
+          "text": "It started this afternoon, after I came home from work."
         },
         {
           "speaker": "Nhân vật",
@@ -11665,22 +11656,22 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, a little."
+          "text": "Yes, a little, especially when I stand up."
         },
         {
           "speaker": "Nhân vật",
-          "text": "Please sit down for a moment. Tell me if you feel worse."
+          "text": "Please sit down for a moment. I'll get you some medicine."
         },
         {
           "speaker": "Bạn",
-          "text": "Okay. I will."
+          "text": "Thank you. How often should I take it, and should I take it with food?"
         }
       ]
     },
     {
       "dialogue_id": "dlg_549_af88d73c",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T01:03:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -11702,23 +11693,23 @@
         },
         {
           "speaker": "Bạn",
-          "text": "I have a mild headache."
+          "text": "Hello. I have a mild headache. It started this afternoon and I don't feel very well."
         },
         {
           "speaker": "Pharmacist",
-          "text": "When did it start?"
+          "text": "I see. Do you have any other symptoms?"
         },
         {
           "speaker": "Bạn",
-          "text": "It started this afternoon."
+          "text": "I feel a little tired, but I don't have a fever."
         },
         {
           "speaker": "Pharmacist",
-          "text": "Okay. I can show you something and explain how to use it."
+          "text": "Okay, this medicine should help with the headache."
         },
         {
           "speaker": "Bạn",
-          "text": "How often should I take it?"
+          "text": "Okay, thank you. How often should I take it?"
         },
         {
           "speaker": "Pharmacist",
@@ -11726,7 +11717,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Can I take it with food?"
+          "text": "I understand. Can I take it with food?"
         },
         {
           "speaker": "Pharmacist",
@@ -11734,7 +11725,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Thank you. That’s clear."
+          "text": "That's very helpful. Thank you."
         }
       ]
     },
@@ -13457,6 +13448,6 @@
       ]
     }
   ],
-  "updated_at": "2026-08-20T11:57:54.405Z",
+  "updated_at": "2026-08-20T17:50:13.413Z",
   "export_scope": "full"
 }
