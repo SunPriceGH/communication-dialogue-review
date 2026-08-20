@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "export_type": "communication_dialogue_review",
-  "exported_at": "2026-08-20T00:19:00+07:00",
+  "exported_at": "2026-08-20T06:51:00.000Z",
   "storage": "standalone-json-review",
   "navigation_status": "all",
   "summary": {
     "dialogues": 209,
-    "verified": 147,
-    "unverified": 62
+    "verified": 157,
+    "unverified": 52
   },
   "items": [
     {
@@ -6697,8 +6697,8 @@
     },
     {
       "dialogue_id": "dlg_363_83f256e2",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -6732,22 +6732,22 @@
         },
         {
           "speaker": "Clerk",
-          "text": "It is a medium, and yes. The large one is ninety dollars."
+          "text": "It's a medium, and yes, we do. The large one is ninety dollars."
         },
         {
           "speaker": "Minh",
-          "text": "That is too expensive. Do you have a cheaper jacket?"
+          "text": "That's too expensive. Do you have a cheaper one?"
         },
         {
           "speaker": "Clerk",
-          "text": "Yes. This blue jacket is sixty dollars."
+          "text": "Yes, this blue one is sixty dollars."
         }
       ]
     },
     {
       "dialogue_id": "dlg_637_17ca2649",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -6781,7 +6781,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "Yes. Here is the large one."
+          "text": "Yes, here's the large one."
         },
         {
           "speaker": "Minh",
@@ -6789,7 +6789,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "It is one hundred and twenty dollars."
+          "text": "It's one hundred and twenty dollars."
         },
         {
           "speaker": "Minh",
@@ -6797,7 +6797,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "Yes. This gray one is seventy dollars."
+          "text": "Yes, this gray one is only seventy dollars."
         },
         {
           "speaker": "Minh",
@@ -6807,8 +6807,8 @@
     },
     {
       "dialogue_id": "dlg_368_f4082a09",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -6850,11 +6850,11 @@
         },
         {
           "speaker": "Mia",
-          "text": "That is more expensive, but it looks strong."
+          "text": "That's more expensive, but it looks strong."
         },
         {
           "speaker": "Minh",
-          "text": "Yes, and the large size is useful for a long trip."
+          "text": "Yeah, and the large size is useful for a long trip."
         },
         {
           "speaker": "Mia",
@@ -6869,7 +6869,7 @@
     {
       "dialogue_id": "dlg_370_8df92e57",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -6895,7 +6895,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "Yes, and this one is on sale today."
+          "text": "Yes, and it's on sale today."
         },
         {
           "speaker": "Anna",
@@ -6911,11 +6911,11 @@
         },
         {
           "speaker": "Clerk",
-          "text": "It is eighty dollars."
+          "text": "It's eighty dollars."
         },
         {
           "speaker": "Anna",
-          "text": "That is more expensive than I expected."
+          "text": "That's more expensive than I expected."
         },
         {
           "speaker": "Clerk",
@@ -6972,8 +6972,8 @@
         },
         {
           "turn_index": 7,
-          "start": 13,
-          "end": 22,
+          "start": 12,
+          "end": 21,
           "word": "expensive",
           "blank_id": "l1-read-b06"
         }
@@ -6982,7 +6982,7 @@
     {
       "dialogue_id": "dlg_372_ea9660e6",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7008,7 +7008,7 @@
         },
         {
           "speaker": "Nhân vật",
-          "text": "It is sixty dollars. Would you like to try it?"
+          "text": "It's sixty dollars. Would you like to try it on?"
         },
         {
           "speaker": "Bạn",
@@ -7024,7 +7024,7 @@
         },
         {
           "speaker": "Nhân vật",
-          "text": "Yes. The large one is eighty-five dollars."
+          "text": "Yes, the large one is eighty-five dollars."
         },
         {
           "speaker": "Bạn",
@@ -7043,7 +7043,7 @@
     {
       "dialogue_id": "dlg_373_44d6bc29",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7065,7 +7065,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "The black one is better for me."
+          "text": "The black one works better for me."
         },
         {
           "speaker": "Mia",
@@ -7103,8 +7103,8 @@
     },
     {
       "dialogue_id": "dlg_376_68c6c933",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7150,7 +7150,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Great. This one is better."
+          "text": "Great. I like this one better."
         },
         {
           "speaker": "Clerk",
@@ -7158,14 +7158,14 @@
         },
         {
           "speaker": "Minh",
-          "text": "Perfect. I will choose the green one."
+          "text": "Perfect. I'll take the green one."
         }
       ]
     },
     {
       "dialogue_id": "dlg_382_3c77973a",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7219,14 +7219,14 @@
         },
         {
           "speaker": "Minh",
-          "text": "I agree. It is strong and easy to carry."
+          "text": "I agree. It is light and easy to carry. The plastic is still strong enough for everyday use."
         }
       ]
     },
     {
       "dialogue_id": "dlg_383_09f39ec2",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7268,11 +7268,11 @@
         },
         {
           "speaker": "Leo",
-          "text": "Here is the blue lamp. It is also nice, but it costs five dollars more."
+          "text": "Here is the blue lamp. It costs five dollars more."
         },
         {
           "speaker": "Bạn",
-          "text": "It's a bit expensive."
+          "text": "Hmm, that's a little too expensive for me."
         },
         {
           "speaker": "Leo",
@@ -7280,14 +7280,14 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, I think I'll choose the white lamp."
+          "text": "\"Yeah, I'll go with the white lamp.\""
         }
       ]
     },
     {
       "dialogue_id": "dlg_389_1ae0549c",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7329,7 +7329,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes, please. Do you have a larger size?"
+          "text": "Yes, please. Do you have a larger one?"
         },
         {
           "speaker": "Clerk",
@@ -7344,7 +7344,7 @@
     {
       "dialogue_id": "dlg_638_cb112e86",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7382,7 +7382,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Thanks. This size feels a little tight."
+          "text": "Thanks. This feels a little tight."
         },
         {
           "speaker": "Clerk",
@@ -7404,8 +7404,8 @@
     },
     {
       "dialogue_id": "dlg_394_92fa55f8",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7435,7 +7435,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes. The clerk brought me a larger pair."
+          "text": "Yes, the clerk brought me a larger pair."
         },
         {
           "speaker": "Emma",
@@ -7443,7 +7443,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "It was a little loose, but much more comfortable."
+          "text": "They were a little loose, but much more comfortable."
         },
         {
           "speaker": "Emma",
@@ -7451,7 +7451,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes. The length looked good in the mirror."
+          "text": "Yes, the length looked good in the mirror."
         },
         {
           "speaker": "Emma",
@@ -7465,8 +7465,8 @@
     },
     {
       "dialogue_id": "dlg_397_92bdeef7",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7504,15 +7504,15 @@
         },
         {
           "speaker": "Bạn",
-          "text": "It feels too tight for me."
+          "text": "It feels too tight for me. Do you have another size?"
         },
         {
           "speaker": "Nhân vật",
-          "text": "I can bring you a different size."
+          "text": "I can bring you a larger one."
         },
         {
           "speaker": "Bạn",
-          "text": "Do you have another size?"
+          "text": "Yes, please. That would be great."
         },
         {
           "speaker": "Nhân vật",
@@ -7526,8 +7526,8 @@
     },
     {
       "dialogue_id": "dlg_398_d703c63c",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7553,7 +7553,7 @@
         },
         {
           "speaker": "Mia",
-          "text": "The fitting room is behind you. Please try it and tell me how it feels."
+          "text": "The fitting room is behind you. Please try it on and tell me how it feels."
         },
         {
           "speaker": "Bạn",
@@ -7561,11 +7561,11 @@
         },
         {
           "speaker": "Mia",
-          "text": "I can bring the medium size. Would you like to try it?"
+          "text": "I can bring the medium one. Would you like to try it on?"
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, please. I would like to try the medium size."
+          "text": "Yes, please. I'd like to try the medium."
         },
         {
           "speaker": "Mia",
@@ -7577,18 +7577,18 @@
         },
         {
           "speaker": "Mia",
-          "text": "Great. Would you like to take the medium sweater?"
+          "text": "Great. Would you like to take the medium one?"
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, I would like to buy this sweater."
+          "text": "Yes, I will buy this sweater."
         }
       ]
     },
     {
       "dialogue_id": "dlg_401_78af4efd",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:30:23.430Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7637,7 +7637,7 @@
     {
       "dialogue_id": "dlg_639_e6367d39",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7671,7 +7671,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "What seems to be wrong?"
+          "text": "What seems to be the problem?"
         },
         {
           "speaker": "Minh",
@@ -7697,8 +7697,8 @@
     },
     {
       "dialogue_id": "dlg_406_3481fd73",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7732,7 +7732,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "I can change it for another one."
+          "text": "I can exchange it for another one."
         },
         {
           "speaker": "Anna",
@@ -7787,8 +7787,8 @@
         },
         {
           "turn_index": 4,
-          "start": 6,
-          "end": 12,
+          "start": 8,
+          "end": 14,
           "word": "change",
           "blank_id": "l4-read-b04"
         },
@@ -7810,8 +7810,8 @@
     },
     {
       "dialogue_id": "dlg_409_794be26d",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7841,7 +7841,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes. I bought them two days ago."
+          "text": "Yeah, I bought them two days ago."
         },
         {
           "speaker": "Mia",
@@ -7872,7 +7872,7 @@
     {
       "dialogue_id": "dlg_410_3817b1e1",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:36:31.214Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7933,7 +7933,7 @@
     {
       "dialogue_id": "dlg_411_9220c61c",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:36:54.983Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7994,7 +7994,7 @@
     {
       "dialogue_id": "dlg_414_cb1fdde5",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -8032,7 +8032,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "It fits well. How much is this?"
+          "text": "It fits well. How much is it?"
         },
         {
           "speaker": "Clerk",
@@ -8055,7 +8055,7 @@
     {
       "dialogue_id": "dlg_640_43b3391f",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -8093,7 +8093,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "The blue jacket looks good. I like this one. How much is this?"
+          "text": "The blue jacket looks good. I like this one. How much is it?"
         },
         {
           "speaker": "Clerk",
@@ -8116,7 +8116,7 @@
     {
       "dialogue_id": "dlg_418_5c2cba7f",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -8162,7 +8162,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes. The medium fit well, so I bought it. But when I got home, I found a problem with it."
+          "text": "Yes, the medium fit well, so I bought it. But when I got home, I found a problem with it."
         },
         {
           "speaker": "Emma",
@@ -8177,7 +8177,7 @@
     {
       "dialogue_id": "dlg_420_6b8b6d79",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:48:03.938Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -13440,5 +13440,6 @@
       ]
     }
   ],
-  "updated_at": "2026-08-19T17:46:00+07:00"
+  "updated_at": "2026-08-20T06:49:27.848Z",
+  "export_scope": "full"
 }
