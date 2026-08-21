@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "export_type": "communication_dialogue_review",
-  "exported_at": "2026-08-19T17:46:00+07:00",
+  "exported_at": "2026-08-21T18:18:00.000Z",
   "storage": "standalone-json-review",
   "navigation_status": "all",
   "summary": {
     "dialogues": 209,
-    "verified": 121,
-    "unverified": 88
+    "verified": 209,
+    "unverified": 0
   },
   "items": [
     {
@@ -6697,8 +6697,8 @@
     },
     {
       "dialogue_id": "dlg_363_83f256e2",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -6732,22 +6732,22 @@
         },
         {
           "speaker": "Clerk",
-          "text": "It is a medium, and yes. The large one is ninety dollars."
+          "text": "It's a medium, and yes, we do. The large one is ninety dollars."
         },
         {
           "speaker": "Minh",
-          "text": "That is too expensive. Do you have a cheaper jacket?"
+          "text": "That's too expensive. Do you have a cheaper one?"
         },
         {
           "speaker": "Clerk",
-          "text": "Yes. This blue jacket is sixty dollars."
+          "text": "Yes, this blue one is sixty dollars."
         }
       ]
     },
     {
       "dialogue_id": "dlg_637_17ca2649",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -6781,7 +6781,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "Yes. Here is the large one."
+          "text": "Yes, here's the large one."
         },
         {
           "speaker": "Minh",
@@ -6789,7 +6789,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "It is one hundred and twenty dollars."
+          "text": "It's one hundred and twenty dollars."
         },
         {
           "speaker": "Minh",
@@ -6797,7 +6797,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "Yes. This gray one is seventy dollars."
+          "text": "Yes, this gray one is only seventy dollars."
         },
         {
           "speaker": "Minh",
@@ -6807,8 +6807,8 @@
     },
     {
       "dialogue_id": "dlg_368_f4082a09",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -6850,11 +6850,11 @@
         },
         {
           "speaker": "Mia",
-          "text": "That is more expensive, but it looks strong."
+          "text": "That's more expensive, but it looks strong."
         },
         {
           "speaker": "Minh",
-          "text": "Yes, and the large size is useful for a long trip."
+          "text": "Yeah, and the large size is useful for a long trip."
         },
         {
           "speaker": "Mia",
@@ -6869,7 +6869,7 @@
     {
       "dialogue_id": "dlg_370_8df92e57",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -6895,7 +6895,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "Yes, and this one is on sale today."
+          "text": "Yes, and it's on sale today."
         },
         {
           "speaker": "Anna",
@@ -6911,11 +6911,11 @@
         },
         {
           "speaker": "Clerk",
-          "text": "It is eighty dollars."
+          "text": "It's eighty dollars."
         },
         {
           "speaker": "Anna",
-          "text": "That is more expensive than I expected."
+          "text": "That's more expensive than I expected."
         },
         {
           "speaker": "Clerk",
@@ -6972,8 +6972,8 @@
         },
         {
           "turn_index": 7,
-          "start": 13,
-          "end": 22,
+          "start": 12,
+          "end": 21,
           "word": "expensive",
           "blank_id": "l1-read-b06"
         }
@@ -6982,7 +6982,7 @@
     {
       "dialogue_id": "dlg_372_ea9660e6",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7008,7 +7008,7 @@
         },
         {
           "speaker": "Nhân vật",
-          "text": "It is sixty dollars. Would you like to try it?"
+          "text": "It's sixty dollars. Would you like to try it on?"
         },
         {
           "speaker": "Bạn",
@@ -7024,7 +7024,7 @@
         },
         {
           "speaker": "Nhân vật",
-          "text": "Yes. The large one is eighty-five dollars."
+          "text": "Yes, the large one is eighty-five dollars."
         },
         {
           "speaker": "Bạn",
@@ -7043,7 +7043,7 @@
     {
       "dialogue_id": "dlg_373_44d6bc29",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7065,7 +7065,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "The black one is better for me."
+          "text": "The black one works better for me."
         },
         {
           "speaker": "Mia",
@@ -7103,8 +7103,8 @@
     },
     {
       "dialogue_id": "dlg_376_68c6c933",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7150,7 +7150,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Great. This one is better."
+          "text": "Great. I like this one better."
         },
         {
           "speaker": "Clerk",
@@ -7158,14 +7158,14 @@
         },
         {
           "speaker": "Minh",
-          "text": "Perfect. I will choose the green one."
+          "text": "Perfect. I'll take the green one."
         }
       ]
     },
     {
       "dialogue_id": "dlg_382_3c77973a",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7219,14 +7219,14 @@
         },
         {
           "speaker": "Minh",
-          "text": "I agree. It is strong and easy to carry."
+          "text": "I agree. It is light and easy to carry. The plastic is still strong enough for everyday use."
         }
       ]
     },
     {
       "dialogue_id": "dlg_383_09f39ec2",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7268,11 +7268,11 @@
         },
         {
           "speaker": "Leo",
-          "text": "Here is the blue lamp. It is also nice, but it costs five dollars more."
+          "text": "Here is the blue lamp. It costs five dollars more."
         },
         {
           "speaker": "Bạn",
-          "text": "It's a bit expensive."
+          "text": "Hmm, that's a little too expensive for me."
         },
         {
           "speaker": "Leo",
@@ -7280,14 +7280,14 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, I think I'll choose the white lamp."
+          "text": "\"Yeah, I'll go with the white lamp.\""
         }
       ]
     },
     {
       "dialogue_id": "dlg_389_1ae0549c",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7329,7 +7329,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes, please. Do you have a larger size?"
+          "text": "Yes, please. Do you have a larger one?"
         },
         {
           "speaker": "Clerk",
@@ -7344,7 +7344,7 @@
     {
       "dialogue_id": "dlg_638_cb112e86",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7382,7 +7382,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Thanks. This size feels a little tight."
+          "text": "Thanks. This feels a little tight."
         },
         {
           "speaker": "Clerk",
@@ -7404,8 +7404,8 @@
     },
     {
       "dialogue_id": "dlg_394_92fa55f8",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7435,7 +7435,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes. The clerk brought me a larger pair."
+          "text": "Yes, the clerk brought me a larger pair."
         },
         {
           "speaker": "Emma",
@@ -7443,7 +7443,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "It was a little loose, but much more comfortable."
+          "text": "They were a little loose, but much more comfortable."
         },
         {
           "speaker": "Emma",
@@ -7451,7 +7451,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes. The length looked good in the mirror."
+          "text": "Yes, the length looked good in the mirror."
         },
         {
           "speaker": "Emma",
@@ -7465,8 +7465,8 @@
     },
     {
       "dialogue_id": "dlg_397_92bdeef7",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7504,15 +7504,15 @@
         },
         {
           "speaker": "Bạn",
-          "text": "It feels too tight for me."
+          "text": "It feels too tight for me. Do you have another size?"
         },
         {
           "speaker": "Nhân vật",
-          "text": "I can bring you a different size."
+          "text": "I can bring you a larger one."
         },
         {
           "speaker": "Bạn",
-          "text": "Do you have another size?"
+          "text": "Yes, please. That would be great."
         },
         {
           "speaker": "Nhân vật",
@@ -7526,8 +7526,8 @@
     },
     {
       "dialogue_id": "dlg_398_d703c63c",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7553,7 +7553,7 @@
         },
         {
           "speaker": "Mia",
-          "text": "The fitting room is behind you. Please try it and tell me how it feels."
+          "text": "The fitting room is behind you. Please try it on and tell me how it feels."
         },
         {
           "speaker": "Bạn",
@@ -7561,11 +7561,11 @@
         },
         {
           "speaker": "Mia",
-          "text": "I can bring the medium size. Would you like to try it?"
+          "text": "I can bring the medium one. Would you like to try it on?"
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, please. I would like to try the medium size."
+          "text": "Yes, please. I'd like to try the medium."
         },
         {
           "speaker": "Mia",
@@ -7577,18 +7577,18 @@
         },
         {
           "speaker": "Mia",
-          "text": "Great. Would you like to take the medium sweater?"
+          "text": "Great. Would you like to take the medium one?"
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, I would like to buy this sweater."
+          "text": "Yes, I will buy this sweater."
         }
       ]
     },
     {
       "dialogue_id": "dlg_401_78af4efd",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:30:23.430Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7637,7 +7637,7 @@
     {
       "dialogue_id": "dlg_639_e6367d39",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7671,7 +7671,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "What seems to be wrong?"
+          "text": "What seems to be the problem?"
         },
         {
           "speaker": "Minh",
@@ -7697,8 +7697,8 @@
     },
     {
       "dialogue_id": "dlg_406_3481fd73",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7732,7 +7732,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "I can change it for another one."
+          "text": "I can exchange it for another one."
         },
         {
           "speaker": "Anna",
@@ -7787,8 +7787,8 @@
         },
         {
           "turn_index": 4,
-          "start": 6,
-          "end": 12,
+          "start": 8,
+          "end": 14,
           "word": "change",
           "blank_id": "l4-read-b04"
         },
@@ -7810,8 +7810,8 @@
     },
     {
       "dialogue_id": "dlg_409_794be26d",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7841,7 +7841,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes. I bought them two days ago."
+          "text": "Yeah, I bought them two days ago."
         },
         {
           "speaker": "Mia",
@@ -7872,7 +7872,7 @@
     {
       "dialogue_id": "dlg_410_3817b1e1",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:36:31.214Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7933,7 +7933,7 @@
     {
       "dialogue_id": "dlg_411_9220c61c",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:36:54.983Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -7994,7 +7994,7 @@
     {
       "dialogue_id": "dlg_414_cb1fdde5",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -8032,7 +8032,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "It fits well. How much is this?"
+          "text": "It fits well. How much is it?"
         },
         {
           "speaker": "Clerk",
@@ -8055,7 +8055,7 @@
     {
       "dialogue_id": "dlg_640_43b3391f",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -8093,7 +8093,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "The blue jacket looks good. I like this one. How much is this?"
+          "text": "The blue jacket looks good. I like this one. How much is it?"
         },
         {
           "speaker": "Clerk",
@@ -8116,7 +8116,7 @@
     {
       "dialogue_id": "dlg_418_5c2cba7f",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:51:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -8162,7 +8162,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Yes. The medium fit well, so I bought it. But when I got home, I found a problem with it."
+          "text": "Yes, the medium fit well, so I bought it. But when I got home, I found a problem with it."
         },
         {
           "speaker": "Emma",
@@ -8177,7 +8177,7 @@
     {
       "dialogue_id": "dlg_420_6b8b6d79",
       "verified": true,
-      "verified_at": "2026-08-19T17:46:00+07:00",
+      "verified_at": "2026-08-20T06:48:03.938Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-05",
@@ -8411,8 +8411,8 @@
     },
     {
       "dialogue_id": "dlg_426_81d6055a",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8430,11 +8430,11 @@
       "turns": [
         {
           "speaker": "Mia",
-          "text": "Excuse me. Is there a pharmacy near here?"
+          "text": "Hi, Minh. I'm new to this town. Is there a pharmacy near here?"
         },
         {
           "speaker": "Minh",
-          "text": "Yes. It's next to the supermarket."
+          "text": "Yes. There's one next to the supermarket."
         },
         {
           "speaker": "Mia",
@@ -8442,11 +8442,11 @@
         },
         {
           "speaker": "Minh",
-          "text": "It's across from the supermarket."
+          "text": "It's across from the supermarket, on King Street."
         },
         {
           "speaker": "Mia",
-          "text": "Thanks. Is there a hospital near the station?"
+          "text": "Good to know. Is there a hospital in this area too?"
         },
         {
           "speaker": "Minh",
@@ -8454,18 +8454,18 @@
         },
         {
           "speaker": "Mia",
-          "text": "Perfect. Thank you."
+          "text": "Nice. It sounds like most places are close together here."
         },
         {
           "speaker": "Minh",
-          "text": "You're welcome."
+          "text": "They are. This area is very convenient."
         }
       ]
     },
     {
       "dialogue_id": "dlg_641_cc5e4e08",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8483,34 +8483,34 @@
       "turns": [
         {
           "speaker": "Anna",
-          "text": "Excuse me. Where is the library?"
+          "text": "Hi. I just moved to this neighborhood. Is there a library near here?"
         },
         {
           "speaker": "Minh",
-          "text": "It is across from the bank."
+          "text": "Yes. The library is across from the bank."
         },
         {
           "speaker": "Anna",
-          "text": "Is it on this street?"
+          "text": "That's useful. Is there a supermarket nearby too?"
         },
         {
           "speaker": "Minh",
-          "text": "Yes. It is just ahead on your left."
+          "text": "Yes. It's next to the bank, on King Street."
         },
         {
           "speaker": "Anna",
-          "text": "Thank you."
+          "text": "Great. I'm starting to know the area."
         },
         {
           "speaker": "Minh",
-          "text": "You are welcome."
+          "text": "You'll find most of the useful places around King Street."
         }
       ]
     },
     {
       "dialogue_id": "dlg_431_86adb332",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8528,7 +8528,7 @@
       "turns": [
         {
           "speaker": "Emma",
-          "text": "Excuse me. Is there a hospital nearby?"
+          "text": "I'm new to this town. Is there a hospital nearby?"
         },
         {
           "speaker": "Minh",
@@ -8536,31 +8536,31 @@
         },
         {
           "speaker": "Emma",
-          "text": "Great. I am outside the pharmacy now. How do I get there?"
+          "text": "That's good to know. What about a pharmacy?"
         },
         {
           "speaker": "Minh",
-          "text": "Go straight until you reach the bank."
+          "text": "There's one across from the bank."
         },
         {
           "speaker": "Emma",
-          "text": "One second. Let me write that down. Okay, what comes next?"
+          "text": "Nice. Is there somewhere nearby to buy food and other things?"
         },
         {
           "speaker": "Minh",
-          "text": "Turn left and go past the supermarket."
+          "text": "Yes. The supermarket is next to the bank."
         },
         {
           "speaker": "Emma",
-          "text": "Okay, and then?"
+          "text": "And is there a library in this area?"
         },
         {
           "speaker": "Minh",
-          "text": "You will see the library. The hospital is right across from it."
+          "text": "Yes. The library is across from the station, near the hospital."
         },
         {
           "speaker": "Emma",
-          "text": "Got it. Thanks a lot."
+          "text": "Perfect. Now I know where the main places in town are."
         }
       ],
       "fill_blank_words": [
@@ -8618,8 +8618,8 @@
     },
     {
       "dialogue_id": "dlg_434_a892c26a",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8637,30 +8637,30 @@
       "turns": [
         {
           "speaker": "Mia",
-          "text": "Where is the supermarket?"
+          "text": "I'm still getting to know this neighborhood. What places are near here?"
         },
         {
           "speaker": "Minh",
-          "text": "It is next to the bank on King Street."
+          "text": "There's a supermarket next to the bank on King Street, and a pharmacy across from it."
         },
         {
           "speaker": "Mia",
-          "text": "Is it far from here?"
+          "text": "Is there a library in this area too?"
         },
         {
           "speaker": "Minh",
-          "text": "No. It is only a short walk."
+          "text": "Yes. It's near the station, and the hospital is across from the library."
         },
         {
           "speaker": "Mia",
-          "text": "Great. Thanks."
+          "text": "Great. That helps me understand the area much better."
         }
       ]
     },
     {
       "dialogue_id": "dlg_435_71e2405d",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8677,51 +8677,51 @@
       "turn_count": 10,
       "turns": [
         {
-          "speaker": "Nhân vật",
-          "text": "Can I help you?"
+          "speaker": "Mia",
+          "text": "Hi. You look new around here. Can I help you?"
         },
         {
           "speaker": "Bạn",
-          "text": "Yes. Where is the pharmacy?"
+          "text": "Yes, thanks. I'm new to this town. Is there a supermarket near here?"
         },
         {
-          "speaker": "Nhân vật",
-          "text": "It is across from the library."
-        },
-        {
-          "speaker": "Bạn",
-          "text": "Is it near here?"
-        },
-        {
-          "speaker": "Nhân vật",
-          "text": "Yes. It is only a few minutes away."
+          "speaker": "Mia",
+          "text": "Yes. There's one on King Street, next to the bank."
         },
         {
           "speaker": "Bạn",
-          "text": "Great. Which way should I go?"
+          "text": "Great. Is there a pharmacy nearby too?"
         },
         {
-          "speaker": "Nhân vật",
-          "text": "Go straight and turn left at the next corner. You will see the library on your right."
-        },
-        {
-          "speaker": "Bạn",
-          "text": "So the pharmacy is across from the library?"
-        },
-        {
-          "speaker": "Nhân vật",
-          "text": "Yes, exactly. You will see it there."
+          "speaker": "Mia",
+          "text": "Yes. It's across from the supermarket."
         },
         {
           "speaker": "Bạn",
-          "text": "Perfect. Thank you."
+          "text": "What places are near the station?"
+        },
+        {
+          "speaker": "Mia",
+          "text": "The library is across from the station, and the hospital is next to it."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "That's useful. Is the bank near the supermarket?"
+        },
+        {
+          "speaker": "Mia",
+          "text": "Yes. They're right next to each other."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Perfect. I'm starting to know the neighborhood now."
         }
       ]
     },
     {
       "dialogue_id": "dlg_436_7dfa85a3",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8739,50 +8739,50 @@
       "turns": [
         {
           "speaker": "Alex",
-          "text": "Hello. Can I help you?"
+          "text": "Hi. I haven't seen you around before. Are you new to the neighborhood?"
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, please. Where is the bus station?"
+          "text": "Yes. I just moved here. What places are near here?"
         },
         {
           "speaker": "Alex",
-          "text": "It is on Green Street, about a five-minute walk from here."
+          "text": "There are several useful places on King Street. There's a supermarket and a bank."
         },
         {
           "speaker": "Bạn",
-          "text": "Which way should I go?"
+          "text": "Is there a pharmacy nearby?"
         },
         {
           "speaker": "Alex",
-          "text": "Go straight for two blocks and turn right onto Green Street."
+          "text": "Yes. It's across from the supermarket."
         },
         {
           "speaker": "Bạn",
-          "text": "Is it on the left or the right?"
+          "text": "What about the bus station?"
         },
         {
           "speaker": "Alex",
-          "text": "It is on your left, next to the bank."
+          "text": "It's near the library, a few blocks from King Street."
         },
         {
           "speaker": "Bạn",
-          "text": "Do I need to cross the street?"
+          "text": "Is there a hospital near the station too?"
         },
         {
           "speaker": "Alex",
-          "text": "No. Stay on the same side. You will see the bus station just after the bank."
+          "text": "Yes. The hospital is next to the station, across from the library."
         },
         {
           "speaker": "Bạn",
-          "text": "Perfect. Thank you."
+          "text": "Great. That gives me a good idea of the area. Thanks."
         }
       ]
     },
     {
       "dialogue_id": "dlg_439_9513b086",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8826,8 +8826,8 @@
     },
     {
       "dialogue_id": "dlg_642_7cc54612",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8875,8 +8875,8 @@
     },
     {
       "dialogue_id": "dlg_444_14d9e812",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8932,8 +8932,8 @@
     },
     {
       "dialogue_id": "dlg_447_baecf5b7",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -8951,50 +8951,50 @@
       "turns": [
         {
           "speaker": "Nhân vật",
-          "text": "Excuse me. Could you tell me how to get to the pharmacy one step at a time?"
+          "text": "Hello. Can I help you?"
         },
         {
           "speaker": "Bạn",
+          "text": "Yes, please. Could you tell me how to get to the pharmacy one step at a time?"
+        },
+        {
+          "speaker": "Nhân vật",
           "text": "Sure. First, go straight to the next corner."
         },
         {
-          "speaker": "Nhân vật",
-          "text": "Okay, the next corner. Got it. What comes next?"
+          "speaker": "Bạn",
+          "text": "Okay. What comes next?"
         },
         {
-          "speaker": "Bạn",
+          "speaker": "Nhân vật",
           "text": "Turn left at the corner."
         },
         {
-          "speaker": "Nhân vật",
-          "text": "Turn left. Got it. And then?"
+          "speaker": "Bạn",
+          "text": "And then?"
         },
         {
-          "speaker": "Bạn",
+          "speaker": "Nhân vật",
           "text": "Go past the bank. The pharmacy is on your right."
         },
         {
-          "speaker": "Nhân vật",
+          "speaker": "Bạn",
           "text": "Is it far from the bank?"
         },
         {
-          "speaker": "Bạn",
+          "speaker": "Nhân vật",
           "text": "No. It is only about five minutes on foot."
         },
         {
-          "speaker": "Nhân vật",
-          "text": "Great. I think I can find it now. Thank you."
-        },
-        {
           "speaker": "Bạn",
-          "text": "You are welcome."
+          "text": "Great. I think I can find it now. Thank you."
         }
       ]
     },
     {
       "dialogue_id": "dlg_448_809d5c8e",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9012,58 +9012,58 @@
       "turns": [
         {
           "speaker": "Leo",
-          "text": "Excuse me. I am trying to find the art center. How do I get there?"
+          "text": "Hi. Can I help you?"
         },
         {
           "speaker": "Bạn",
+          "text": "Yes, please. I'm trying to find the art center. How do I get there?"
+        },
+        {
+          "speaker": "Leo",
           "text": "Go straight along Oak Street, turn right at the second corner, then go past the cafe. The art center is on your left."
         },
         {
-          "speaker": "Leo",
+          "speaker": "Bạn",
           "text": "Sorry, that is a lot to remember. Could you say it again one step at a time?"
         },
         {
+          "speaker": "Leo",
+          "text": "Of course. First, go straight along Oak Street."
+        },
+        {
           "speaker": "Bạn",
-          "text": "Sure. First, go straight along Oak Street."
+          "text": "Okay. What comes next?"
         },
         {
           "speaker": "Leo",
-          "text": "Okay, along Oak Street. Got it. What is next?"
-        },
-        {
-          "speaker": "Bạn",
           "text": "Turn right at the second corner."
         },
         {
-          "speaker": "Leo",
-          "text": "Right at the second corner. And then?"
+          "speaker": "Bạn",
+          "text": "And then?"
         },
         {
-          "speaker": "Bạn",
+          "speaker": "Leo",
           "text": "Go past the cafe. The art center is on your left."
         },
         {
-          "speaker": "Leo",
-          "text": "Great. Is it far from there?"
+          "speaker": "Bạn",
+          "text": "Is it far from there?"
         },
         {
-          "speaker": "Bạn",
+          "speaker": "Leo",
           "text": "No. It is only a short walk."
         },
         {
-          "speaker": "Leo",
-          "text": "Thank you."
-        },
-        {
           "speaker": "Bạn",
-          "text": "You are welcome."
+          "text": "Great. Thank you."
         }
       ]
     },
     {
       "dialogue_id": "dlg_451_662e86aa",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9111,8 +9111,8 @@
     },
     {
       "dialogue_id": "dlg_457_a82742f6",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9168,8 +9168,8 @@
     },
     {
       "dialogue_id": "dlg_458_1d47aa68",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9229,8 +9229,8 @@
     },
     {
       "dialogue_id": "dlg_464_f9966a90",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9278,8 +9278,8 @@
     },
     {
       "dialogue_id": "dlg_643_f5027b19",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9319,8 +9319,8 @@
     },
     {
       "dialogue_id": "dlg_469_e6859e77",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9372,8 +9372,8 @@
     },
     {
       "dialogue_id": "dlg_471_856ea3eb",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9481,8 +9481,8 @@
     },
     {
       "dialogue_id": "dlg_473_4f7c790c",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9542,8 +9542,8 @@
     },
     {
       "dialogue_id": "dlg_474_b079964a",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9603,8 +9603,8 @@
     },
     {
       "dialogue_id": "dlg_477_5d21bfb1",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9664,8 +9664,8 @@
     },
     {
       "dialogue_id": "dlg_644_3959f10a",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9721,8 +9721,8 @@
     },
     {
       "dialogue_id": "dlg_481_fd82389e",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9782,8 +9782,8 @@
     },
     {
       "dialogue_id": "dlg_483_14a69688",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9895,8 +9895,8 @@
     },
     {
       "dialogue_id": "dlg_485_b2541162",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -9956,8 +9956,8 @@
     },
     {
       "dialogue_id": "dlg_486_2a09bb1d",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-19T17:19:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-06",
@@ -10017,8 +10017,8 @@
     },
     {
       "dialogue_id": "dlg_489_3d2091ce",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:05:50.230Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10066,8 +10066,8 @@
     },
     {
       "dialogue_id": "dlg_645_52f9211d",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:05:57.677Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10127,8 +10127,8 @@
     },
     {
       "dialogue_id": "dlg_494_ca22e948",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:06:12.390Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10188,8 +10188,8 @@
     },
     {
       "dialogue_id": "dlg_496_b2364c60",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:06:13.966Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10301,8 +10301,8 @@
     },
     {
       "dialogue_id": "dlg_498_9230f52a",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T10:09:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10356,14 +10356,14 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Sure."
+          "text": "Sure, go ahead. Let me know if you need anything else from me."
         }
       ]
     },
     {
       "dialogue_id": "dlg_499_b5775a4b",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T10:09:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10417,14 +10417,14 @@
         },
         {
           "speaker": "Bạn",
-          "text": "I will."
+          "text": "Of course, I will tell you right away if I get worse."
         }
       ]
     },
     {
       "dialogue_id": "dlg_502_75ca05f1",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:31:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10474,11 +10474,11 @@
         },
         {
           "speaker": "Minh",
-          "text": "I agree. I need an early night."
+          "text": "I agree. I need to sleep early."
         },
         {
           "speaker": "Mia",
-          "text": "Get some rest."
+          "text": "Get more rest, and you should see a doctor."
         },
         {
           "speaker": "Minh",
@@ -10492,8 +10492,8 @@
     },
     {
       "dialogue_id": "dlg_508_4857a0df",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:09:50.343Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10553,8 +10553,8 @@
     },
     {
       "dialogue_id": "dlg_509_6218c287",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:31:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10572,7 +10572,7 @@
       "turns": [
         {
           "speaker": "Alex",
-          "text": "I slept only four hours last night, and I feel very tired. What do you think I should do first?"
+          "text": "I only slept four hours last night, and I feel really tired. What should I do?"
         },
         {
           "speaker": "Bạn",
@@ -10580,27 +10580,27 @@
         },
         {
           "speaker": "Alex",
-          "text": "I also noticed that I have hardly had any water today. What would you suggest?"
+          "text": "I'm thirsty. I haven't had much water today."
         },
         {
           "speaker": "Bạn",
-          "text": "You should drink some water."
+          "text": "You should drink some water. That might help."
         },
         {
           "speaker": "Alex",
-          "text": "I was planning to play games until midnight. Is that a good idea?"
+          "text": "I was planning to stay up late again tonight to do homework."
         },
         {
           "speaker": "Bạn",
-          "text": "You should not stay up late tonight."
+          "text": "You shouldn't stay up too late. You need rest."
         },
         {
           "speaker": "Alex",
-          "text": "Okay. I will rest, drink water, and go to bed earlier. What if I still feel unwell tomorrow?"
+          "text": "Okay, I'll rest, drink more water, and go to bed earlier. What if I still feel bad tomorrow?"
         },
         {
           "speaker": "Bạn",
-          "text": "You should see a doctor if you are still not feeling well."
+          "text": "If you still don't feel well, you should see a doctor."
         },
         {
           "speaker": "Alex",
@@ -10608,14 +10608,14 @@
         },
         {
           "speaker": "Bạn",
-          "text": "I hope you feel better tomorrow."
+          "text": "I hope you get better tomorrow."
         }
       ]
     },
     {
       "dialogue_id": "dlg_515_c053548b",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T01:03:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10633,7 +10633,7 @@
       "turns": [
         {
           "speaker": "Minh",
-          "text": "Excuse me. Can you help me? I need help."
+          "text": "Excuse me. Can you help me?"
         },
         {
           "speaker": "Receptionist",
@@ -10649,7 +10649,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Near the entrance. Please call a doctor."
+          "text": "We are at the entrance. Please call a doctor."
         },
         {
           "speaker": "Receptionist",
@@ -10657,14 +10657,14 @@
         },
         {
           "speaker": "Minh",
-          "text": "Thank you. I will."
+          "text": "Thank you very much, I will stay here."
         }
       ]
     },
     {
       "dialogue_id": "dlg_646_ae325c0f",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T09:31:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10682,7 +10682,7 @@
       "turns": [
         {
           "speaker": "Minh",
-          "text": "Excuse me. Can you help me?"
+          "text": "Excuse me. I need help. Can you help me?"
         },
         {
           "speaker": "Receptionist",
@@ -10690,27 +10690,27 @@
         },
         {
           "speaker": "Minh",
-          "text": "I need help."
+          "text": "My friend feels very weak and dizzy."
         },
         {
           "speaker": "Receptionist",
-          "text": "What is the problem?"
+          "text": "Where are you now?"
         },
         {
           "speaker": "Minh",
-          "text": "My friend feels very weak and dizzy and had to sit down near the entrance."
+          "text": "We are near the main entrance."
         },
         {
           "speaker": "Receptionist",
-          "text": "Okay. I can call a doctor."
+          "text": "Okay. I can call a doctor. Please stay there."
         },
         {
           "speaker": "Minh",
-          "text": "Yes. Please call a doctor."
+          "text": "Yes, please call a doctor right away. We are sitting right next to the entrance."
         },
         {
           "speaker": "Receptionist",
-          "text": "I will call one now."
+          "text": "A doctor is on the way to you now. Please don't go anywhere."
         },
         {
           "speaker": "Minh",
@@ -10720,8 +10720,8 @@
     },
     {
       "dialogue_id": "dlg_520_eb21f784",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T01:03:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10775,14 +10775,14 @@
         },
         {
           "speaker": "Guard",
-          "text": "Thank you. The group leader is on the way."
+          "text": "Thank you. I will call the group leader, and ask him to go there."
         }
       ]
     },
     {
       "dialogue_id": "dlg_523_8f8e3a02",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T10:09:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10812,7 +10812,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "My friend feels very dizzy."
+          "text": "My friend feels very dizzy. She cannot stand up."
         },
         {
           "speaker": "Nhân vật",
@@ -10820,7 +10820,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "My friend is sitting near the entrance."
+          "text": "My friend is sitting near the main entrance."
         },
         {
           "speaker": "Nhân vật",
@@ -10828,7 +10828,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, please. Please call a doctor."
+          "text": "Yes, please call a doctor. She looks very pale."
         },
         {
           "speaker": "Nhân vật",
@@ -10836,14 +10836,14 @@
         },
         {
           "speaker": "Bạn",
-          "text": "I will. Thank you."
+          "text": "I will. Thank you for helping us."
         }
       ]
     },
     {
       "dialogue_id": "dlg_524_b1946a07",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T10:09:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10873,7 +10873,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "My group is called Green Team."
+          "text": "My group is called Green Team. There are about ten people in it."
         },
         {
           "speaker": "Mia",
@@ -10881,7 +10881,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Near the main entrance."
+          "text": "Near the main entrance. I last saw them about ten minutes ago."
         },
         {
           "speaker": "Mia",
@@ -10889,7 +10889,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Okay. I will wait here."
+          "text": "Okay, I'll wait here. Thank you for your help."
         },
         {
           "speaker": "Mia",
@@ -10897,14 +10897,14 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Great. Thank you for your help."
+          "text": "Great. Thank you so much. I feel better now."
         }
       ]
     },
     {
       "dialogue_id": "dlg_527_761bea5b",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T18:58:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10926,7 +10926,7 @@
         },
         {
           "speaker": "Pharmacist",
-          "text": "Yes, I can show you one. Take one tablet every 6 hours."
+          "text": "Yes, this one should help. Take one tablet every 6 hours."
         },
         {
           "speaker": "Minh",
@@ -10952,8 +10952,8 @@
     },
     {
       "dialogue_id": "dlg_647_95c94a97",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T18:58:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -10975,7 +10975,7 @@
         },
         {
           "speaker": "Pharmacist",
-          "text": "Yes. I can show you one."
+          "text": "Yes, I can show you one."
         },
         {
           "speaker": "Minh",
@@ -10983,7 +10983,7 @@
         },
         {
           "speaker": "Pharmacist",
-          "text": "Let me explain. Take one tablet every 4 to 6 hours."
+          "text": "Let me explain. This one should help. Take one tablet every 4 to 6 hours."
         },
         {
           "speaker": "Minh",
@@ -10991,7 +10991,7 @@
         },
         {
           "speaker": "Pharmacist",
-          "text": "Do not take more than 3 tablets in 24 hours."
+          "text": "Don't take more than 3 tablets in 24 hours."
         },
         {
           "speaker": "Minh",
@@ -10999,7 +10999,7 @@
         },
         {
           "speaker": "Pharmacist",
-          "text": "Yes, you can take it with food. That is fine."
+          "text": "Yes, you can take it with food. That's fine."
         },
         {
           "speaker": "Minh",
@@ -11013,8 +11013,8 @@
     },
     {
       "dialogue_id": "dlg_532_dbec687d",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T18:58:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -11040,11 +11040,11 @@
         },
         {
           "speaker": "Anna",
-          "text": "I have some pain in my shoulder, and I cannot take some medicines."
+          "text": "I have some pain in my shoulder, and I can't take some medicines."
         },
         {
           "speaker": "Pharmacist",
-          "text": "Okay. Tell me which medicines you cannot take. I can check the ingredients for you."
+          "text": "Okay. Tell me which medicines you can't take. I can check the ingredients for you."
         },
         {
           "speaker": "Anna",
@@ -11130,8 +11130,8 @@
     },
     {
       "dialogue_id": "dlg_535_30042671",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T18:58:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -11181,7 +11181,7 @@
         },
         {
           "speaker": "Emma",
-          "text": "Okay. I will ask those questions."
+          "text": "Okay, I'll ask those questions."
         },
         {
           "speaker": "Minh",
@@ -11191,8 +11191,8 @@
     },
     {
       "dialogue_id": "dlg_536_ded18327",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T18:58:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -11206,54 +11206,62 @@
       "activity_sort_order": 11,
       "dialogue_index": 1,
       "source_path": "content.questions[canonical]",
-      "turn_count": 10,
+      "turn_count": 12,
       "turns": [
         {
-          "speaker": "Nhân vật",
+          "speaker": "Pharmacist",
           "text": "Hello. How can I help you?"
         },
         {
           "speaker": "Bạn",
-          "text": "Do you have something for a mild headache?"
+          "text": "Do you have something for a mild headache? It's been bothering me since this morning."
         },
         {
-          "speaker": "Nhân vật",
-          "text": "Yes, I can show you one. Do you have any allergies?"
-        },
-        {
-          "speaker": "Bạn",
-          "text": "Yes, I have an allergy."
-        },
-        {
-          "speaker": "Nhân vật",
-          "text": "Tell me what you are allergic to. I can check the ingredients for you."
+          "speaker": "Pharmacist",
+          "text": "Yes, this one should help. Do you have any allergies?"
         },
         {
           "speaker": "Bạn",
-          "text": "Thank you. How often should I take it?"
+          "text": "Yes, I have an allergy. I'm allergic to aspirin."
         },
         {
-          "speaker": "Nhân vật",
-          "text": "Take one tablet every 6 hours. Do not take more than 3 in one day."
+          "speaker": "Pharmacist",
+          "text": "Tell me what you're allergic to. I can check the ingredients for you."
         },
         {
           "speaker": "Bạn",
-          "text": "Can I take it with food?"
+          "text": "I'm allergic to aspirin. Is this medicine safe for me?"
         },
         {
-          "speaker": "Nhân vật",
+          "speaker": "Pharmacist",
+          "text": "Okay, this medicine doesn't contain aspirin. It's safe for you."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Thank you. How often should I take this medicine?"
+        },
+        {
+          "speaker": "Pharmacist",
+          "text": "You should take one tablet every 6 hours. Don't take more than 3 in one day."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Can I take it with food, or should I take it before meals?"
+        },
+        {
+          "speaker": "Pharmacist",
           "text": "Yes, you can take it with food. The label also has this information, in case you need to read it again."
         },
         {
           "speaker": "Bạn",
-          "text": "Thank you. That helps."
+          "text": "Thank you. That helps a lot. I'll check the label again later."
         }
       ]
     },
     {
       "dialogue_id": "dlg_537_0ed0c092",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T18:58:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -11275,7 +11283,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "I have a question about this cough medicine."
+          "text": "I have a question about this cough medicine. I want to make sure I use it correctly."
         },
         {
           "speaker": "Pharmacist",
@@ -11283,7 +11291,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Can I take it with food?"
+          "text": "Can I take it with food, or should I take it before meals?"
         },
         {
           "speaker": "Pharmacist",
@@ -11291,30 +11299,30 @@
         },
         {
           "speaker": "Bạn",
-          "text": "How often should I take it?"
+          "text": "How often should I take it, and how much should I take each time?"
         },
         {
           "speaker": "Pharmacist",
-          "text": "Take 2 teaspoons every 6 hours. Do not take more than 4 times a day."
+          "text": "You should take 2 teaspoons every 6 hours. Don't take more than 4 times a day."
         },
         {
           "speaker": "Bạn",
-          "text": "Is there anything else I should know?"
+          "text": "Is there anything else I should know before I start taking it?"
         },
         {
           "speaker": "Pharmacist",
-          "text": "Yes. Check the warnings on the label. It tells you about allergies and other important things."
+          "text": "Yes, check the warnings on the label. It tells you about allergies and other important things."
         },
         {
           "speaker": "Bạn",
-          "text": "Thank you. That helps."
+          "text": "Thank you. That helps a lot. I'll check the label again later."
         }
       ]
     },
     {
       "dialogue_id": "dlg_540_5b21feba",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T01:03:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -11348,15 +11356,15 @@
         },
         {
           "speaker": "Doctor",
-          "text": "Please rest for a moment. If you use any medicine later, make sure you understand the directions."
+          "text": "You can take a mild painkiller from the pharmacy. Ask the pharmacist about the directions before you take it."
         },
         {
           "speaker": "Minh",
-          "text": "Okay. I will."
+          "text": "Okay, I will. Thank you for your help."
         },
         {
           "speaker": "Pharmacist",
-          "text": "Hello. How can I help you?"
+          "text": "Here's your medicine. Do you need anything else?"
         },
         {
           "speaker": "Minh",
@@ -11364,18 +11372,18 @@
         },
         {
           "speaker": "Pharmacist",
-          "text": "The frequency is listed in the directions. Ask me if anything is unclear."
+          "text": "You should take one tablet every 6 hours. Read the directions carefully, and ask me if anything is unclear."
         },
         {
           "speaker": "Minh",
-          "text": "Thanks. I will read the directions carefully and ask if I need help."
+          "text": "Thanks, I'll check the directions carefully and ask if I need help."
         }
       ]
     },
     {
       "dialogue_id": "dlg_648_645a1fbc",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T01:03:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -11397,7 +11405,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "Can you help me? I do not feel well."
+          "text": "Can you help me? I don't feel well. I need to see a doctor."
         },
         {
           "speaker": "Doctor",
@@ -11405,7 +11413,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "I have a headache."
+          "text": "I have a headache, and it is getting worse."
         },
         {
           "speaker": "Doctor",
@@ -11413,15 +11421,15 @@
         },
         {
           "speaker": "Minh",
-          "text": "It started this afternoon. I feel a little dizzy."
+          "text": "It started this afternoon. I feel a little dizzy too."
         },
         {
           "speaker": "Doctor",
-          "text": "Please sit down for a moment."
+          "text": "Please sit down for a moment. I'll get you some medicine."
         },
         {
           "speaker": "Minh",
-          "text": "Okay."
+          "text": "Okay, thank you."
         },
         {
           "speaker": "Doctor",
@@ -11429,14 +11437,14 @@
         },
         {
           "speaker": "Minh",
-          "text": "I will. Thank you."
+          "text": "I will."
         }
       ]
     },
     {
       "dialogue_id": "dlg_544_232f7ce0",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T01:03:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -11470,7 +11478,7 @@
         },
         {
           "speaker": "Emma",
-          "text": "About an hour ago."
+          "text": "About an hour ago when I was cooking dinner."
         },
         {
           "speaker": "Minh",
@@ -11478,18 +11486,18 @@
         },
         {
           "speaker": "Emma",
-          "text": "I will. If I need medicine later, I can ask a pharmacist about the directions."
+          "text": "I will. I hope the doctor can give me some medicine to help me feel better."
         },
         {
           "speaker": "Minh",
-          "text": "Yes. Ask if anything is unclear before you use it."
+          "text": "Yes. Make sure you understand the directions before you use any medicine."
         }
       ]
     },
     {
       "dialogue_id": "dlg_546_800f6d52",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-20T17:49:49.602Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -11601,8 +11609,8 @@
     },
     {
       "dialogue_id": "dlg_548_220dada3",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T01:03:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -11624,7 +11632,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "I do not feel well."
+          "text": "I don't feel well. I have been tired all day."
         },
         {
           "speaker": "Nhân vật",
@@ -11632,7 +11640,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "I have a headache."
+          "text": "I have a headache. It is right here in the front of my head."
         },
         {
           "speaker": "Nhân vật",
@@ -11640,7 +11648,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "It started this afternoon."
+          "text": "It started this afternoon, after I came home from work."
         },
         {
           "speaker": "Nhân vật",
@@ -11648,22 +11656,22 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, a little."
+          "text": "Yes, a little, especially when I stand up."
         },
         {
           "speaker": "Nhân vật",
-          "text": "Please sit down for a moment. Tell me if you feel worse."
+          "text": "Please sit down for a moment. I'll get you some medicine."
         },
         {
           "speaker": "Bạn",
-          "text": "Okay. I will."
+          "text": "Thank you. How often should I take it, and should I take it with food?"
         }
       ]
     },
     {
       "dialogue_id": "dlg_549_af88d73c",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T01:03:00+07:00",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-07",
@@ -11685,23 +11693,23 @@
         },
         {
           "speaker": "Bạn",
-          "text": "I have a mild headache."
+          "text": "Hello. I have a mild headache. It started this afternoon and I don't feel very well."
         },
         {
           "speaker": "Pharmacist",
-          "text": "When did it start?"
+          "text": "I see. Do you have any other symptoms?"
         },
         {
           "speaker": "Bạn",
-          "text": "It started this afternoon."
+          "text": "I feel a little tired, but I don't have a fever."
         },
         {
           "speaker": "Pharmacist",
-          "text": "Okay. I can show you something and explain how to use it."
+          "text": "Okay, this medicine should help with the headache."
         },
         {
           "speaker": "Bạn",
-          "text": "How often should I take it?"
+          "text": "Okay, thank you. How often should I take it?"
         },
         {
           "speaker": "Pharmacist",
@@ -11709,7 +11717,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Can I take it with food?"
+          "text": "I understand. Can I take it with food?"
         },
         {
           "speaker": "Pharmacist",
@@ -11717,14 +11725,14 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Thank you. That’s clear."
+          "text": "That's very helpful. Thank you."
         }
       ]
     },
     {
       "dialogue_id": "dlg_552_e516e52e",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -11738,7 +11746,7 @@
       "activity_sort_order": 1,
       "dialogue_index": 1,
       "source_path": "content.lines",
-      "turn_count": 7,
+      "turn_count": 10,
       "turns": [
         {
           "speaker": "Clerk",
@@ -11750,30 +11758,42 @@
         },
         {
           "speaker": "Clerk",
-          "text": "Certainly. The next train has seats available."
+          "text": "Certainly. The next train still has seats available. Would you like a ticket for it?"
         },
         {
           "speaker": "Minh",
-          "text": "What time does it leave?"
+          "text": "Yes, please. What time does it leave?"
         },
         {
           "speaker": "Clerk",
-          "text": "20 this morning."
+          "text": "It leaves at 9:20 this morning."
         },
         {
           "speaker": "Minh",
-          "text": "Which platform is it? Is the train on time?"
+          "text": "Which platform does it leave from?"
         },
         {
           "speaker": "Clerk",
-          "text": "It is on Platform 4, and yes, the train is on time."
+          "text": "It leaves from Platform 4."
+        },
+        {
+          "speaker": "Minh",
+          "text": "I heard there may be a delay. Is the train on time?"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Yes. It is still on time."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Great. Thank you."
         }
       ]
     },
     {
       "dialogue_id": "dlg_649_e7579244",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -11799,31 +11819,31 @@
         },
         {
           "speaker": "Clerk",
-          "text": "The next train has seats available."
+          "text": "Certainly. The next train still has seats available. Would you like a ticket for it?"
         },
         {
           "speaker": "Minh",
-          "text": "What time does it leave?"
+          "text": "Yes, please. What time does it leave?"
         },
         {
           "speaker": "Clerk",
-          "text": "05."
+          "text": "It leaves at 11:05."
         },
         {
           "speaker": "Minh",
-          "text": "Which platform is it?"
+          "text": "Which platform does it leave from?"
         },
         {
           "speaker": "Clerk",
-          "text": "Platform 6. The departure board has the latest status."
+          "text": "Platform 6. There may be a short delay, so please check the departure board."
         },
         {
           "speaker": "Minh",
-          "text": "Is the train on time?"
+          "text": "I see. Is the train on time right now?"
         },
         {
           "speaker": "Clerk",
-          "text": "Yes. There is no delay at the moment."
+          "text": "Yes. It is still on time at the moment."
         },
         {
           "speaker": "Minh",
@@ -11833,8 +11853,8 @@
     },
     {
       "dialogue_id": "dlg_557_6ebdfeee",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -11852,19 +11872,19 @@
       "turns": [
         {
           "speaker": "Emma",
-          "text": "00 train to Nha Trang."
+          "text": "Excuse me. I have a ticket for the 2:00 train to Nha Trang."
         },
         {
           "speaker": "Clerk",
-          "text": "Let me check the departure board. That train now leaves at 2:25."
+          "text": "Let me check the departure board. Your train is delayed. It now leaves at 2:25."
         },
         {
           "speaker": "Emma",
-          "text": "So there is a delay?"
+          "text": "I see. So the delay is twenty-five minutes?"
         },
         {
           "speaker": "Clerk",
-          "text": "Yes. The delay is twenty-five minutes."
+          "text": "Yes, that's right."
         },
         {
           "speaker": "Emma",
@@ -11880,7 +11900,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "10 this evening."
+          "text": "The expected arrival time is 6:10 this evening."
         },
         {
           "speaker": "Emma",
@@ -11888,14 +11908,14 @@
         },
         {
           "speaker": "Clerk",
-          "text": "You are welcome. Check the board again before boarding."
+          "text": "You're welcome. Please check the board again before boarding."
         }
       ]
     },
     {
       "dialogue_id": "dlg_559_d0ab1dda",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -11909,7 +11929,7 @@
       "activity_sort_order": 9,
       "dialogue_index": 1,
       "source_path": "content.fillBlankDialogue",
-      "turn_count": 10,
+      "turn_count": 12,
       "turns": [
         {
           "speaker": "Mia",
@@ -11917,11 +11937,11 @@
         },
         {
           "speaker": "Anna",
-          "text": "Yes. I am checking the departure time now."
+          "text": "Yes. I am checking the departure board now."
         },
         {
           "speaker": "Mia",
-          "text": "What does the board say?"
+          "text": "What does it say?"
         },
         {
           "speaker": "Anna",
@@ -11929,27 +11949,35 @@
         },
         {
           "speaker": "Mia",
+          "text": "What is the new departure time?"
+        },
+        {
+          "speaker": "Anna",
+          "text": "It is 4:10."
+        },
+        {
+          "speaker": "Mia",
           "text": "Which platform do we need?"
         },
         {
           "speaker": "Anna",
-          "text": "Platform 5, and we should enter through the north gate."
+          "text": "Platform 5, through the north gate."
         },
         {
           "speaker": "Mia",
-          "text": "Does the later departure change the arrival time?"
+          "text": "Does the delay change the arrival time too?"
         },
         {
           "speaker": "Anna",
-          "text": "Yes. The new arrival is 4:40."
+          "text": "Yes. The new arrival time is 4:40."
         },
         {
           "speaker": "Mia",
-          "text": "Good. We still have time to find Platform 5."
+          "text": "Okay. We still have enough time."
         },
         {
           "speaker": "Anna",
-          "text": "We should check the board again before we go."
+          "text": "Good. Let's go to Platform 5 now."
         }
       ],
       "fill_blank_words": [
@@ -11969,13 +11997,6 @@
           "blank_id": "l1-read-b01"
         },
         {
-          "turn_index": 1,
-          "start": 23,
-          "end": 32,
-          "word": "departure",
-          "blank_id": "l1-read-b02"
-        },
-        {
           "turn_index": 3,
           "start": 26,
           "end": 31,
@@ -11984,22 +12005,29 @@
         },
         {
           "turn_index": 4,
+          "start": 16,
+          "end": 25,
+          "word": "departure",
+          "blank_id": "l1-read-b02"
+        },
+        {
+          "turn_index": 6,
           "start": 6,
           "end": 14,
           "word": "platform",
           "blank_id": "l1-read-b04"
         },
         {
-          "turn_index": 5,
-          "start": 50,
-          "end": 54,
+          "turn_index": 7,
+          "start": 30,
+          "end": 34,
           "word": "gate",
           "blank_id": "l1-read-b05"
         },
         {
-          "turn_index": 6,
-          "start": 36,
-          "end": 43,
+          "turn_index": 8,
+          "start": 26,
+          "end": 33,
           "word": "arrival",
           "blank_id": "l1-read-b06"
         }
@@ -12007,8 +12035,8 @@
     },
     {
       "dialogue_id": "dlg_561_3d55bf02",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -12025,7 +12053,7 @@
       "turn_count": 10,
       "turns": [
         {
-          "speaker": "It leaves at 10",
+          "speaker": "Clerk",
           "text": "Good morning. Where would you like to travel?"
         },
         {
@@ -12033,32 +12061,32 @@
           "text": "I would like a ticket to Hue."
         },
         {
-          "speaker": "It leaves at 10",
-          "text": "Certainly. The next train has seats available."
+          "speaker": "Clerk",
+          "text": "Certainly. I can book the next train for you."
         },
         {
           "speaker": "Bạn",
           "text": "What time does it leave?"
         },
         {
-          "speaker": "It leaves at 10",
-          "text": "40."
+          "speaker": "Clerk",
+          "text": "It leaves at 10:40."
         },
         {
           "speaker": "Bạn",
           "text": "Which platform does it leave from?"
         },
         {
-          "speaker": "It leaves at 10",
+          "speaker": "Clerk",
           "text": "It leaves from Platform 2."
         },
         {
           "speaker": "Bạn",
-          "text": "Is the train on time?"
+          "text": "When does boarding begin?"
         },
         {
-          "speaker": "It leaves at 10",
-          "text": "Yes. It is on time, and boarding begins in ten minutes."
+          "speaker": "Clerk",
+          "text": "Boarding begins in ten minutes."
         },
         {
           "speaker": "Bạn",
@@ -12068,8 +12096,8 @@
     },
     {
       "dialogue_id": "dlg_562_3ae1ecd5",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -12103,7 +12131,7 @@
         },
         {
           "speaker": "Station Agent",
-          "text": "It leaves from Platform 7, through Gate C."
+          "text": "It leaves from Platform 7, through Gate C. The departure board has just been updated."
         },
         {
           "speaker": "Bạn",
@@ -12111,15 +12139,15 @@
         },
         {
           "speaker": "Station Agent",
-          "text": "There is a fifteen-minute delay. The new departure time is 5:30."
+          "text": "No. There is a fifteen-minute delay. The new departure time is 5:30."
         },
         {
           "speaker": "Bạn",
-          "text": "Has the gate changed?"
+          "text": "What time does boarding begin now?"
         },
         {
           "speaker": "Station Agent",
-          "text": "No. Gate C is the same."
+          "text": "Boarding begins at 5:15 at Gate C."
         },
         {
           "speaker": "Bạn",
@@ -12129,8 +12157,8 @@
     },
     {
       "dialogue_id": "dlg_565_20caeb23",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -12152,7 +12180,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "I would like to book a room."
+          "text": "I would like to book a room for one guest."
         },
         {
           "speaker": "Receptionist",
@@ -12164,7 +12192,7 @@
         },
         {
           "speaker": "Receptionist",
-          "text": "Yes. We have a room for one guest."
+          "text": "Yes. We have a room available for those two nights."
         },
         {
           "speaker": "Minh",
@@ -12190,8 +12218,8 @@
     },
     {
       "dialogue_id": "dlg_571_88586e9e",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -12209,7 +12237,7 @@
       "turns": [
         {
           "speaker": "Emma",
-          "text": "Hello. I need a room from Monday to Thursday."
+          "text": "Hello. I need a room for two guests from Monday to Thursday."
         },
         {
           "speaker": "Receptionist",
@@ -12217,7 +12245,7 @@
         },
         {
           "speaker": "Emma",
-          "text": "The room is for two guests. What is the rate?"
+          "text": "Great. What is the rate?"
         },
         {
           "speaker": "Receptionist",
@@ -12251,8 +12279,8 @@
     },
     {
       "dialogue_id": "dlg_572_243230c6",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -12274,23 +12302,23 @@
         },
         {
           "speaker": "Bạn",
-          "text": "I would like to book a room for three nights."
+          "text": "I would like to book a room for two guests for three nights."
         },
         {
           "speaker": "Receptionist",
-          "text": "Certainly. What day are you arriving, and how many guests will be staying?"
+          "text": "Certainly. What day are you arriving?"
         },
         {
           "speaker": "Bạn",
-          "text": "I am arriving on Tuesday, and the room is for two guests."
+          "text": "I am arriving on Tuesday. How much is the room per night?"
         },
         {
           "speaker": "Receptionist",
-          "text": "We have a room for two guests. The rate is ninety-five dollars per night."
+          "text": "We have a room available. The rate is ninety-five dollars per night."
         },
         {
           "speaker": "Bạn",
-          "text": "Is breakfast included?"
+          "text": "That sounds okay. Is breakfast included in the rate?"
         },
         {
           "speaker": "Receptionist",
@@ -12298,7 +12326,7 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Yes. That is within my budget."
+          "text": "Yes, that is within my budget. I would like to book the room."
         },
         {
           "speaker": "Receptionist",
@@ -12306,14 +12334,14 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Yes, please."
+          "text": "Yes, please confirm it for me."
         }
       ]
     },
     {
       "dialogue_id": "dlg_578_befa7db8",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -12327,7 +12355,7 @@
       "activity_sort_order": 1,
       "dialogue_index": 1,
       "source_path": "content.dialogueOrder.turns",
-      "turn_count": 7,
+      "turn_count": 10,
       "turns": [
         {
           "speaker": "Receptionist",
@@ -12347,22 +12375,34 @@
         },
         {
           "speaker": "Receptionist",
-          "text": "Thank you. Here is your key. Your room is on the fifth floor."
+          "text": "Thank you. Your room is on the fifth floor. Here is your key."
         },
         {
           "speaker": "Minh",
-          "text": "Thank you. What time is checkout?"
+          "text": "Thank you. Where is the elevator?"
         },
         {
           "speaker": "Receptionist",
-          "text": "Checkout is at eleven. The elevator is on your right."
+          "text": "It is on your right, beside the lobby."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Great. What time is checkout tomorrow?"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Checkout is at eleven."
+        },
+        {
+          "speaker": "Minh",
+          "text": "Thank you for your help."
         }
       ]
     },
     {
       "dialogue_id": "dlg_650_32ebe0da",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -12384,11 +12424,11 @@
         },
         {
           "speaker": "Minh",
-          "text": "Hello. I have a reservation."
+          "text": "Hello. I have a reservation for two nights."
         },
         {
           "speaker": "Receptionist",
-          "text": "Wonderful. Can I see your passport?"
+          "text": "Certainly. Can I see your passport?"
         },
         {
           "speaker": "Minh",
@@ -12396,7 +12436,7 @@
         },
         {
           "speaker": "Receptionist",
-          "text": "Thank you. Here is your key. Your room is on the third floor."
+          "text": "Thank you. Your room is on the third floor. Here is your key."
         },
         {
           "speaker": "Minh",
@@ -12408,7 +12448,7 @@
         },
         {
           "speaker": "Minh",
-          "text": "One more question. What time is checkout?"
+          "text": "One more question. What time is checkout tomorrow?"
         },
         {
           "speaker": "Receptionist",
@@ -12422,8 +12462,8 @@
     },
     {
       "dialogue_id": "dlg_583_65db8054",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -12441,19 +12481,11 @@
       "turns": [
         {
           "speaker": "Emma",
-          "text": "Hello. I have a reservation."
+          "text": "Hello. I have a reservation for three nights under Emma Lee."
         },
         {
           "speaker": "Receptionist",
-          "text": "Welcome. What name is it under?"
-        },
-        {
-          "speaker": "Emma",
-          "text": "Emma Lee."
-        },
-        {
-          "speaker": "Receptionist",
-          "text": "Thank you. May I see your passport, please?"
+          "text": "Welcome, Ms. Lee. May I see your passport, please?"
         },
         {
           "speaker": "Emma",
@@ -12461,11 +12493,19 @@
         },
         {
           "speaker": "Receptionist",
-          "text": "Everything looks good. Your room is 602, on the sixth floor. The elevator is behind you."
+          "text": "Thank you. Everything looks good. Your room is 602, on the sixth floor."
         },
         {
           "speaker": "Emma",
-          "text": "Great. What time is checkout tomorrow?"
+          "text": "Great. Where is the elevator?"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "It is behind you, near the lobby."
+        },
+        {
+          "speaker": "Emma",
+          "text": "Thank you. What time is checkout on my last day?"
         },
         {
           "speaker": "Receptionist",
@@ -12473,7 +12513,7 @@
         },
         {
           "speaker": "Emma",
-          "text": "Thank you. May I have the room key?"
+          "text": "Perfect. May I have the room key, please?"
         },
         {
           "speaker": "Receptionist",
@@ -12483,8 +12523,8 @@
     },
     {
       "dialogue_id": "dlg_586_1d56aba6",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -12498,54 +12538,62 @@
       "activity_sort_order": 10,
       "dialogue_index": 1,
       "source_path": "content.questions[canonical]",
-      "turn_count": 10,
+      "turn_count": 12,
       "turns": [
         {
-          "speaker": "Nhân vật",
+          "speaker": "Receptionist",
           "text": "Good evening. Welcome to Ocean Hotel. How can I help you?"
         },
         {
           "speaker": "Bạn",
-          "text": "Hello. I have a reservation."
+          "text": "Hello. I have a reservation for two nights."
         },
         {
-          "speaker": "Nhân vật",
-          "text": "Great. I found your booking. May I see your passport?"
+          "speaker": "Receptionist",
+          "text": "Certainly. What name is the reservation under?"
+        },
+        {
+          "speaker": "Bạn",
+          "text": "It is under Minh Tran."
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Thank you. I found your booking. May I see your passport?"
         },
         {
           "speaker": "Bạn",
           "text": "Yes. Here is my passport."
         },
         {
-          "speaker": "Nhân vật",
+          "speaker": "Receptionist",
           "text": "Thank you. Your room is on the fourth floor. Here is your key."
         },
         {
           "speaker": "Bạn",
-          "text": "Where is the elevator?"
+          "text": "Thank you. Where is the elevator from here?"
         },
         {
-          "speaker": "Nhân vật",
+          "speaker": "Receptionist",
           "text": "The elevator is beside the lobby."
         },
         {
           "speaker": "Bạn",
-          "text": "What time is checkout?"
+          "text": "Great. What time is checkout on my last day?"
         },
         {
-          "speaker": "Nhân vật",
-          "text": "Checkout is at eleven. Please keep your room key with you during your stay."
+          "speaker": "Receptionist",
+          "text": "Checkout is at eleven."
         },
         {
           "speaker": "Bạn",
-          "text": "Thank you. I will keep the key with me."
+          "text": "Thank you. I have everything I need now."
         }
       ]
     },
     {
       "dialogue_id": "dlg_587_8dbd94b3",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -12567,31 +12615,31 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Yes. It is under Minh Tran."
+          "text": "Yes. I have a reservation for two nights under Minh Tran."
         },
         {
           "speaker": "Hotel Clerk",
-          "text": "I found it. The reservation is for two nights. Is that correct?"
+          "text": "I found your reservation. May I see your passport?"
         },
         {
           "speaker": "Bạn",
-          "text": "Yes. I am staying for two nights."
+          "text": "Of course. Here is my passport."
         },
         {
           "speaker": "Hotel Clerk",
-          "text": "Great. May I see your passport?"
+          "text": "Thank you. Your room is 805, on the eighth floor. Here is your key."
         },
         {
           "speaker": "Bạn",
-          "text": "Yes. Here is my passport."
+          "text": "Thank you. Where is the elevator?"
         },
         {
           "speaker": "Hotel Clerk",
-          "text": "Thank you. Your room is 805, on the eighth floor."
+          "text": "It is across from the front desk."
         },
         {
           "speaker": "Bạn",
-          "text": "What time is checkout?"
+          "text": "Great. What time is checkout on my last day?"
         },
         {
           "speaker": "Hotel Clerk",
@@ -12599,14 +12647,14 @@
         },
         {
           "speaker": "Bạn",
-          "text": "Thank you. That works for me."
+          "text": "Perfect. Thank you for your help."
         }
       ]
     },
     {
       "dialogue_id": "dlg_590_1fe314f8",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -12628,38 +12676,38 @@
         },
         {
           "speaker": "Minh",
-          "text": "My flight is delayed, and I am still at the hotel."
+          "text": "My flight is delayed by two hours. I already contacted the airline."
         },
         {
           "speaker": "Support Agent",
-          "text": "How long is the delay?"
+          "text": "I see. Did they give you a new departure time?"
         },
         {
           "speaker": "Minh",
-          "text": "About two hours."
+          "text": "Yes. The new departure time is 6:30 this evening."
         },
         {
           "speaker": "Support Agent",
-          "text": "Do you need help changing your travel plans?"
+          "text": "Okay. Do you need help with anything else?"
         },
         {
           "speaker": "Minh",
-          "text": "Yes. Who should I contact about the flight?"
+          "text": "Yes. I have a car booked to take me to the airport. Can you change the time?"
         },
         {
           "speaker": "Support Agent",
-          "text": "Contact the airline desk. They can tell you the new departure time or help you find another flight."
+          "text": "Of course. I can change it to 4:30."
         },
         {
           "speaker": "Minh",
-          "text": "Thank you. I will contact them now."
+          "text": "Great. Thank you for your help."
         }
       ]
     },
     {
       "dialogue_id": "dlg_651_31bad267",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -12673,46 +12721,54 @@
       "activity_sort_order": 4,
       "dialogue_index": 1,
       "source_path": "content.dragFillDialogue.lines",
-      "turn_count": 8,
+      "turn_count": 10,
       "turns": [
         {
           "speaker": "Support Agent",
-          "text": "Hello. How can I help you today?"
+          "text": "Hello. Travel Support. How can I help you today?"
         },
         {
           "speaker": "Minh",
-          "text": "My luggage is missing."
+          "text": "My luggage is missing. I already spoke to the hotel front desk."
         },
         {
           "speaker": "Support Agent",
-          "text": "Where did you last have it?"
+          "text": "I am sorry. What did they tell you?"
         },
         {
           "speaker": "Minh",
-          "text": "I left one bag at the hotel storage desk, but they cannot find it now."
+          "text": "They looked for my bag, but they could not find it."
         },
         {
           "speaker": "Support Agent",
-          "text": "The hotel front desk can help you check what happened."
+          "text": "Where did you leave it?"
         },
         {
           "speaker": "Minh",
-          "text": "Who should I contact there?"
+          "text": "I left it at the hotel desk this morning."
         },
         {
           "speaker": "Support Agent",
-          "text": "Ask for someone at the front desk who can check the luggage storage record."
+          "text": "Okay. I can contact the hotel manager and ask them to look again."
         },
         {
           "speaker": "Minh",
-          "text": "Thank you. I will speak to them now."
+          "text": "Thank you. Who should I contact if they still cannot find it?"
+        },
+        {
+          "speaker": "Support Agent",
+          "text": "You can contact the police station nearby. I can give you the phone number."
+        },
+        {
+          "speaker": "Minh",
+          "text": "That would help. Thank you."
         }
       ]
     },
     {
       "dialogue_id": "dlg_595_ee8ded2f",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -12734,11 +12790,11 @@
         },
         {
           "speaker": "Agent",
-          "text": "Of course. Is there a problem with your trip?"
+          "text": "Of course. May I ask why?"
         },
         {
           "speaker": "Anna",
-          "text": "Yes. My last flight was delayed, and now one of my bags did not arrive."
+          "text": "My last flight was delayed, and one of my bags did not arrive."
         },
         {
           "speaker": "Agent",
@@ -12754,19 +12810,19 @@
         },
         {
           "speaker": "Anna",
-          "text": "Okay. What information do they need?"
+          "text": "Okay. Can I come back here to cancel my flight after that?"
         },
         {
           "speaker": "Agent",
-          "text": "Give them your ticket and the details of the lost bag. Show them the damaged bag too."
+          "text": "Yes. Bring your ticket back, and I can help you cancel it."
         },
         {
           "speaker": "Anna",
-          "text": "All right. I will talk to them first. Thank you."
+          "text": "All right. I will go to the baggage desk first, then come back here."
         },
         {
           "speaker": "Agent",
-          "text": "You are welcome."
+          "text": "That is fine. I will be here when you return."
         }
       ],
       "fill_blank_words": [
@@ -12787,8 +12843,8 @@
         },
         {
           "turn_index": 2,
-          "start": 24,
-          "end": 31,
+          "start": 19,
+          "end": 26,
           "word": "delayed",
           "blank_id": "l4-read-b01"
         },
@@ -12815,17 +12871,17 @@
         },
         {
           "turn_index": 7,
-          "start": 45,
-          "end": 49,
-          "word": "lost",
+          "start": 16,
+          "end": 22,
+          "word": "ticket",
           "blank_id": "l4-read-b02"
         }
       ]
     },
     {
       "dialogue_id": "dlg_598_8e589719",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -12855,7 +12911,7 @@
         },
         {
           "speaker": "Airline Agent",
-          "text": "20 from Gate B4."
+          "text": "There is one at 6:20 from Gate B4."
         },
         {
           "speaker": "Emma",
@@ -12885,8 +12941,8 @@
     },
     {
       "dialogue_id": "dlg_599_43eeb043",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -12903,51 +12959,51 @@
       "turn_count": 10,
       "turns": [
         {
-          "speaker": "Nhân vật",
-          "text": "Good evening. Reception. How can I help you?"
+          "speaker": "Receptionist",
+          "text": "Good evening. This is the front desk. How can I help you?"
         },
         {
           "speaker": "Bạn",
-          "text": "The air conditioner in my room does not work."
+          "text": "The air conditioner in my room doesn't work, and the room is getting very warm."
         },
         {
-          "speaker": "Nhân vật",
+          "speaker": "Receptionist",
           "text": "I am sorry about that. What room are you in?"
         },
         {
           "speaker": "Bạn",
-          "text": "I am in room 407."
+          "text": "I am in room 407. Could you send someone to check it, please?"
         },
         {
-          "speaker": "Nhân vật",
-          "text": "Thank you. I can send someone to check it."
-        },
-        {
-          "speaker": "Bạn",
-          "text": "How long will it take?"
-        },
-        {
-          "speaker": "Nhân vật",
-          "text": "About fifteen minutes."
+          "speaker": "Receptionist",
+          "text": "Of course. I can send someone up in about fifteen minutes."
         },
         {
           "speaker": "Bạn",
-          "text": "What if they cannot fix it tonight?"
+          "text": "Thank you. What can I do if they cannot fix it tonight?"
         },
         {
-          "speaker": "Nhân vật",
+          "speaker": "Receptionist",
           "text": "We can move you to another room if they cannot fix it."
         },
         {
           "speaker": "Bạn",
-          "text": "That would be great. Thank you."
+          "text": "That would be great. I would like another room if the problem cannot be fixed."
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Certainly. We will take care of it for you."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Thank you very much. I will wait in my room for now."
         }
       ]
     },
     {
       "dialogue_id": "dlg_600_33960727",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -12961,7 +13017,7 @@
       "activity_sort_order": 12,
       "dialogue_index": 1,
       "source_path": "content.turns[roleplay-canonical]",
-      "turn_count": 10,
+      "turn_count": 12,
       "turns": [
         {
           "speaker": "Travel Desk Agent",
@@ -12969,46 +13025,54 @@
         },
         {
           "speaker": "Bạn",
-          "text": "My connecting flight was canceled."
+          "text": "My connecting flight was canceled, and I need help finding another flight today."
         },
         {
           "speaker": "Travel Desk Agent",
-          "text": "I can help you find another flight. Do you have your ticket with you?"
+          "text": "I can help you with that. Do you have your ticket with you?"
         },
         {
           "speaker": "Bạn",
-          "text": "Yes. I also need help because one of my suitcases is damaged."
+          "text": "Yes, I have my ticket here. I also have a problem with one of my suitcases."
         },
         {
           "speaker": "Travel Desk Agent",
-          "text": "Okay. We can deal with the flight first, and then I can direct you to Baggage Services."
+          "text": "What happened to your suitcase?"
         },
         {
           "speaker": "Bạn",
-          "text": "Thank you. What is the next available flight?"
+          "text": "It arrived with me, but it is damaged on one side. Who should I contact about it?"
         },
         {
           "speaker": "Travel Desk Agent",
-          "text": "20 from Gate B4."
+          "text": "You can go to Baggage Services after we change your flight."
         },
         {
           "speaker": "Bạn",
-          "text": "Great. And where is Baggage Services?"
+          "text": "Okay, thank you. What is the next available flight for me?"
         },
         {
           "speaker": "Travel Desk Agent",
-          "text": "It is near Carousel 4."
+          "text": "There is one at 6:20 from Gate B4."
         },
         {
           "speaker": "Bạn",
-          "text": "Thank you. I know where to go now."
+          "text": "That flight works for me. Can you change my ticket to that flight?"
+        },
+        {
+          "speaker": "Travel Desk Agent",
+          "text": "Yes, I can. Baggage Services is near Carousel 4."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Great. I will go there after this. Thank you for helping me with both problems."
         }
       ]
     },
     {
       "dialogue_id": "dlg_603_93dae2c5",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -13022,7 +13086,7 @@
       "activity_sort_order": 1,
       "dialogue_index": 1,
       "source_path": "content.dialogueOrder.turns",
-      "turn_count": 14,
+      "turn_count": 11,
       "turns": [
         {
           "speaker": "Travel Agent",
@@ -13030,62 +13094,50 @@
         },
         {
           "speaker": "Minh",
-          "text": "I would like a ticket to Hue. What time does it leave?"
+          "text": "I would like a ticket to Hue. What time does the next train leave?"
         },
         {
           "speaker": "Travel Agent",
-          "text": "30 from Platform 2."
+          "text": "The next train to Hue leaves at 2:30 from Platform 2."
         },
         {
           "speaker": "Minh",
-          "text": "Is it on time?"
+          "text": "I heard there may be a delay. Is that train on time?"
         },
         {
           "speaker": "Travel Agent",
-          "text": "There is a twenty-minute delay, but the platform has not changed."
+          "text": "No. There is a twenty-minute delay, but it still leaves from Platform 2."
         },
         {
           "speaker": "Minh",
-          "text": "Thanks. I will wait near Platform 2."
+          "text": "Okay. Thank you. I will wait near Platform 2."
         },
         {
           "speaker": "Receptionist",
-          "text": "Good evening. Do you have a reservation?"
+          "text": "Good evening. Welcome to the hotel. Do you have a reservation?"
         },
         {
           "speaker": "Minh",
-          "text": "Yes. It is under Minh Tran."
+          "text": "Yes. I have a reservation for two nights under Minh Tran."
         },
         {
           "speaker": "Receptionist",
-          "text": "I found it. May I see your passport?"
+          "text": "Thank you. May I see your passport, please?"
         },
         {
           "speaker": "Minh",
-          "text": "Yes. Here it is."
+          "text": "Of course. Here it is."
         },
         {
           "speaker": "Receptionist",
-          "text": "Thank you. Everything looks good."
-        },
-        {
-          "speaker": "Minh",
-          "text": "One of my bags is missing. Who should I contact?"
-        },
-        {
-          "speaker": "Receptionist",
-          "text": "Contact the station baggage desk. I can give you their number."
-        },
-        {
-          "speaker": "Minh",
-          "text": "Thank you. That would help."
+          "text": "Everything looks good. Your room is 506. Here is your key."
         }
       ]
     },
     {
       "dialogue_id": "dlg_652_757d0781",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -13099,7 +13151,7 @@
       "activity_sort_order": 5,
       "dialogue_index": 1,
       "source_path": "content.dragFillDialogue.lines",
-      "turn_count": 10,
+      "turn_count": 12,
       "turns": [
         {
           "speaker": "Travel Agent",
@@ -13107,31 +13159,15 @@
         },
         {
           "speaker": "Minh",
-          "text": "I would like a ticket to Hue. What time does it leave?"
+          "text": "I would like a ticket to Hue. What time does the next train leave?"
         },
         {
           "speaker": "Travel Agent",
-          "text": "15. Do you need a hotel too?"
+          "text": "The next train leaves at 3:15. Would you like a ticket for that train?"
         },
         {
           "speaker": "Minh",
-          "text": "Yes. I would like to book a room."
-        },
-        {
-          "speaker": "Travel Agent",
-          "text": "Your hotel booking is confirmed for two nights."
-        },
-        {
-          "speaker": "Minh",
-          "text": "Great. I have a reservation."
-        },
-        {
-          "speaker": "Travel Agent",
-          "text": "Yes. I can see the confirmation. Is there anything else I can help you with?"
-        },
-        {
-          "speaker": "Minh",
-          "text": "My luggage is missing. Who should I contact?"
+          "text": "Yes, please. But I cannot find one of my bags. I think I left it near Platform 2."
         },
         {
           "speaker": "Travel Agent",
@@ -13139,14 +13175,38 @@
         },
         {
           "speaker": "Minh",
-          "text": "Thank you. I know what to do next."
+          "text": "Thank you. I will go there now and ask about my bag."
+        },
+        {
+          "speaker": "Travel Agent",
+          "text": "Did you find your bag?"
+        },
+        {
+          "speaker": "Minh",
+          "text": "Yes, I did. Thank you. Is there a hotel near the station? I also need a hotel room for two nights."
+        },
+        {
+          "speaker": "Travel Agent",
+          "text": "Yes, there is. I can book a room at a hotel near the station. Is the room for one guest?"
+        },
+        {
+          "speaker": "Minh",
+          "text": "Yes, just one guest. How much is it per night?"
+        },
+        {
+          "speaker": "Travel Agent",
+          "text": "It is seventy dollars per night. Would you like me to book it?"
+        },
+        {
+          "speaker": "Minh",
+          "text": "Yes, please book the room for me."
         }
       ]
     },
     {
       "dialogue_id": "dlg_607_a03679e6",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -13160,7 +13220,7 @@
       "activity_sort_order": 6,
       "dialogue_index": 1,
       "source_path": "content.lines",
-      "turn_count": 8,
+      "turn_count": 10,
       "turns": [
         {
           "speaker": "Emma",
@@ -13168,38 +13228,46 @@
         },
         {
           "speaker": "Travel Agent",
-          "text": "00 from Platform 6."
+          "text": "The new departure time is 4:00 from Platform 6."
         },
         {
           "speaker": "Emma",
-          "text": "Thank you. I have a hotel booked for tonight. Will I still arrive before seven?"
+          "text": "I have a hotel reservation for tonight. I may arrive later than I planned."
         },
         {
           "speaker": "Travel Agent",
-          "text": "10."
+          "text": "What time did you tell the hotel you would arrive?"
         },
         {
           "speaker": "Emma",
-          "text": "Good. One more thing. One of my bags is missing after the bus trip."
+          "text": "Around six, but now I will probably arrive after seven."
         },
         {
           "speaker": "Travel Agent",
-          "text": "The bus baggage desk is near Platform 1."
+          "text": "You should call the hotel and tell them about the delay."
         },
         {
           "speaker": "Emma",
-          "text": "Should I contact that desk before I board my train?"
+          "text": "Good idea. I do not want them to cancel my reservation."
         },
         {
           "speaker": "Travel Agent",
-          "text": "Yes. You have enough time because of the delay."
+          "text": "They can keep the room for you if they know you are arriving late."
+        },
+        {
+          "speaker": "Emma",
+          "text": "Thank you. I will call the hotel before I board the train."
+        },
+        {
+          "speaker": "Travel Agent",
+          "text": "You're welcome. Your train still leaves from Platform 6."
         }
       ]
     },
     {
       "dialogue_id": "dlg_609_aa6bca87",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -13245,7 +13313,7 @@
         },
         {
           "speaker": "Anna",
-          "text": "Yes. I checked both bags before we left the station."
+          "text": "Yes. I have both bags with me."
         },
         {
           "speaker": "Mia",
@@ -13253,7 +13321,7 @@
         },
         {
           "speaker": "Anna",
-          "text": "Let us check the departure board one more time."
+          "text": "Good. Let's go to Platform 4 and wait for the train."
         }
       ],
       "fill_blank_words": [
@@ -13311,8 +13379,8 @@
     },
     {
       "dialogue_id": "dlg_611_22fac3bc",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -13329,51 +13397,51 @@
       "turn_count": 10,
       "turns": [
         {
-          "speaker": "The next train leaves at 1",
+          "speaker": "Travel Agent",
           "text": "Welcome to the travel center. How can I help you?"
         },
         {
           "speaker": "Bạn",
-          "text": "I would like a ticket to Hue."
+          "text": "I would like to travel to Hue this afternoon. What time does the next train leave?"
         },
         {
-          "speaker": "The next train leaves at 1",
-          "text": "45. What would you like to know?"
-        },
-        {
-          "speaker": "Bạn",
-          "text": "What time does it arrive?"
-        },
-        {
-          "speaker": "The next train leaves at 1",
-          "text": "20. Do you already have a hotel?"
+          "speaker": "Travel Agent",
+          "text": "The next train leaves at 1:45 and arrives in Hue at 4:20."
         },
         {
           "speaker": "Bạn",
-          "text": "No. I would like to book a room for tonight."
+          "text": "That works for me. I would like one ticket, and I also need a hotel room for two nights."
         },
         {
-          "speaker": "The next train leaves at 1",
-          "text": "Certainly. How many nights will you stay?"
-        },
-        {
-          "speaker": "Bạn",
-          "text": "I will stay for two nights."
-        },
-        {
-          "speaker": "The next train leaves at 1",
-          "text": "I can reserve a room near the station for two nights."
+          "speaker": "Travel Agent",
+          "text": "Certainly. How many guests will be staying in the room?"
         },
         {
           "speaker": "Bạn",
-          "text": "Thank you. That makes the trip easier."
+          "text": "Just one guest. Is there a hotel near the station?"
+        },
+        {
+          "speaker": "Travel Agent",
+          "text": "Yes. Riverside Hotel is nearby. The rate is seventy dollars per night, including breakfast."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "That sounds good. Please book the room for two nights."
+        },
+        {
+          "speaker": "Travel Agent",
+          "text": "Certainly. Your train ticket and hotel room are both booked."
+        },
+        {
+          "speaker": "Bạn",
+          "text": "Great. Thank you. Now I have everything ready for my trip."
         }
       ]
     },
     {
       "dialogue_id": "dlg_612_c7df90e3",
-      "verified": false,
-      "verified_at": null,
+      "verified": true,
+      "verified_at": "2026-08-21T18:18:00.000Z",
       "course_key": "communication-basic",
       "course_title": "Giao tiếp cơ bản",
       "module_key": "basic-module-08",
@@ -13387,58 +13455,51 @@
       "activity_sort_order": 11,
       "dialogue_index": 1,
       "source_path": "content.turns[roleplay-canonical]",
-      "turn_count": 12,
+      "turn_count": 10,
       "turns": [
         {
           "speaker": "Trip Assistant",
-          "text": "Welcome. How can I help you?"
+          "text": "Hello. How can I help you today?"
         },
         {
           "speaker": "Bạn",
-          "text": "I have checked in, but one of my bags is missing."
+          "text": "My train to Nha Trang was canceled, and I need another train for tomorrow morning."
         },
         {
           "speaker": "Trip Assistant",
-          "text": "I see. Did you last have it at the station?"
+          "text": "I can help with that. There is a train at 9:10 tomorrow."
         },
         {
           "speaker": "Bạn",
-          "text": "Yes. I think I left it there."
+          "text": "That time works for me. Which platform does the train leave from?"
         },
         {
           "speaker": "Trip Assistant",
-          "text": "Then the station baggage desk is the right place to contact."
+          "text": "It leaves from Platform 3. The ticket is twenty-five dollars."
         },
         {
           "speaker": "Bạn",
-          "text": "Could you give me their number?"
+          "text": "That is fine. Does the train arrive before noon?"
         },
         {
           "speaker": "Trip Assistant",
-          "text": "Of course. I will give you the number. Is there anything else I can help you with?"
+          "text": "Yes. It arrives in Nha Trang at 11:45."
         },
         {
           "speaker": "Bạn",
-          "text": "Yes. I would like a ticket to Nha Trang for tomorrow."
+          "text": "Great. Please book that train for me."
         },
         {
           "speaker": "Trip Assistant",
-          "text": "The morning train is available."
+          "text": "Certainly. Your new ticket is ready."
         },
         {
           "speaker": "Bạn",
-          "text": "What time does it leave?"
-        },
-        {
-          "speaker": "Trip Assistant",
-          "text": "10."
-        },
-        {
-          "speaker": "Bạn",
-          "text": "Great. I would like that ticket, please."
+          "text": "Thank you. I will be at Platform 3 before nine."
         }
       ]
     }
   ],
-  "updated_at": "2026-08-19T17:46:00+07:00"
+  "updated_at": "2026-08-21T18:15:58.696Z",
+  "export_scope": "full"
 }
