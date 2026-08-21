@@ -11766,7 +11766,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "20 this morning."
+          "text": "It leaves at 9:20 this morning."
         },
         {
           "speaker": "Minh",
@@ -11815,7 +11815,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "05."
+          "text": "It leaves at 11:05."
         },
         {
           "speaker": "Minh",
@@ -11860,7 +11860,7 @@
       "turns": [
         {
           "speaker": "Emma",
-          "text": "00 train to Nha Trang."
+          "text": "Excuse me. I have a ticket for the 2:00 train to Nha Trang."
         },
         {
           "speaker": "Clerk",
@@ -11888,7 +11888,7 @@
         },
         {
           "speaker": "Clerk",
-          "text": "10 this evening."
+          "text": "The expected arrival is 6:10 this evening."
         },
         {
           "speaker": "Emma",
@@ -12033,7 +12033,7 @@
       "turn_count": 10,
       "turns": [
         {
-          "speaker": "It leaves at 10",
+          "speaker": "Clerk",
           "text": "Good morning. Where would you like to travel?"
         },
         {
@@ -12041,7 +12041,7 @@
           "text": "I would like a ticket to Hue."
         },
         {
-          "speaker": "It leaves at 10",
+          "speaker": "Clerk",
           "text": "Certainly. The next train has seats available."
         },
         {
@@ -12049,15 +12049,15 @@
           "text": "What time does it leave?"
         },
         {
-          "speaker": "It leaves at 10",
-          "text": "40."
+          "speaker": "Clerk",
+          "text": "It leaves at 10:40."
         },
         {
           "speaker": "Bạn",
           "text": "Which platform does it leave from?"
         },
         {
-          "speaker": "It leaves at 10",
+          "speaker": "Clerk",
           "text": "It leaves from Platform 2."
         },
         {
@@ -12065,7 +12065,7 @@
           "text": "Is the train on time?"
         },
         {
-          "speaker": "It leaves at 10",
+          "speaker": "Clerk",
           "text": "Yes. It is on time, and boarding begins in ten minutes."
         },
         {
@@ -12509,7 +12509,7 @@
       "turn_count": 10,
       "turns": [
         {
-          "speaker": "Nhân vật",
+          "speaker": "Receptionist",
           "text": "Good evening. Welcome to Ocean Hotel. How can I help you?"
         },
         {
@@ -12517,7 +12517,7 @@
           "text": "Hello. I have a reservation."
         },
         {
-          "speaker": "Nhân vật",
+          "speaker": "Receptionist",
           "text": "Great. I found your booking. May I see your passport?"
         },
         {
@@ -12525,7 +12525,7 @@
           "text": "Yes. Here is my passport."
         },
         {
-          "speaker": "Nhân vật",
+          "speaker": "Receptionist",
           "text": "Thank you. Your room is on the fourth floor. Here is your key."
         },
         {
@@ -12533,7 +12533,7 @@
           "text": "Where is the elevator?"
         },
         {
-          "speaker": "Nhân vật",
+          "speaker": "Receptionist",
           "text": "The elevator is beside the lobby."
         },
         {
@@ -12541,7 +12541,7 @@
           "text": "What time is checkout?"
         },
         {
-          "speaker": "Nhân vật",
+          "speaker": "Receptionist",
           "text": "Checkout is at eleven. Please keep your room key with you during your stay."
         },
         {
@@ -12863,7 +12863,7 @@
         },
         {
           "speaker": "Airline Agent",
-          "text": "20 from Gate B4."
+          "text": "There is one at 6:20 from Gate B4."
         },
         {
           "speaker": "Emma",
@@ -12911,7 +12911,7 @@
       "turn_count": 10,
       "turns": [
         {
-          "speaker": "Nhân vật",
+          "speaker": "Receptionist",
           "text": "Good evening. Reception. How can I help you?"
         },
         {
@@ -12919,7 +12919,7 @@
           "text": "The air conditioner in my room does not work."
         },
         {
-          "speaker": "Nhân vật",
+          "speaker": "Receptionist",
           "text": "I am sorry about that. What room are you in?"
         },
         {
@@ -12927,7 +12927,7 @@
           "text": "I am in room 407."
         },
         {
-          "speaker": "Nhân vật",
+          "speaker": "Receptionist",
           "text": "Thank you. I can send someone to check it."
         },
         {
@@ -12935,7 +12935,7 @@
           "text": "How long will it take?"
         },
         {
-          "speaker": "Nhân vật",
+          "speaker": "Receptionist",
           "text": "About fifteen minutes."
         },
         {
@@ -12943,7 +12943,7 @@
           "text": "What if they cannot fix it tonight?"
         },
         {
-          "speaker": "Nhân vật",
+          "speaker": "Receptionist",
           "text": "We can move you to another room if they cannot fix it."
         },
         {
@@ -12997,7 +12997,7 @@
         },
         {
           "speaker": "Travel Desk Agent",
-          "text": "20 from Gate B4."
+          "text": "There is one at 6:20 from Gate B4."
         },
         {
           "speaker": "Bạn",
@@ -13042,7 +13042,7 @@
         },
         {
           "speaker": "Travel Agent",
-          "text": "30 from Platform 2."
+          "text": "It leaves at 2:30 from Platform 2."
         },
         {
           "speaker": "Minh",
@@ -13119,7 +13119,7 @@
         },
         {
           "speaker": "Travel Agent",
-          "text": "15. Do you need a hotel too?"
+          "text": "The next train leaves at 3:15. Do you need a hotel too?"
         },
         {
           "speaker": "Minh",
@@ -13176,7 +13176,7 @@
         },
         {
           "speaker": "Travel Agent",
-          "text": "00 from Platform 6."
+          "text": "The new departure time is 4:00 from Platform 6."
         },
         {
           "speaker": "Emma",
@@ -13184,7 +13184,7 @@
         },
         {
           "speaker": "Travel Agent",
-          "text": "10."
+          "text": "Yes. The new arrival time is 6:10."
         },
         {
           "speaker": "Emma",
@@ -13337,7 +13337,7 @@
       "turn_count": 10,
       "turns": [
         {
-          "speaker": "The next train leaves at 1",
+          "speaker": "Travel Agent",
           "text": "Welcome to the travel center. How can I help you?"
         },
         {
@@ -13345,23 +13345,23 @@
           "text": "I would like a ticket to Hue."
         },
         {
-          "speaker": "The next train leaves at 1",
-          "text": "45. What would you like to know?"
+          "speaker": "Travel Agent",
+          "text": "The next train leaves at 1:45. What would you like to know?"
         },
         {
           "speaker": "Bạn",
           "text": "What time does it arrive?"
         },
         {
-          "speaker": "The next train leaves at 1",
-          "text": "20. Do you already have a hotel?"
+          "speaker": "Travel Agent",
+          "text": "It arrives at 4:20. Do you already have a hotel?"
         },
         {
           "speaker": "Bạn",
           "text": "No. I would like to book a room for tonight."
         },
         {
-          "speaker": "The next train leaves at 1",
+          "speaker": "Travel Agent",
           "text": "Certainly. How many nights will you stay?"
         },
         {
@@ -13369,7 +13369,7 @@
           "text": "I will stay for two nights."
         },
         {
-          "speaker": "The next train leaves at 1",
+          "speaker": "Travel Agent",
           "text": "I can reserve a room near the station for two nights."
         },
         {
@@ -13439,7 +13439,7 @@
         },
         {
           "speaker": "Trip Assistant",
-          "text": "10."
+          "text": "It leaves at 9:10."
         },
         {
           "speaker": "Bạn",
